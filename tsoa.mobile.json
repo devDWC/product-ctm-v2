@@ -1,0 +1,14 @@
+{
+  "entryFile": "src/start-up/app.ts",
+  "noImplicitAdditionalProperties": "throw-on-extras",
+  "controllerPathGlobs": ["src/controllers/mobile/**/*.ts"],
+  "spec": {
+    "outputDirectory": "src/routes/mobile",
+    "specVersion": 3,
+    "basePath": "api",
+    "specFileBaseName": "swagger"
+  },
+  "routes": {
+    "routesDir": "src/routes/mobile"
+  }
+}

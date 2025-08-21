@@ -1,0 +1,14 @@
+{
+  "entryFile": "src/start-up/app.ts",
+  "noImplicitAdditionalProperties": "throw-on-extras",
+  "controllerPathGlobs": ["src/controllers/public/**/*.ts"],
+  "spec": {
+    "outputDirectory": "src/routes/public",
+    "specVersion": 3,
+    "basePath": "api",
+    "specFileBaseName": "swagger"
+  },
+  "routes": {
+    "routesDir": "src/routes/public"
+  }
+}
