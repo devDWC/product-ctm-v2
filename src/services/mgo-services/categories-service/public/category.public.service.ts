@@ -1,8 +1,8 @@
-// src/services/category.service.ts
-
 import { CategoryDto } from "../../../../model/dto/category/category.dto";
-import { CategoryRepository } from "../../../../repository/mgo-repository/categories-repository/categories.repository";
 import { ICategory } from "../../../../model/entities/category.entities";
+import { CategoryRepository } from "../../../../repository/mgo-repository/categories-repository/categories.repository";
+
+
 
 export class CategoryService {
   private categoryRepo: CategoryRepository;

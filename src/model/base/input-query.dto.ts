@@ -3,5 +3,5 @@ export interface InputQuery {
   pageCurrent?: number;
   pageSize?: number;
   sortList?: { key: string; value: 'asc' | 'desc' }[];
-  conditions?: { key: string; value: 'asc' | 'desc' }[];
+  conditions?: { key: string; value: 'name' | '[tên cần tìm]' }[];
 }

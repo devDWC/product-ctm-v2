@@ -9,57 +9,6 @@ interface DecodedToken extends JwtPayload {
   privateKey: string;
   isEmloy?: boolean;
 }
-
-// export const authMiddleware = async (
-//   req: Request,
-//   res: Response,
-//   next: NextFunction
-// ) => {
-//   try {
-//     const authHeader = req.headers.authorization;
-//     if (!authHeader || !authHeader.startsWith("Bearer ")) {
-//       return res.status(403).json({
-//         message: "Bạn không có quyền truy cập (Token không hợp lệ).",
-//       });
-//     }
-
-//     const token = authHeader.split(" ")[1];
-
-//     if (!token) {
-//       return res.status(403).json({
-//         message: "Token không tồn tại.",
-//       });
-//     }
-
-//     try {
-//       const decoded = jwt.verify(token, process.env.SECRET_KEY || "") as DecodedToken;
-
-//       let user: any;
-//       if (decoded.isEmloy) {
-//         user = await employServices.getKeyPrivateUserByEmail(decoded.emailAddress || "");
-//       } else {
-//         user = await mgoUserServices.getKeyPrivateUserById(decoded.id);
-//       }
-
-//       if (user && user.privateKey === decoded.privateKey) {
-//         (req as any).user = user;
-//         return next();
-//       } else {
-//         return res.status(403).json({ message: "Token không hợp lệ." });
-//       }
-//     } catch (error) {
-//       if (error instanceof jwt.TokenExpiredError) {
-//         return res.status(401).json({ message: "Token đã hết hạn." });
-//       } else if (error instanceof jwt.JsonWebTokenError) {
-//         return res.status(403).json({ message: "Token không hợp lệ." });
-//       }
-//       throw error;
-//     }
-//   } catch (error) {
-//     return res.status(500).json({ message: "Lỗi server khi xác thực token." });
-//   }
-// };
-
 export const authMiddlewareEmploy = async (
   req: Request,
   res: Response,

@@ -10,7 +10,7 @@ import {
   ForgotPasswordDataMobile,
 } from "../../../../model/dto/user/user.dto";
 import { UserContext, IUser } from "../../../../model/entities/user.entities";
-import { generatePrivateKey } from "../../../../shared/helper/support.service";
+import { generatePrivateKey } from "../../../helper-services/support.service";
 import { buildMongoQuery } from "../../../../shared/utils/mgo.utility";
 import { normalizePhone } from "../../../../shared/utils/phone.utility";
 import { createToken } from "../../../../shared/utils/jwt.utility";

@@ -8,6 +8,7 @@ import { connectToMongoDb } from "../context/mongo-context/mongo-db";
 import cors from "cors";
 import path from "path";
 import { setLanguage } from '../middleware/set-language.middleware';
+import { s3Utility } from "ctm-utility";
 
 dotenv.config();
 
@@ -20,6 +21,11 @@ app.use(
     allowedHeaders: ["Content-Type", "Authorization", "x-isencrypt"],
   })
 );
+  s3Utility.s3Init({
+  endpoint: process.env.S3_URL || "",
+  accessKeyId: process.env.MINIO_ACCESS_KEY || "",
+  secretAccessKey: process.env.MINIO_SECRET_KEY || "",
+});
 
 app.use(express.json());
 app.use(setLanguage);

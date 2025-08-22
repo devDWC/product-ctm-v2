@@ -6,7 +6,9 @@ import {
   ExceptionError,
   NotfoundError,
 } from "../../shared/utils/response.utility";
-import { CategoryService } from "../../service/mgo-services/categories-service/public/category.public.service";
+import { CategoryService } from "../../services/mgo-services/categories-service/public/category.public.service";
+
+
 
 @Tags("Category")
 @Route("/v1/public/categories")

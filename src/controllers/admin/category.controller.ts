@@ -17,7 +17,6 @@ import {
   ExceptionError,
   NotfoundError,
 } from "../../shared/utils/response.utility";
-import { CategoryService } from "../../service/mgo-services/categories-service/admin/category.admin.service";
 import {
   CreateCategoryDto,
   UpdateCategoryDto,
@@ -26,12 +25,15 @@ import { validateRequest } from "../../middleware/validateRequest.middleware";
 import {
   createCategorySchema,
   updateCategorySchema,
-} from "../../validators/categories.validator";
+} from "../../shared/validators/categories.validator";
 import { t } from "../../locales";
+import { CategoryService } from "../../services/mgo-services/categories-service/admin/category.admin.service";
+import { accessControlMiddleware } from "../../middleware/access-control.middleware";
 
 @Tags("Category")
 @Route("/v1/public/categories")
 export class CategoryController extends Controller {
+
   private categoryService = new CategoryService();
 
   @Post("/")
@@ -53,6 +55,7 @@ export class CategoryController extends Controller {
   @Put("/{categoryId}")
   @Middlewares([
     validateRequest(updateCategorySchema, { namespace: "categories" }),
+    accessControlMiddleware("users", "create")
   ])
   public async updateCategory(
     @Path() categoryId: string,

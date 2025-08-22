@@ -21,7 +21,7 @@ export const securityMiddleware = async (
     if (!baseConfig.dencrytePayload) return next();
 
     const isEncrypt =
-      req.headers["X-isencrypt"]?.toString().toLowerCase() === "true";
+      req.headers["X-isEncrypt"]?.toString().toLowerCase() === "true";
 
     if (isEncrypt) {
       const encryptedData = req.body?.data;
