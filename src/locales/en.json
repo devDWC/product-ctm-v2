@@ -1,0 +1,24 @@
+{
+  "invalid_data": "Invalid data",
+  "required_field": "This field is required",
+  "invalid_url": "Invalid URL format",
+  "unauthorized": "You are not authorized to access this API.",
+  "error_detail": "Error validating input data",
+  "categories": {
+    "createSuccess": "Category created successfully",
+    "createFailure": "Error while creating category",
+    "updateSuccess": "Category updated successfully",
+    "updateFailure": "Error while updating category",
+    "deleteSuccess": "Category deleted successfully",
+    "deleteFailure": "Error while deleting category",
+    "getAllSuccess": "Get categories successfully",
+    "getAllFailure": "Error while getting categories",
+    "getOneSuccess": "Get category info successfully",
+    "getOneFailure": "Error while getting category",
+    "getChildrenSuccess": "Get child categories successfully",
+    "getChildrenFailure": "Error while getting child categories",
+    "notFound": "Category not found",
+    "error.name.required": "Category name cannot be empty",
+    "error.slug.required": "Category slug cannot be empty"
+  }
+}

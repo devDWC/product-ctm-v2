@@ -7,4 +7,5 @@ export interface ApiResponse {
   errorDetail: string | null;
   isEncrypted?: boolean | false;
   resultApi: any;
+  total?: number;
 }
