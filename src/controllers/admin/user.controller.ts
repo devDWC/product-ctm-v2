@@ -1,7 +1,6 @@
 import {
   Body,
   Controller,
-  Exception,
   Get,
   Middlewares,
   Post,
@@ -18,8 +17,6 @@ import {
   getUsers,
   getUserById,
   updateUser,
-  login,
-  register,
   exchangePointUser,
   getUserStatsThisMonth,
 } from "../../service/mgo-services/users-service/admin/user.service";
@@ -28,19 +25,17 @@ import {
   UpdateUserDto,
   GetUserRequest,
 } from "../../model/dto/user/user.dto";
-import { accessControlMiddleware } from "../../middleware/accessControl.middleware";
-import { LoginDto } from "../../model/dto/auth/login.dto";
-import {
-  RegisterInputDto,
-  RegisterOutputDto,
-} from "../../model/dto/auth/register.dto";
-import { updateDynamicUser } from "../../service/mgo-services/users-service/public/user.service";
+
+// sửa path import middleware đúng
+import { accessControlMiddleware } from "../../middleware/access-control.middleware";
 import { ExchangePointDto } from "../../model/dto/user/pointUser.dto";
+
 @Tags("User")
 @Route("/v1/admin/users")
 export class UserController extends Controller {
   @Post("/getUser")
-  //  @Middlewares([accessControlMiddleware("account", "GET_ACCOUNT")])
+  // giữ nguyên comment middleware
+  // @Middlewares([accessControlMiddleware("account", "GET_ACCOUNT")])
   public async getUserList(@Body() body: GetUserRequest): Promise<ApiResponse> {
     try {
       const {
@@ -63,6 +58,7 @@ export class UserController extends Controller {
       return ExceptionError("Lỗi khi lấy danh sách employed");
     }
   }
+
   @Get("/")
   public async getUsers(
     @Query() search?: string,
@@ -90,6 +86,7 @@ export class UserController extends Controller {
     return Success(result, "Lấy danh sách người dùng thành công");
   }
 
+  // dùng middleware chuẩn, factory trả về function
   @Middlewares([accessControlMiddleware("users", "create")])
   @Post("/")
   public async createUser(@Body() user: CreateUserDto): Promise<ApiResponse> {
@@ -105,7 +102,7 @@ export class UserController extends Controller {
   @Get("{id}")
   public async getUserById(@Path() id: string): Promise<ApiResponse> {
     try {
-      const user = await getUserById(id); // đây là service xử lý logic tìm user theo id
+      const user = await getUserById(id);
       return Success(user, "Lấy thông tin người dùng thành công");
     } catch (error: any) {
       const message = error?.message || "Đã xảy ra lỗi không xác định";
@@ -126,6 +123,7 @@ export class UserController extends Controller {
       return ExceptionError(message);
     }
   }
+
   @Put("exchangePointUser/{id}")
   public async exchangePointUser(
     @Path() id: string,
@@ -139,6 +137,7 @@ export class UserController extends Controller {
       return ExceptionError(message);
     }
   }
+
   @Get("getUserStatsThisMonth/getTotal")
   public async getUserStatsThisMonth(
     @Query() tenantId?: number

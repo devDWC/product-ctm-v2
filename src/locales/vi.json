@@ -1,0 +1,24 @@
+{
+  "invalid_data": "Dữ liệu không hợp lệ",
+  "required_field": "Trường này là bắt buộc",
+  "invalid_url": "Đường dẫn URL không hợp lệ",
+  "unauthorized": "Bạn không có quyền truy cập vào api này.",
+  "error_detail": "Có lỗi khi validate dữ liệu đầu vào",
+  "categories": {
+    "createSuccess": "Tạo category thành công",
+    "createFailure": "Lỗi khi tạo category",
+    "updateSuccess": "Cập nhật category thành công",
+    "updateFailure": "Lỗi khi cập nhật category",
+    "deleteSuccess": "Xóa category thành công",
+    "deleteFailure": "Lỗi khi xóa category",
+    "getAllSuccess": "Lấy danh sách category thành công",
+    "getAllFailure": "Lỗi khi lấy danh sách category",
+    "getOneSuccess": "Lấy thông tin category thành công",
+    "getOneFailure": "Lỗi khi lấy category",
+    "getChildrenSuccess": "Lấy danh sách category con thành công",
+    "getChildrenFailure": "Lỗi khi lấy category con",
+    "notFound": "Category không tồn tại",
+    "error.name.required": "Tên danh mục không được để trống",
+    "error.slug.required": "Slug danh mục không được để trống"
+  }
+}

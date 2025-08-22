@@ -9,13 +9,8 @@ import { generatePrivateKey } from "../../../../shared/helper/support.service";
 import { buildMongoQuery } from "../../../../shared/utils/mgo.utility";
 import { normalizePhone } from "../../../../shared/utils/phone.utility";
 import { createToken } from "../../../../shared/utils/jwt.utility";
-import {
-  RegisterInputDto,
-  RegisterOutputDto,
-} from "../../../../model/dto/auth/register.dto";
 
 import bcrypt from "bcryptjs";
-import { verifyOTPforMultiChannel } from "../../auth-service/admin/auth.service";
 
 export async function createUser(user: CreateUserDto) {
   const {
@@ -205,88 +200,6 @@ export async function login(
       user.originSystem || "chothongminh.com"
     }`,
   };
-}
-
-export async function register(
-  user: RegisterInputDto
-): Promise<RegisterOutputDto> {
-  try {
-    const {
-      otp,
-      emailAddress,
-      firstName,
-      lastName,
-      phoneNumber,
-      address,
-      password,
-      channel,
-    } = user;
-
-    const phoneNumberFormat: any = normalizePhone(phoneNumber);
-    if (!otp) {
-      const err = new Error("OTP là bắt buộc") as Error & {
-        code?: string;
-        statusCode?: number;
-      };
-      err.code = "MISSING_OTP";
-      err.statusCode = 400;
-      throw err;
-    }
-    const check = await verifyOTPforMultiChannel(
-      phoneNumberFormat,
-      otp,
-      channel
-    );
-
-    if (!check.status) {
-      const err = new Error("OTP không hợp lệ") as Error & {
-        code?: string;
-        statusCode?: number;
-      };
-      err.code = "INVALID_OTP";
-      err.statusCode = 400;
-      throw err;
-    }
-
-    const existingUser = await UserContext.findOne({
-      phoneNumber: phoneNumberFormat,
-    });
-    if (existingUser) {
-      const err = new Error(
-        "Số điện thoại đã tồn tại, bạn có thể dùng số điện thoại này để đăng nhập vào hệ thống"
-      ) as Error & {
-        code?: string;
-        statusCode?: number;
-      };
-      err.code = "CONFLICT";
-      err.statusCode = 409;
-      throw err;
-    }
-
-    const passwordHash = await bcrypt.hash(password, 10);
-
-    const userData = {
-      id: uuidv4(),
-      firstName,
-      lastName,
-      fullName: `${firstName} ${lastName}`,
-      phoneNumber: phoneNumberFormat,
-      address,
-      passwordHash,
-      privateKey: generatePrivateKey(),
-      originSystem: "chothongminh.com",
-    };
-
-    const newUser = new UserContext(userData);
-    await newUser.save();
-
-    const token = createToken(newUser);
-
-    return { user: newUser.toObject(), token };
-  } catch (error) {
-    console.error("Error in register:", error);
-    throw error;
-  }
 }
 
 //đổi điểm cho user - api admin

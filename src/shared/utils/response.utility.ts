@@ -1,7 +1,11 @@
 // src/shared/utils/response-helper.ts
 import { ApiResponse } from "../../model/base/response.dto";
 
-export function Success(result: any, message = "Process success"): ApiResponse {
+export function Success(
+  result: any,
+  message: string = "Process success",
+  total?: number
+): ApiResponse {
   return {
     status: 200,
     message,
@@ -10,10 +14,13 @@ export function Success(result: any, message = "Process success"): ApiResponse {
     errorDetail: null,
     resultApi: result,
     isEncrypted: false,
+    total,
   };
 }
+
 export function SuccessEncrypted(
   result: any,
+  total: number = 1,
   message = "Process success"
 ): ApiResponse {
   return {
@@ -24,21 +31,24 @@ export function SuccessEncrypted(
     errorDetail: null,
     isEncrypted: true,
     resultApi: result,
+    total,
   };
 }
+
 export function ProcessError(
   message = "Error",
   status: number = 400,
   error?: string,
-  errorDetail: string = ""
+  errorDetail: string = "",
+  resultApi?: any
 ): ApiResponse {
   return {
     status,
     message,
     error: error || "Internal Server Error",
     isBusinessError: true,
-    errorDetail: errorDetail,
-    resultApi: null,
+    errorDetail,
+    resultApi: resultApi,
     isEncrypted: false,
   };
 }
@@ -54,7 +64,24 @@ export function NotfoundError(
     message,
     error: error || "Not found",
     isBusinessError: true,
-    errorDetail: errorDetail,
+    errorDetail,
+    resultApi: null,
+    isEncrypted: false,
+  };
+}
+
+export function Unauthorized(
+  message = "Unauthorized",
+  status: number = 401,
+  error?: string,
+  errorDetail: string = ""
+): ApiResponse {
+  return {
+    status,
+    message,
+    error: error || "Unauthorized",
+    isBusinessError: true,
+    errorDetail,
     resultApi: null,
     isEncrypted: false,
   };
@@ -71,7 +98,7 @@ export function ConflictError(
     message,
     error: error || "Conflict",
     isBusinessError: true,
-    errorDetail: errorDetail,
+    errorDetail,
     resultApi: null,
     isEncrypted: false,
   };

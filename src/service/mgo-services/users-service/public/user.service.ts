@@ -1,6 +1,5 @@
 import { v4 as uuidv4 } from "uuid";
 import {
-  CreateUserDto,
   UpdateUserDto,
   GetUserByIdPublicDto,
   FindUserInput,
@@ -11,21 +10,13 @@ import {
   ForgotPasswordDataMobile,
 } from "../../../../model/dto/user/user.dto";
 import { UserContext, IUser } from "../../../../model/entities/user.entities";
-import { TenantContext } from "../../../../model/entities/tenant.entities";
 import { generatePrivateKey } from "../../../../shared/helper/support.service";
 import { buildMongoQuery } from "../../../../shared/utils/mgo.utility";
 import { normalizePhone } from "../../../../shared/utils/phone.utility";
 import { createToken } from "../../../../shared/utils/jwt.utility";
-import { TenantRandom } from "../../../../model/dto/tenant/tenant.dto";
 import { OAuth2Client, TokenPayload } from "google-auth-library";
-import {
-  RegisterInputDto,
-  RegisterOutputDto,
-} from "../../../../model/dto/auth/register.dto";
-import {
-  sendOtpforMultiChannel,
-  verifyOTPforMultiChannel,
-} from "../../auth-service/admin/auth.service";
+
+
 import bcrypt from "bcryptjs";
 // Khai báo client Google OAuth2
 const client = new OAuth2Client(
@@ -96,80 +87,6 @@ export async function login(
       user.originSystem || "chothongminh.com"
     }`,
   };
-}
-
-export async function register(
-  user: RegisterInputDto
-): Promise<RegisterOutputDto> {
-  try {
-    const {
-      otp,
-      emailAddress,
-      firstName,
-      lastName,
-      phoneNumber,
-      address,
-      password,
-      channel,
-    } = user;
-
-    const phoneNumberFormat = normalizePhone(phoneNumber);
-
-    // const check = await authService.verifyOTPforMultiChannel(
-    //   phoneNumberFormat,
-    //   otp,
-    //   channel
-    // );
-
-    // if (!check.status) {
-    //   const err = new Error("OTP không hợp lệ") as Error & {
-    //     code?: string;
-    //     statusCode?: number;
-    //   };
-    //   err.code = "INVALID_OTP";
-    //   err.statusCode = 400;
-    //   throw err;
-    // }
-
-    const existingUser = await UserContext.findOne({
-      phoneNumber: phoneNumberFormat,
-    });
-    if (existingUser) {
-      const err = new Error(
-        "Số điện thoại đã tồn tại, bạn có thể dùng số điện thoại này để đăng nhập vào hệ thống"
-      ) as Error & {
-        code?: string;
-        statusCode?: number;
-      };
-      err.code = "CONFLICT";
-      err.statusCode = 409;
-      throw err;
-    }
-
-    const passwordHash = await bcrypt.hash(password, 10);
-
-    const userData = {
-      id: uuidv4(),
-      firstName,
-      lastName,
-      fullName: `${firstName} ${lastName}`,
-      phoneNumber: phoneNumberFormat,
-      address,
-      passwordHash,
-      privateKey: generatePrivateKey(),
-      originSystem: "chothongminh.com",
-    };
-
-    const newUser = new UserContext(userData);
-    await newUser.save();
-
-    const token = createToken(newUser);
-
-    return { user: newUser.toObject(), token };
-  } catch (error) {
-    console.error("Error in register:", error);
-    throw error;
-  }
 }
 
 //public function
@@ -345,23 +262,6 @@ export async function updateEmailOrPhoneNumber(
   }
 }
 
-export async function getTenantOrRandom(id?: number): Promise<TenantRandom> {
-  let tenant = await TenantContext.findOne({ id: id }).lean();
-
-  if (!tenant) {
-    const allTenants = await TenantContext.find().lean();
-    if (allTenants.length === 0) {
-      throw new Error("Không có tenant nào trong hệ thống.");
-    }
-
-    // Lấy ngẫu nhiên 1 tenant
-    const randomIndex = Math.floor(Math.random() * allTenants.length);
-    tenant = allTenants[randomIndex];
-  }
-
-  return tenant;
-}
-
 export async function getUsersForComment(
   search?: string,
   pageCurrent: number = 1,
@@ -412,56 +312,6 @@ export async function getUsersForComment(
     users: usersWithLevel,
     totalUsers: total,
   };
-}
-
-export async function forgotPasswordforMultiChannel(
-  data: ForgotPasswordData,
-  action: string | null = null
-): Promise<any> {
-  if (action === "sendOtp") {
-    if (!data.input) {
-      throw new Error("Thiếu thông tin input để gửi OTP");
-    }
-    await sendOtpforMultiChannel(data.input, data.channel);
-    return { status: 200, message: "Gửi otp xác nhận thành công" };
-  }
-
-  try {
-    const { otp, newPassword, phoneOrEmail, channel } = data;
-
-    if (!otp || !newPassword || !phoneOrEmail) {
-      throw new Error("Thiếu thông tin cần thiết để đặt lại mật khẩu");
-    }
-
-    const check = await verifyOTPforMultiChannel(phoneOrEmail, otp, channel);
-
-    if (!check.status) {
-      const err = new Error("OTP không hợp lệ") as Error & {
-        code?: string;
-        statusCode?: number;
-      };
-      err.code = "INVALID_OTP";
-      err.statusCode = 400;
-      throw err;
-    }
-
-    const passwordHash = await bcrypt.hash(newPassword, 10);
-    const isEmail = phoneOrEmail.includes("@");
-    const condition = isEmail
-      ? { emailAddress: phoneOrEmail }
-      : { phoneNumber: phoneOrEmail };
-
-    await UserContext.findOneAndUpdate(
-      condition,
-      { $set: { passwordHash, privateKey: generatePrivateKey() } },
-      { new: true }
-    );
-
-    return { status: 200, message: "Mật khẩu đã được cập nhật thành công" };
-  } catch (error) {
-    console.log("Error in reset password:", error);
-    throw error;
-  }
 }
 
 export async function verifyGoogleToken(

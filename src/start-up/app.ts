@@ -1,4 +1,5 @@
 // src/start-up/main.ts
+import 'reflect-metadata';
 import express from "express";
 import dotenv from "dotenv";
 import routesModule from "../routes/router.module";
@@ -6,6 +7,7 @@ import { setupSwagger } from "./swagger";
 import { connectToMongoDb } from "../context/mongo-context/mongo-db";
 import cors from "cors";
 import path from "path";
+import { setLanguage } from '../middleware/set-language.middleware';
 
 dotenv.config();
 
@@ -20,6 +22,7 @@ app.use(
 );
 
 app.use(express.json());
+app.use(setLanguage);
 
 setupSwagger(app);
 
