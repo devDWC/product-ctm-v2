@@ -69,7 +69,7 @@
 		"contact": {}
 	},
 	"paths": {
-		"/v1/public/categories/parent/{parentId}": {
+		"/v1/mobile/categories/parent/{parentId}": {
 			"get": {
 				"operationId": "GetCategoriesByParentId",
 				"responses": {
@@ -94,8 +94,7 @@
 						"name": "parentId",
 						"required": true,
 						"schema": {
-							"format": "double",
-							"type": "number"
+							"type": "string"
 						}
 					}
 				]

@@ -1,3 +1,7 @@
+function escapeRegex(str: string) {
+  return str.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"); // escape regex special chars
+}
+
 export function buildMongoQuery({
   search,
   searchKeys = [],

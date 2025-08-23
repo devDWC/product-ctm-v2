@@ -1,9 +1,11 @@
 // src/services/category.service.ts
-
 import { CategoryDto } from "../../../../model/dto/category/category.dto";
 import { CategoryRepository } from "../../../../repository/mgo-repository/categories-repository/categories.repository";
 import { ICategory } from "../../../../model/entities/category.entities";
-import { ConflictError } from "../../../../shared/utils/response.utility";
+import {
+  ConflictError,
+  NotfoundError,
+} from "../../../../shared/utils/response.utility";
 
 export class CategoryService {
   private categoryRepo: CategoryRepository;
@@ -15,13 +17,15 @@ export class CategoryService {
   /**
    * Tạo mới category với check slug + name trùng
    */
-  public async createCategory(data: Partial<ICategory>): Promise<ICategory> {
+  public async createCategory(data: Partial<ICategory>): Promise<CategoryDto> {
     // Nếu có parent thì set order = parent.order + 1
     let order = 1;
-    if (data.parentId && data.parentId !== 0) {
-      const parent = await this.categoryRepo.getByCategoryId(
-        String(data.parentId)
-      );
+    if (data.parentId && data.parentId !== "0") {
+      const categoryId = String(data.parentId);
+      const parent = await this.categoryRepo.getOne({
+        categoryId,
+        isDeleted: false,
+      });
       if (parent) {
         order = (parent.order || 0) + 1;
       }
@@ -29,20 +33,17 @@ export class CategoryService {
 
     data.order = order;
 
-    const category = await this.categoryRepo.createCategory(data);
+    const category = await this.categoryRepo.create(data, {
+      slug: data.slug,
+      name: data.name,
+      isDeleted: false,
+    } as any);
 
     if (!category) {
-      throw new Error("Category này đã tồn tại (slug + name).");
+      throw ConflictError("Category này đã tồn tại (slug + name).");
     }
 
-    return category;
-  }
-
-  /**
-   * Lấy category theo categoryId
-   */
-  public async getCategoryById(categoryId: string): Promise<ICategory | null> {
-    return this.categoryRepo.getByCategoryId(categoryId);
+    return new CategoryDto(category);
   }
 
   /**
@@ -52,18 +53,62 @@ export class CategoryService {
     categoryId: string,
     updateData: Partial<ICategory>
   ): Promise<CategoryDto | null> {
-    const updated = await this.categoryRepo.updateByCategoryId(
+    const category = await this.categoryRepo.getOne({
       categoryId,
-      updateData
-    );
+      isDeleted: false,
+    });
+    if (!category) {
+      throw NotfoundError("Không tìm thấy category");
+    }
+
+    // 2. Nếu có name + slug mới thì check trùng
+    if (updateData.name && updateData.slug) {
+      const exists = await this.categoryRepo.getOne({
+        name: updateData.name,
+        slug: updateData.slug,
+        isDeleted: false,
+        categoryId: { $ne: categoryId }, // loại trừ chính nó
+      });
+
+      if (exists) {
+        throw ConflictError("Category với name + slug đã tồn tại");
+      }
+    }
+
+    if (updateData.parentId && updateData.parentId !== "0") {
+      const categoryId = String(updateData.parentId);
+      const parent = await this.categoryRepo.getOne({
+        categoryId,
+        isDeleted: false,
+      });
+      if (parent) {
+        updateData.order = (parent.order || 0) + 1;
+      }
+    }
+    const updated = await this.categoryRepo.update({ categoryId }, updateData);
     return updated ? new CategoryDto(updated) : null;
   }
 
   /**
    * Xóa category (soft delete) theo categoryId
    */
-  public async deleteCategory(categoryId: string): Promise<CategoryDto | null> {
-    const deleted = await this.categoryRepo.deleteByCategoryId(categoryId);
+  public async deleteSoftCategory(
+    categoryId: string
+  ): Promise<CategoryDto | null> {
+    const deleted = await this.categoryRepo.update(
+      { categoryId },
+      { isDeleted: true }
+    );
+    return deleted ? new CategoryDto(deleted) : null;
+  }
+
+  /**
+   * Xóa category (soft delete) theo categoryId
+   */
+  public async deleteHardCategory(
+    categoryId: string
+  ): Promise<CategoryDto | null> {
+    const deleted = await this.categoryRepo.delete({ categoryId });
     return deleted ? new CategoryDto(deleted) : null;
   }
 
@@ -75,11 +120,12 @@ export class CategoryService {
     order?: number,
     index?: number
   ): Promise<CategoryDto | null> {
-    const updated = await this.categoryRepo.updateOrderOrIndex(
-      categoryId,
-      order,
-      index
-    );
+    const updateData: Partial<ICategory> = {};
+    if (order !== undefined) updateData.order = order;
+    if (index !== undefined) updateData.index = index;
+
+    const updated = await this.categoryRepo.update({ categoryId }, updateData);
+
     return updated ? new CategoryDto(updated) : null;
   }
 }

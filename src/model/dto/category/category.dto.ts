@@ -14,7 +14,7 @@ export class CategoryDto {
   createDate?: Date;
   updateDate?: Date;
   isDeleted: boolean;
-  parentId: number;
+  parentId: string;
   index: number;
   order: number;
   createUser: number;
@@ -37,7 +37,7 @@ export class CategoryDto {
     this.createDate = data.createDate;
     this.updateDate = data.updateDate;
     this.isDeleted = data.isDeleted ?? false;
-    this.parentId = data.parentId ?? 0;
+    this.parentId = data.parentId ?? "0";
     this.index = data.index ?? 0;
     this.order = data.order ?? 0;
     this.createUser = data.createUser ?? 0;
@@ -57,6 +57,7 @@ export interface CreateCategoryDto {
   index?: number;
   order?: number;
   createUser?: number;
+  folderPath?: string;
 }
 
 export interface UpdateCategoryDto {
@@ -71,4 +72,6 @@ export interface UpdateCategoryDto {
   parentId?: number;
   index?: number;
   order?: number;
+    createUser?: number;
+  folderPath?: string;
 }

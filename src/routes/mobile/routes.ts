@@ -45,9 +45,9 @@ export function RegisterRoutes(app: Router) {
 
     
         const argsCategoryController_getCategoriesByParentId: Record<string, TsoaRoute.ParameterSchema> = {
-                parentId: {"in":"path","name":"parentId","required":true,"dataType":"double"},
+                parentId: {"in":"path","name":"parentId","required":true,"dataType":"string"},
         };
-        app.get('/v1/public/categories/parent/:parentId',
+        app.get('/v1/mobile/categories/parent/:parentId',
             ...(fetchMiddlewares<RequestHandler>(CategoryController)),
             ...(fetchMiddlewares<RequestHandler>(CategoryController.prototype.getCategoriesByParentId)),
 

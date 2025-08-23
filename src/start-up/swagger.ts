@@ -6,6 +6,24 @@ import swaggerPublicDocument from "../routes/public/swagger.json"; // tsoa tạo
 import swaggerMobileDocument from "../routes/mobile/swagger.json";
 export function setupSwagger(app: Express): void {
   // Serve static for public docs
+  const swaggerUiOptions = {
+    swaggerOptions: {
+      persistAuthorization: true,
+      authAction: {
+        BearerAuth: {
+          name: "Authorization",
+          schema: {
+            type: "http",
+            in: "header",
+            name: "Authorization",
+            scheme: "bearer",
+          },
+          value: "Bearer abc...token của bạn...", // <-- token mặc định
+        },
+      },
+    },
+  };
+
   if (process.env.NODE_ENV === "production") {
     swaggerDocument.servers = [{ url: process.env.DOMAIN || "" }];
     swaggerPublicDocument.servers = [{ url: process.env.DOMAIN || "" }];
@@ -22,7 +40,7 @@ export function setupSwagger(app: Express): void {
   app.use(
     "/admin/docs",
     swaggerUi.serveFiles(swaggerDocument),
-    swaggerUi.setup(swaggerDocument)
+    swaggerUi.setup(swaggerDocument, swaggerUiOptions)
   );
   app.use(
     "/mobile/docs",

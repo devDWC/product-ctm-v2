@@ -19,6 +19,11 @@
     "getChildrenFailure": "Lỗi khi lấy category con",
     "notFound": "Category không tồn tại",
     "error.name.required": "Tên danh mục không được để trống",
-    "error.slug.required": "Slug danh mục không được để trống"
+    "error.slug.required": "Slug danh mục không được để trống",
+    "error.index.invalid_number": "index là số không phải chuỗi",
+    "error.order.invalid_number": "order là số không phải chuỗi",
+    "error.createUser.invalid_number": "createUser là số không phải chuỗi",
+    "error.userUpdate.invalid_number": "userUpdate là số không phải chuỗi",
+    "uploadFailed": "Xảy ra lỗi khi upload hình ảnh"
   }
 }

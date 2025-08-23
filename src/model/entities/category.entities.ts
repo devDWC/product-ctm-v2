@@ -16,7 +16,7 @@ export interface ICategory extends Document {
   createDate?: Date;
   updateDate?: Date;
   isDeleted: boolean;
-  parentId: number;
+  parentId: string;
   index: number;
   order: number;
   createUser: number;
@@ -43,7 +43,7 @@ const CategorySchema: Schema<ICategory> = new Schema(
     createDate: { type: Date, default: Date.now },
     updateDate: { type: Date, default: Date.now },
     isDeleted: { type: Boolean, default: false },
-    parentId: { type: Number, default: 0 },
+    parentId: { type: String, default: "0" },
     index: { type: Number, default: 0 },
     order: { type: Number, default: 0 },
     createUser: { type: Number, default: 0 },
@@ -53,7 +53,4 @@ const CategorySchema: Schema<ICategory> = new Schema(
   }
 );
 
-export const CategoryContext = mongoose.model<ICategory>(
-  "Category",
-  CategorySchema
-);
+export const CategoryModel = mongoose.model<ICategory>("Category", CategorySchema);

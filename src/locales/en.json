@@ -19,6 +19,11 @@
     "getChildrenFailure": "Error while getting child categories",
     "notFound": "Category not found",
     "error.name.required": "Category name cannot be empty",
-    "error.slug.required": "Category slug cannot be empty"
+    "error.slug.required": "Category slug cannot be empty",
+    "error.index.invalid_number": "index is number not string",
+    "error.order.invalid_number": "order is number not string",
+    "error.createUser.invalid_number": "createUser is number not string",
+    "error.userUpdate.invalid_number": "userUpdate is number not string",
+    "uploadFailed": "Error occurred while uploading image"
   }
 }

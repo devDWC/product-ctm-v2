@@ -1,16 +1,16 @@
 // src/start-up/main.ts
-import 'reflect-metadata';
+import "reflect-metadata";
 import express from "express";
 import dotenv from "dotenv";
+dotenv.config();
+
 import routesModule from "../routes/router.module";
 import { setupSwagger } from "./swagger";
 import { connectToMongoDb } from "../context/mongo-context/mongo-db";
 import cors from "cors";
 import path from "path";
-import { setLanguage } from '../middleware/set-language.middleware';
+import { setLanguage } from "../middleware/set-language.middleware";
 import { s3Utility } from "ctm-utility";
-
-dotenv.config();
 
 const app = express();
 

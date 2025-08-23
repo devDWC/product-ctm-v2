@@ -8,16 +8,14 @@ import {
 } from "../../shared/utils/response.utility";
 import { CategoryService } from "../../services/mgo-services/categories-service/public/category.public.service";
 
-
-
 @Tags("Category")
-@Route("/v1/public/categories")
+@Route("/v1/mobile/categories")
 export class CategoryController extends Controller {
   private categoryService = new CategoryService();
 
   @Get("/parent/{parentId}")
   public async getCategoriesByParentId(
-    @Path() parentId: number
+    @Path() parentId: string
   ): Promise<ApiResponse> {
     try {
       const categories = await this.categoryService.getCategoriesByParentId(

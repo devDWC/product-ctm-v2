@@ -11,7 +11,7 @@ declare global {
 
 export function setLanguage(req: Request, res: Response, next: NextFunction) {
   req.lang =
-    req.headers["accept-language"]?.toString().split(",")[0] ||
+    req.headers["X-language"]?.toString().split(",")[0] ||
     req.headers["language"]?.toString() ||
     "en";
   next();

@@ -16,8 +16,12 @@ export class BaseRepository<T extends Document> {
     projection: any = null,
     options: any = {}
   ): Promise<{ data: T[]; total: number }> {
+    const { sort, ...restOptions } = options;
+
     const [data, total] = await Promise.all([
-      this.model.find(filter, projection, options).exec() as unknown as T[],
+      this.model
+        .find(filter, projection, { ...restOptions, sort })
+        .exec() as unknown as T[],
       this.model.countDocuments(filter).exec(),
     ]);
 

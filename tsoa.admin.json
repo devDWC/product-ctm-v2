@@ -6,7 +6,18 @@
     "outputDirectory": "src/routes/admin",
     "specVersion": 3,
     "basePath": "api",
-    "specFileBaseName": "swagger"
+    "specFileBaseName": "swagger",
+    "securityDefinitions": {
+    "BearerAuth": {
+      "type": "http",
+      "scheme": "bearer",
+      "in": "header",
+      "name": "Authorization"
+    }
+  },
+    "security": [
+      { "BearerAuth": [] }
+  ]
   },
   "routes": {
     "routesDir": "src/routes/admin"

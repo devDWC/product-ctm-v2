@@ -1,5 +1,4 @@
 import jwt from "jsonwebtoken";
-import { GetUserDto } from "../../model/dto/user/user.dto"; // Đảm bảo bạn đã có interface này
 // Đảm bảo bạn có SECRET_KEY trong env config
 
 export function createToken(user: any, key: string = "chothongminh"): string {
