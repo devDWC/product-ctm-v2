@@ -12,12 +12,12 @@ export const flowMiddleware = async (
 ) => {
   try {
     // ✅ Gọi authMiddlewareEmploy trước
-    // await new Promise<void>((resolve, reject) => {
-    //   authMiddlewareEmploy(req, res, (err) => {
-    //     if (err) reject(err);
-    //     else resolve();
-    //   });
-    // });
+    await new Promise<void>((resolve, reject) => {
+      authMiddlewareEmploy(req, res, (err) => {
+        if (err) reject(err);
+        else resolve();
+      });
+    });
 
     // ✅ Sau đó gọi decryptorMiddleware
     await new Promise<void>((resolve, reject) => {

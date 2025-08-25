@@ -11,6 +11,7 @@ import {
   Header,
   UploadedFile,
   FormField,
+  Security,
 } from "tsoa";
 import { ApiResponse } from "../../model/base/response.dto";
 import {
@@ -41,6 +42,7 @@ export class CategoryController extends Controller {
   private readonly _s3Service = new S3Service();
 
   @Post("/")
+  @Security("BearerAuth")
   @Middlewares(accessControlMiddleware("categories", "create"))
   public async createCategory(
     @FormField() name: string,
@@ -113,7 +115,7 @@ export class CategoryController extends Controller {
   public async updateCategory(
     @Path() categoryId: string,
 
-    @FormField() name?: string,
+    @FormField() name: string = "abc",
     @FormField() slug?: string,
     @FormField() description?: string,
     @FormField() meta_title?: string,

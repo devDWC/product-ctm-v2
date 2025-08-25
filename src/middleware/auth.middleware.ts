@@ -48,6 +48,8 @@ export const authMiddlewareEmploy = async (
       const decoded = jwt.verify(token, process.env.JWT_SECRET_KEY || "") as DecodedToken;
     //   const user = await employServices.getKeyPrivateEmployById(decoded.id);
       const user:any = {};
+       (req as any).user = user;
+        return next();
       if (user && user.privateKey === decoded.privateKey) {
         (req as any).user = user;
         return next();

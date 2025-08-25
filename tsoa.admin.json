@@ -20,6 +20,7 @@
   ]
   },
   "routes": {
-    "routesDir": "src/routes/admin"
+    "routesDir": "src/routes/admin",
+    "authenticationModule": "src/start-up/swagger.ts"
   }
 }

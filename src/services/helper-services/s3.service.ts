@@ -29,11 +29,10 @@ export class S3Service {
   ) {
     const pathToSave = `${folderPath}/${distinctive}`;
     try {
-      var test = await s3Utility.uploadSingleFileAsync([file], pathToSave, organization);
+      return await s3Utility.uploadSingleFileAsync([file], pathToSave, organization);
     } catch (error) {
       
     }
-    return test
   }
 
   public async deleteFolder(

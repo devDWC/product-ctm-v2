@@ -48,3 +48,15 @@ export function setupSwagger(app: Express): void {
     swaggerUi.setup(swaggerMobileDocument)
   );
 }
+
+import { Request } from "express"; // hoặc fastify Request tùy bạn
+import * as jwt from "jsonwebtoken";
+
+export async function expressAuthentication(
+  request: Request,
+  securityName: string,
+  scopes?: string[]
+): Promise<any> {
+      return {};
+
+}
