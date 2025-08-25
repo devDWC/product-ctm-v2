@@ -19,11 +19,7 @@ export class LogService {
   error(error: Error | string, context?: any) {
     if (typeof error === "string") {
       console.error(`[ERROR] ${error}`, context || "");
-      try {
-              Sentry.captureMessage(error);
-      } catch (error) {
-        
-      }
+       Sentry.captureMessage(error);
 
     } else {
       console.error(`[ERROR] ${error.message}`, error.stack, context || "");

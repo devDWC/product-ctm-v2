@@ -44,15 +44,15 @@ export class CategoryController extends Controller {
   private readonly _s3Service = new S3Service();
 
 
-  // @Get("/")
-  // public async getTest(): Promise<any> {
-  //   try {
-  //     _logSingletonService.error("Creating user đang bị lỗi 123", "hahaha");
-  //   } catch (error) {
-  //     console.log(error);
-  //   }
+  @Get("/")
+  public async getTest(): Promise<any> {
+    try {
+      _logSingletonService.error("Creating user đang bị lỗi 123", "hahaha");
+    } catch (error) {
+      console.log(error);
+    }
 
-  // }
+  }
 
 
   @Post("/")
