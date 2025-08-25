@@ -61,7 +61,7 @@
 		"securitySchemes": {}
 	},
 	"info": {
-		"title": "sever-base-ctm",
+		"title": "product-ctm-v2",
 		"version": "1.0.0",
 		"license": {
 			"name": "ISC"
