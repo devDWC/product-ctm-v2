@@ -8,7 +8,11 @@ export class S3Service {
     organization: string = "chothongminh"
   ) {
     const pathToSave = `${folderPath}/${distinctive}`;
-    return await s3Utility.uploadMultipleFilesAsync(files, pathToSave, organization);
+    return await s3Utility.uploadMultipleFilesAsync(
+      files,
+      pathToSave,
+      organization
+    );
   }
 
   public async uploadFilesJoinInFolderAsync(
@@ -18,7 +22,11 @@ export class S3Service {
     organization: string = "chothongminh"
   ) {
     const pathToSave = `${folderPath}/${distinctive}`;
-    return await s3Utility.uploadFilesJoinInFolderAsync(files, pathToSave, organization);
+    return await s3Utility.uploadFilesJoinInFolderAsync(
+      files,
+      pathToSave,
+      organization
+    );
   }
 
   public async uploadSingleFileAsync(
@@ -27,11 +35,17 @@ export class S3Service {
     distinctive: string,
     organization: string = "chothongminh"
   ) {
+    if (!file) return undefined;
+
     const pathToSave = `${folderPath}/${distinctive}`;
     try {
-      return await s3Utility.uploadSingleFileAsync([file], pathToSave, organization);
+      return await s3Utility.uploadSingleFileAsync(
+        [file],
+        pathToSave,
+        organization
+      );
     } catch (error) {
-      
+      return undefined;
     }
   }
 

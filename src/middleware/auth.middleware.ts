@@ -1,7 +1,7 @@
 import { Request, Response, NextFunction } from "express";
 import jwt, { JwtPayload } from "jsonwebtoken";
 import { ApiResponse } from "../model/base/response.dto";
-
+import baseConfig from "../config/baseConfig.json";
 
 interface DecodedToken extends JwtPayload {
   id: string;
@@ -22,6 +22,8 @@ export const authMiddlewareEmploy = async (
     errorDetail: null,
     resultApi: null,
   };
+
+  if (!baseConfig.enableMiddleware) return next();
 
   try {
     const authHeader = req.headers.authorization;
@@ -45,11 +47,14 @@ export const authMiddlewareEmploy = async (
     }
 
     try {
-      const decoded = jwt.verify(token, process.env.JWT_SECRET_KEY || "") as DecodedToken;
-    //   const user = await employServices.getKeyPrivateEmployById(decoded.id);
-      const user:any = {};
-       (req as any).user = user;
-        return next();
+      const decoded = jwt.verify(
+        token,
+        process.env.JWT_SECRET_KEY || ""
+      ) as DecodedToken;
+      //   const user = await employServices.getKeyPrivateEmployById(decoded.id);
+      const user: any = {};
+      (req as any).user = user;
+      return next();
       if (user && user.privateKey === decoded.privateKey) {
         (req as any).user = user;
         return next();
@@ -88,4 +93,4 @@ export const authMiddlewareEmploy = async (
     apiRes.errorDetail = JSON.stringify(error);
     return res.status(500).json(apiRes);
   }
-}
+};

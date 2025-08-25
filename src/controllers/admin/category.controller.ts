@@ -114,8 +114,10 @@ export class CategoryController extends Controller {
   @Middlewares([accessControlMiddleware("categories", "update")])
   public async updateCategory(
     @Path() categoryId: string,
-
-    @FormField() name: string = "abc",
+    /**
+     * @example "Điện thoại"
+     */
+    @FormField() name: string,
     @FormField() slug?: string,
     @FormField() description?: string,
     @FormField() meta_title?: string,

@@ -1,3 +1,4 @@
 {
-  "dencrytePayload": true
+  "dencrytePayload": true,
+  "enableMiddleware": false
 }

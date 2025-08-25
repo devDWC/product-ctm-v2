@@ -21,12 +21,17 @@ app.use(
     allowedHeaders: ["Content-Type", "Authorization", "x-isencrypt"],
   })
 );
-  s3Utility.s3Init({
-  endpoint: process.env.S3_URL || "",
-  accessKeyId: process.env.MINIO_ACCESS_KEY || "",
-  secretAccessKey: process.env.MINIO_SECRET_KEY || "",
+//   s3Utility.s3Init({
+//   endpoint: process.env.S3_URL || "",
+//   accessKeyId: process.env.MINIO_ACCESS_KEY || "",
+//   secretAccessKey: process.env.MINIO_SECRET_KEY || "",
+// });
+s3Utility.s3Init({
+  endpoint: "https://s3-api-stg.chothongminh.com",
+  accessKeyId: "zNrCdunwb3BPDJMeRRnC",
+  secretAccessKey: "okePeLlMnbtpe4N7cUJMpQrr5RkgorPDORmOmvL5",
 });
-
+// convertCategories("./ok.json", "./categoryMongo.json");
 app.use(express.json());
 app.use(setLanguage);
 
