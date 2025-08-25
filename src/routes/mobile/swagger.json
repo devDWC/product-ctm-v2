@@ -6,101 +6,18 @@
 		"parameters": {},
 		"requestBodies": {},
 		"responses": {},
-		"schemas": {
-			"ApiResponse": {
-				"properties": {
-					"status": {
-						"type": "number",
-						"format": "double"
-					},
-					"message": {
-						"type": "string"
-					},
-					"error": {
-						"type": "string",
-						"nullable": true
-					},
-					"isBusinessError": {
-						"type": "boolean"
-					},
-					"errorDetail": {
-						"type": "string",
-						"nullable": true
-					},
-					"isEncrypted": {
-						"anyOf": [
-							{
-								"type": "boolean"
-							},
-							{
-								"type": "boolean",
-								"enum": [
-									false
-								]
-							}
-						]
-					},
-					"resultApi": {},
-					"total": {
-						"type": "number",
-						"format": "double"
-					}
-				},
-				"required": [
-					"status",
-					"message",
-					"error",
-					"isBusinessError",
-					"errorDetail",
-					"resultApi"
-				],
-				"type": "object",
-				"additionalProperties": false
-			}
-		},
+		"schemas": {},
 		"securitySchemes": {}
 	},
 	"info": {
-		"title": "sever-base-ctm",
+		"title": "product-ctm-v2",
 		"version": "1.0.0",
 		"license": {
 			"name": "ISC"
 		},
 		"contact": {}
 	},
-	"paths": {
-		"/v1/mobile/categories/parent/{parentId}": {
-			"get": {
-				"operationId": "GetCategoriesByParentId",
-				"responses": {
-					"200": {
-						"description": "Ok",
-						"content": {
-							"application/json": {
-								"schema": {
-									"$ref": "#/components/schemas/ApiResponse"
-								}
-							}
-						}
-					}
-				},
-				"tags": [
-					"Category"
-				],
-				"security": [],
-				"parameters": [
-					{
-						"in": "path",
-						"name": "parentId",
-						"required": true,
-						"schema": {
-							"type": "string"
-						}
-					}
-				]
-			}
-		}
-	},
+	"paths": {},
 	"servers": [
 		{
 			"url": "/api"

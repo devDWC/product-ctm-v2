@@ -7,7 +7,7 @@ const router = Router();
 
 // Mount admin route vào /admin
 const adminRouter = Router();
-adminRouter.use(flowMiddleware);
+// adminRouter.use(flowMiddleware);
 RegisterAdminRoutes(adminRouter);
 router.use("/", adminRouter); // 👈 mount tại root
 

@@ -12,6 +12,8 @@ import {
   UploadedFile,
   FormField,
   Security,
+  Get,
+  Query,
 } from "tsoa";
 import { ApiResponse } from "../../model/base/response.dto";
 import {
@@ -34,6 +36,8 @@ import { accessControlMiddleware } from "../../middleware/access-control.middlew
 import { validateAndSanitize } from "../../shared/helper/validateAndSanitize";
 import { S3Service } from "../../services/helper-services/s3.service";
 import { v4 as uuidv4 } from "uuid";
+import { _logSingletonService } from "../../services/helper-services/log.service";
+import { InputQuery } from "../../model/base/input-query.dto";
 
 @Tags("Category")
 @Route("/v1/admin/categories")
@@ -41,6 +45,147 @@ export class CategoryController extends Controller {
   private categoryService = new CategoryService();
   private readonly _s3Service = new S3Service();
 
+  /**
+   * @summary Lấy danh sách danh mục không phải là parent.
+   */
+  @Get("/getCategoryWithoutParentId")
+  @Security("BearerAuth")
+  public async getCategoryWithoutParentId(
+    @Query() search?: string,
+    @Query() pageCurrent: number = 1,
+    @Query() pageSize: number = 10,
+    @Query() sortList?: string,
+    @Query() conditions?: string,
+    @Header("X-Language") lang?: string
+  ): Promise<ApiResponse> {
+    try {
+      const option: InputQuery = {
+        search,
+        pageCurrent,
+        pageSize,
+        sortList: sortList ? JSON.parse(sortList) : [],
+        conditions: conditions ? JSON.parse(conditions) : [],
+      };
+      const categories = await this.categoryService.getCategoryWithoutParentId(
+        option
+      );
+      return Success(categories, t(lang, "getChildrenSuccess", "categories"));
+    } catch (error: any) {
+      return ExceptionError(
+        error?.message || t(lang, "getChildrenFailure", "categories")
+      );
+    }
+  }
+
+  /**
+   * @summary Lấy danh sách danh mục có pagination và search.
+   */
+  @Get("/")
+  @Security("BearerAuth")
+  public async getAllCategories(
+    @Query() search?: string,
+    @Query() pageCurrent: number = 1,
+    @Query() pageSize: number = 10,
+    @Query() sortList?: string,
+    @Query() conditions?: string,
+    @Header("X-Language") lang?: string
+  ): Promise<ApiResponse> {
+    try {
+      const option: InputQuery = {
+        search,
+        pageCurrent,
+        pageSize,
+        sortList: sortList ? JSON.parse(sortList) : [],
+        conditions: conditions ? JSON.parse(conditions) : [],
+      };
+
+      const { data, total } = await this.categoryService.getAllCategories(
+        option
+      );
+      return Success(data, t(lang, "getAllSuccess", "categories"), total);
+    } catch (error: any) {
+      return ExceptionError(
+        error?.message || t(lang, "getAllFailure", "categories")
+      );
+    }
+  }
+
+  /**
+   * @summary Lấy một danh mục dựa vào categoryId.
+   */
+  @Get("/{categoryId}")
+  @Security("BearerAuth")
+  public async getCategoryById(
+    @Path() categoryId: string,
+    @Header("X-Language") lang?: string
+  ): Promise<ApiResponse> {
+    try {
+      const category = await this.categoryService.getCategoryById(categoryId);
+      if (!category) return NotfoundError(t(lang, "notFound", "categories"));
+      return Success(category, t(lang, "getOneSuccess", "categories"));
+    } catch (error: any) {
+      return ExceptionError(
+        error?.message || t(lang, "getOneFailure", "categories")
+      );
+    }
+  }
+
+  /**
+   * @summary Lấy một danh mục dựa vào parentId.
+   */
+  @Get("/parent/{parentId}")
+  @Security("BearerAuth")
+  public async getCategoriesByParentId(
+    @Path() parentId: string,
+    @Header("X-Language") lang?: string
+  ): Promise<ApiResponse> {
+    try {
+      const categories = await this.categoryService.getCategoriesByParentId(
+        parentId
+      );
+      return Success(
+        categories,
+        t(lang, "getChildrenSuccess", "categories"),
+        categories.length
+      );
+    } catch (error: any) {
+      return ExceptionError(
+        error?.message || t(lang, "getChildrenFailure", "categories")
+      );
+    }
+  }
+
+  /**
+   * @summary Lấy danh sách danh mục theo cấp.
+   */
+  @Get("/sort/level/{id}")
+  @Security("BearerAuth")
+  public async getListCategoryLevel(
+    @Path() id: number,
+    @Header("X-Language") lang?: string
+  ): Promise<ApiResponse> {
+    try {
+      const categories = await this.categoryService.getListCategoryLevel(id);
+      return Success(categories, t(lang, "getChildrenSuccess", "categories"));
+    } catch (error: any) {
+      return ExceptionError(
+        error?.message || t(lang, "getChildrenFailure", "categories")
+      );
+    }
+  }
+
+  @Get("/getTest")
+  public async getTest(): Promise<any> {
+    try {
+      _logSingletonService.error("Creating user đang bị lỗi 123", "hahaha");
+    } catch (error) {
+      console.log(error);
+    }
+  }
+
+  /**
+   * @summary Tạo mới một danh mục.
+   */
   @Post("/")
   @Security("BearerAuth")
   @Middlewares(accessControlMiddleware("categories", "create"))
@@ -110,7 +255,11 @@ export class CategoryController extends Controller {
     }
   }
 
+  /**
+   * @summary Cập nhật một danh mục.
+   */
   @Put("/{categoryId}")
+  @Security("BearerAuth")
   @Middlewares([accessControlMiddleware("categories", "update")])
   public async updateCategory(
     @Path() categoryId: string,
@@ -201,7 +350,11 @@ export class CategoryController extends Controller {
     }
   }
 
+  /**
+   * @summary Xóa một danh mục theo categoryId.
+   */
   @Delete("/{categoryId}")
+  @Security("BearerAuth")
   @Middlewares([accessControlMiddleware("categories", "delete")])
   public async deleteHardCategory(
     @Path() categoryId: string,
@@ -220,7 +373,11 @@ export class CategoryController extends Controller {
     }
   }
 
+  /**
+   * @summary Xóa mềm một danh mục theo categoryId.
+   */
   @Put("/temp/{categoryId}")
+  @Security("BearerAuth")
   @Middlewares([accessControlMiddleware("categories", "update")])
   public async deleteSoftCategory(
     @Path() categoryId: string,

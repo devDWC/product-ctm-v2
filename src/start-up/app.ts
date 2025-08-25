@@ -26,12 +26,14 @@ app.use(
 //   accessKeyId: process.env.MINIO_ACCESS_KEY || "",
 //   secretAccessKey: process.env.MINIO_SECRET_KEY || "",
 // });
+
+
 s3Utility.s3Init({
   endpoint: "https://s3-api-stg.chothongminh.com",
   accessKeyId: "zNrCdunwb3BPDJMeRRnC",
   secretAccessKey: "okePeLlMnbtpe4N7cUJMpQrr5RkgorPDORmOmvL5",
 });
-// convertCategories("./ok.json", "./categoryMongo.json");
+
 app.use(express.json());
 app.use(setLanguage);
 
@@ -55,6 +57,7 @@ app.use(
   "/swagger-ui",
   express.static(path.dirname(require.resolve("swagger-ui-dist/package.json")))
 );
+
 
 export const setupApp = async () => {
   await connectToMongoDb(); // ✅ Đảm bảo DB kết nối xong

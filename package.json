@@ -1,9 +1,9 @@
 {
-  "name": "sever-base-ctm",
+  "name": "product-ctm-v2",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "dev": "ts-node -r tsconfig-paths/register src/server.ts",
+    "dev": "nodemon --watch src --exec ts-node -r tsconfig-paths/register src/server.ts",
     "build": "node src/config/build-config/build.js",
     "start": "node dist/server.js",
     "test-build": "npm run build && node dist/server.js",
@@ -33,6 +33,7 @@
     "typescript": "^5.8.3"
   },
   "dependencies": {
+    "@sentry/node": "^10.5.0",
     "axios": "^1.11.0",
     "bcryptjs": "^3.0.2",
     "body-parser": "^2.2.0",
