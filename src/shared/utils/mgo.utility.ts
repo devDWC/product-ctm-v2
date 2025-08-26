@@ -1,6 +1,4 @@
-function escapeRegex(str: string) {
-  return str.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"); // escape regex special chars
-}
+import { CounterModel } from "../../model/entities/counter.entities";
 
 export function buildMongoQuery({
   search,
@@ -30,7 +28,13 @@ export function buildMongoQuery({
   // Áp dụng conditions cụ thể
   if (conditions.length > 0) {
     conditions.forEach(({ key, value }: any) => {
-      andConditions.push({ [key]: value });
+      if (Array.isArray(value)) {
+        // Nếu value là array => dùng $in
+        andConditions.push({ [key]: { $in: value } });
+      } else {
+        // Nếu value là đơn lẻ
+        andConditions.push({ [key]: value });
+      }
     });
   }
 
@@ -56,4 +60,24 @@ export function buildMongoQuery({
   }
 
   return { filter, sort };
+}
+
+export async function generateCode(prefix = "P", minPadLength = 6) {
+  try {
+    const counter = await CounterModel.findByIdAndUpdate(
+      prefix,
+      { $inc: { seq: 1 } },
+      { upsert: true, new: true }
+    );
+
+    const seqString = String(counter.seq);
+    const padded =
+      seqString.length >= minPadLength
+        ? seqString
+        : seqString.padStart(minPadLength, "0");
+
+    return `${prefix}${padded}`;
+  } catch (err: any) {
+    throw new Error("Error generating code: " + err.message);
+  }
 }

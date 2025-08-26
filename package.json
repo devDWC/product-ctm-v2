@@ -8,7 +8,7 @@
     "start": "node dist/server.js",
     "test-build": "npm run build && node dist/server.js",
     "build:swagger": "ts-node src/app.ts",
-    "r-api": "npx tsoa spec -c tsoa.admin.json && npx tsoa routes -c tsoa.admin.json && npx tsoa spec -c tsoa.public.json && npx tsoa routes -c tsoa.public.json && npx tsoa spec -c tsoa.mobile.json && npx tsoa routes -c tsoa.mobile.json"
+    "r-api": "npx tsoa spec -c tsoa.admin.json && npx tsoa routes -c tsoa.admin.json && npx tsoa spec -c tsoa.public.json && npx tsoa routes -c tsoa.public.json && npx tsoa spec -c tsoa.mobile.json && npx tsoa routes -c tsoa.mobile.json && npx ts-node src/scripts/swagger-patch.ts"
   },
   "keywords": [],
   "author": "",

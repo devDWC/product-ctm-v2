@@ -51,6 +51,9 @@ export class CategoryController extends Controller {
   @Get("/getCategoryWithoutParentId")
   @Security("BearerAuth")
   public async getCategoryWithoutParentId(
+    /**
+     * @summary Lấy danh sách danh mục không phải là parent.
+     */
     @Query() search?: string,
     @Query() pageCurrent: number = 1,
     @Query() pageSize: number = 10,
@@ -69,8 +72,17 @@ export class CategoryController extends Controller {
       const categories = await this.categoryService.getCategoryWithoutParentId(
         option
       );
+
+      _logSingletonService.error(
+        t(lang, "getChildrenSuccess", "categories"),
+        categories
+      );
       return Success(categories, t(lang, "getChildrenSuccess", "categories"));
     } catch (error: any) {
+      _logSingletonService.error(
+        t(lang, "getChildrenFailure", "categories"),
+        error
+      );
       return ExceptionError(
         error?.message || t(lang, "getChildrenFailure", "categories")
       );
@@ -102,8 +114,11 @@ export class CategoryController extends Controller {
       const { data, total } = await this.categoryService.getAllCategories(
         option
       );
+
+      _logSingletonService.info(t(lang, "getAllSuccess", "categories"), data);
       return Success(data, t(lang, "getAllSuccess", "categories"), total);
     } catch (error: any) {
+      _logSingletonService.error(t(lang, "getAllFailure", "categories"), error);
       return ExceptionError(
         error?.message || t(lang, "getAllFailure", "categories")
       );
@@ -121,9 +136,18 @@ export class CategoryController extends Controller {
   ): Promise<ApiResponse> {
     try {
       const category = await this.categoryService.getCategoryById(categoryId);
-      if (!category) return NotfoundError(t(lang, "notFound", "categories"));
+      if (!category) {
+        _logSingletonService.error(t(lang, "notFound", "categories"), category);
+        return NotfoundError(t(lang, "notFound", "categories"));
+      }
+
+      _logSingletonService.info(
+        t(lang, "getOneSuccess", "categories"),
+        category
+      );
       return Success(category, t(lang, "getOneSuccess", "categories"));
     } catch (error: any) {
+      _logSingletonService.error(t(lang, "getOneFailure", "categories"), error);
       return ExceptionError(
         error?.message || t(lang, "getOneFailure", "categories")
       );
@@ -143,12 +167,21 @@ export class CategoryController extends Controller {
       const categories = await this.categoryService.getCategoriesByParentId(
         parentId
       );
+
+      _logSingletonService.info(
+        t(lang, "getChildrenSuccess", "categories"),
+        categories
+      );
       return Success(
         categories,
         t(lang, "getChildrenSuccess", "categories"),
         categories.length
       );
     } catch (error: any) {
+      _logSingletonService.error(
+        t(lang, "getChildrenFailure", "categories"),
+        error
+      );
       return ExceptionError(
         error?.message || t(lang, "getChildrenFailure", "categories")
       );
@@ -166,8 +199,16 @@ export class CategoryController extends Controller {
   ): Promise<ApiResponse> {
     try {
       const categories = await this.categoryService.getListCategoryLevel(id);
+      _logSingletonService.info(
+        t(lang, "getChildrenSuccess", "categories"),
+        categories
+      );
       return Success(categories, t(lang, "getChildrenSuccess", "categories"));
     } catch (error: any) {
+      _logSingletonService.error(
+        t(lang, "getChildrenFailure", "categories"),
+        error
+      );
       return ExceptionError(
         error?.message || t(lang, "getChildrenFailure", "categories")
       );
@@ -230,16 +271,26 @@ export class CategoryController extends Controller {
           distinctive
         );
         if (!upload) {
+          _logSingletonService.error(
+            t(lang, "uploadFailed", "categories"),
+            upload
+          );
           return ProcessError(t(lang, "uploadFailed", "categories"));
         }
         dto.image_url = `/${upload.bucketName}/${upload.key}` || "";
       }
       const result = validateAndSanitize(createCategorySchema, dto, lang);
       if (result.error) {
+        _logSingletonService.error(result.error.message, result.error);
         return result.error;
       }
 
       const category = await this.categoryService.createCategory(result.data);
+
+      _logSingletonService.info(
+        t(lang, "createSuccess", "categories"),
+        category
+      );
       return Success(category, t(lang, "createSuccess", "categories"));
     } catch (error: any) {
       if (image_url) {
@@ -251,6 +302,9 @@ export class CategoryController extends Controller {
       if (error.status === 409) {
         return error;
       }
+
+      _logSingletonService.error(t(lang, "createFailure", "categories"), error);
+
       return ExceptionError(t(lang, "createFailure", "categories"));
     }
   }
@@ -263,9 +317,7 @@ export class CategoryController extends Controller {
   @Middlewares([accessControlMiddleware("categories", "update")])
   public async updateCategory(
     @Path() categoryId: string,
-    /**
-     * @example "Điện thoại"
-     */
+
     @FormField() name: string,
     @FormField() slug?: string,
     @FormField() description?: string,
@@ -307,6 +359,10 @@ export class CategoryController extends Controller {
           distinctive
         );
         if (!upload) {
+          _logSingletonService.error(
+            t(lang, "uploadFailed", "categories"),
+            upload
+          );
           return ProcessError(t(lang, "uploadFailed", "categories"));
         }
         dto.image_url = `/${upload.bucketName}/${upload.key}` || "";
@@ -314,6 +370,7 @@ export class CategoryController extends Controller {
 
       const result = validateAndSanitize(updateCategorySchema, dto, lang);
       if (result.error) {
+        _logSingletonService.error(result.error.message, result);
         return result.error;
       }
 
@@ -330,9 +387,15 @@ export class CategoryController extends Controller {
             distinctive
           );
         }
+
+        _logSingletonService.error(t(lang, "notFound", "categories"), category);
         return NotfoundError(t(lang, "notFound", "categories"));
       }
 
+      _logSingletonService.error(
+        t(lang, "updateSuccess", "categories"),
+        category
+      );
       return Success(category, t(lang, "updateSuccess", "categories"));
     } catch (error: any) {
       if (image_url) {
@@ -344,6 +407,8 @@ export class CategoryController extends Controller {
       if (error.status === 409 || error.status === 404) {
         return error;
       }
+
+      _logSingletonService.error(t(lang, "updateFailure", "categories"), error);
       return ExceptionError(
         error?.message || t(lang, "updateFailure", "categories")
       );
@@ -364,9 +429,18 @@ export class CategoryController extends Controller {
       const category = await this.categoryService.deleteHardCategory(
         categoryId
       );
-      if (!category) return NotfoundError(t(lang, "notFound", "categories"));
+      if (!category) {
+        _logSingletonService.error(t(lang, "notFound", "categories"), category);
+        return NotfoundError(t(lang, "notFound", "categories"));
+      }
+
+      _logSingletonService.info(
+        t(lang, "deleteSuccess", "categories"),
+        category
+      );
       return Success(category, t(lang, "deleteSuccess", "categories"));
     } catch (error: any) {
+      _logSingletonService.error(t(lang, "deleteFailure", "categories"), error);
       return ExceptionError(
         error?.message || t(lang, "deleteFailure", "categories")
       );
@@ -387,9 +461,18 @@ export class CategoryController extends Controller {
       const category = await this.categoryService.deleteSoftCategory(
         categoryId
       );
-      if (!category) return NotfoundError(t(lang, "notFound", "categories"));
+      if (!category) {
+        _logSingletonService.error(t(lang, "notFound", "categories"), category);
+        return NotfoundError(t(lang, "notFound", "categories"));
+      }
+
+      _logSingletonService.info(
+        t(lang, "deleteSuccess", "categories"),
+        category
+      );
       return Success(category, t(lang, "deleteSuccess", "categories"));
     } catch (error: any) {
+      _logSingletonService.error(t(lang, "deleteFailure", "categories"), error);
       return ExceptionError(
         error?.message || t(lang, "deleteFailure", "categories")
       );

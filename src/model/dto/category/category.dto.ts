@@ -1,6 +1,10 @@
+//src/model/dto/category/category.dto.ts
 import { ICategory } from "../../entities/category.entities";
 
-//src/model/dto/category/category.dto.ts
+export type CustomId = {
+  mongoId?: string,
+  categoryId: string
+}
 export class CategoryDto {
   image_url: string;
   name: string;
@@ -18,12 +22,12 @@ export class CategoryDto {
   index: number;
   order: number;
   createUser: number;
-  customId: object;
+  customId: CustomId;
 
   constructor(data: Partial<ICategory>) {
     this.customId = {
-      mongoId: data?._id,
-      categoryId: data.categoryId,
+      mongoId: (data?._id || "").toString(),
+      categoryId: data.categoryId?.toString() || "",
     };
     this.image_url = data.image_url ?? "";
     this.name = data.name ?? "";
@@ -43,6 +47,12 @@ export class CategoryDto {
     this.createUser = data.createUser ?? 0;
   }
 }
+
+export type CategoryInfo = {
+  categoryId: string;
+  name: string;
+  slug: string;
+};
 
 export interface CreateCategoryDto {
   name: string;
@@ -72,6 +82,6 @@ export interface UpdateCategoryDto {
   parentId?: number;
   index?: number;
   order?: number;
-    createUser?: number;
+  createUser?: number;
   folderPath?: string;
 }

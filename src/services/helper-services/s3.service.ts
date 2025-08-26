@@ -1,5 +1,4 @@
 import { s3Utility } from "ctm-utility";
-
 export class S3Service {
   public async uploadMultipleFilesAsync(
     files: any,

@@ -1,4 +1,4 @@
-import { Controller,Route, Tags } from "tsoa";
+import { Controller, Route, Tags } from "tsoa";
 
 import { CategoryService } from "../../services/mgo-services/categories-service/public/category.public.service";
 

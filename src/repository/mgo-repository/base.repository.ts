@@ -21,6 +21,7 @@ export class BaseRepository<T extends Document> {
     const [data, total] = await Promise.all([
       this.model
         .find(filter, projection, { ...restOptions, sort })
+        .lean()
         .exec() as unknown as T[],
       this.model.countDocuments(filter).exec(),
     ]);
@@ -35,7 +36,7 @@ export class BaseRepository<T extends Document> {
     filter: FilterQuery<T>,
     projection: any = null
   ): Promise<T | null> {
-    return this.model.findOne(filter, projection).exec();
+    return this.model.findOne(filter, projection).lean<T>().exec();
   }
 
   /**

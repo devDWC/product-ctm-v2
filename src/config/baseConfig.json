@@ -1,4 +1,5 @@
 {
   "dencrytePayload": true,
-  "enableMiddleware": false
+  "enableMiddleware": false,
+  "logService": false
 }

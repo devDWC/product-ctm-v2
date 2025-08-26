@@ -16,8 +16,6 @@ export const createProductSchema = z.object({
   //Optional
   description: z.string().optional(),
   short_description: z.string().optional(),
-  image_url: z.string().optional(),
-  gallery_product: z.string().optional(),
   product_extend: z.string().optional(),
   unit: z.string().optional(),
   productType: z.string().optional(),
@@ -26,7 +24,6 @@ export const createProductSchema = z.object({
   meta_description: z.string().optional(),
   affiliateLinks: z.string().optional(),
   status: z.string().optional(),
-  folderPath: z.string().optional(),
 
   // Numeric fields (parse string → number)
 
@@ -50,37 +47,19 @@ export const createProductSchema = z.object({
   availability: z
     .string()
     .optional()
-    .transform((val) =>
-      val === undefined ? undefined : val.toLowerCase() === "true"
-    ),
-
-  isDeleted: z
-    .string()
-    .optional()
-    .transform((val) =>
-      val === undefined ? undefined : val.toLowerCase() === "true"
-    ),
-
-  // User fields (string → number)
-  userUpdate: z
-    .string()
-    .optional()
-    .transform((val) => (val !== undefined ? Number(val) : undefined))
-    .refine((val) => val === undefined || !Number.isNaN(val), {
-      message: "error.userUpdate.invalid_number",
-    }),
-
-  userCreate: z
-    .string()
-    .optional()
-    .transform((val) => (val !== undefined ? Number(val) : undefined))
-    .refine((val) => val === undefined || !Number.isNaN(val), {
-      message: "error.userCreate.invalid_number",
+    .transform((val) => {
+      if (val === undefined) return undefined;
+      const lower = val.toLowerCase();
+      if (lower === "true") return true;
+      if (lower === "false") return false;
+      return val;
+    })
+    .refine((val) => val === undefined || typeof val === "boolean", {
+      message: "error.availability.invalid_boolean",
     }),
 });
 
 export const updateProductSchema = z.object({
-  // Không còn required như create, tất cả optional
   name: z.string().optional(),
   title: z.string().optional(),
   slug: z.string().optional(),
@@ -96,7 +75,6 @@ export const updateProductSchema = z.object({
   description: z.string().optional(),
   short_description: z.string().optional(),
   image_url: z.string().optional(),
-  gallery_product: z.string().optional(),
   product_extend: z.string().optional(),
   unit: z.string().optional(),
   productType: z.string().optional(),
@@ -105,7 +83,6 @@ export const updateProductSchema = z.object({
   meta_description: z.string().optional(),
   affiliateLinks: z.string().optional(),
   status: z.string().optional(),
-  folderPath: z.string().optional(),
 
   rating: z
     .string()
@@ -126,30 +103,32 @@ export const updateProductSchema = z.object({
   availability: z
     .string()
     .optional()
-    .transform((val) =>
-      val === undefined ? undefined : val.toLowerCase() === "true"
-    ),
+    .transform((val) => {
+      if (val === undefined) return undefined;
+      const lower = val.toLowerCase();
+      if (lower === "true") return true;
+      if (lower === "false") return false;
+      return val;
+    })
+    .refine((val) => val === undefined || typeof val === "boolean", {
+      message: "error.availability.invalid_boolean",
+    }),
 
   isDeleted: z
     .string()
     .optional()
-    .transform((val) =>
-      val === undefined ? undefined : val.toLowerCase() === "true"
-    ),
-
-  userUpdate: z
-    .string()
-    .optional()
-    .transform((val) => (val !== undefined ? Number(val) : undefined))
-    .refine((val) => val === undefined || !Number.isNaN(val), {
-      message: "error.userUpdate.invalid_number",
+    .transform((val) => {
+      if (val === undefined) return undefined;
+      const lower = val.toLowerCase();
+      if (lower === "true") return true;
+      if (lower === "false") return false;
+      return val;
+    })
+    .refine((val) => val === undefined || typeof val === "boolean", {
+      message: "error.availability.invalid_boolean",
     }),
 
-  userCreate: z
-    .string()
-    .optional()
-    .transform((val) => (val !== undefined ? Number(val) : undefined))
-    .refine((val) => val === undefined || !Number.isNaN(val), {
-      message: "error.userCreate.invalid_number",
-    }),
+  userUpdate: z.string().optional(),
+
+  userCreate: z.string().optional(),
 });

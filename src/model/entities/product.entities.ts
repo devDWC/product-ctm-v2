@@ -13,7 +13,7 @@ export interface IProduct extends Document {
   description: string;
   short_description: string;
   image_url: string;
-  gallery_product: string; // có thể chuyển thành string[] nếu cần
+  gallery_product: string[]; // có thể chuyển thành string[] nếu cần
   price: number;
   product_extend: string;
   unit: string;
@@ -52,7 +52,7 @@ const ProductSchema: Schema<IProduct> = new Schema(
     description: { type: String, default: "" },
     short_description: { type: String, default: "" },
     image_url: { type: String, default: "" },
-    gallery_product: { type: String, default: "" },
+    gallery_product: { type: [String], default: [] },
     price: { type: Number, default: 0 },
     product_extend: { type: String, default: "" },
     unit: { type: String, default: "" },
