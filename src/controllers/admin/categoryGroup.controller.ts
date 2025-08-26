@@ -65,7 +65,7 @@ export class CategoryGroupController extends Controller {
       const { data, total } = await this.categoryGrService.getAllCategories(
         option
       );
-      return Success(data, t(lang, "getChildrenSuccess", "categories"), total);
+      return Success(data, t(lang, "getCategory", "categories"), total);
     } catch (error: any) {
       console.log(error);
       return ExceptionError(error || t(lang, "getAllFailure", "categories"));
@@ -73,8 +73,8 @@ export class CategoryGroupController extends Controller {
   }
 
   @Post("/")
-  @Security("BearerAuth")
-  @Middlewares(accessControlMiddleware("categoryGroups", "create"))
+  // @Security("BearerAuth")
+  // @Middlewares(accessControlMiddleware("categoryGroups", "create"))
   public async createCategoryGroup(
     @FormField() name: string,
     @FormField() slug: string,
