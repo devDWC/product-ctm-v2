@@ -43,7 +43,6 @@ export class CategoryController extends Controller {
   private categoryService = new CategoryService();
   private readonly _s3Service = new S3Service();
 
-
   @Get("/")
   public async getTest(): Promise<any> {
     try {
@@ -51,9 +50,7 @@ export class CategoryController extends Controller {
     } catch (error) {
       console.log(error);
     }
-
   }
-
 
   @Post("/")
   @Security("BearerAuth")
