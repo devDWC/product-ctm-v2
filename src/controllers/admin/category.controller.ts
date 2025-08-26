@@ -12,6 +12,7 @@ import {
   UploadedFile,
   FormField,
   Security,
+  Get,
 } from "tsoa";
 import { ApiResponse } from "../../model/base/response.dto";
 import {
@@ -34,12 +35,25 @@ import { accessControlMiddleware } from "../../middleware/access-control.middlew
 import { validateAndSanitize } from "../../shared/helper/validateAndSanitize";
 import { S3Service } from "../../services/helper-services/s3.service";
 import { v4 as uuidv4 } from "uuid";
+import { _logSingletonService } from "../../services/helper-services/log.service";
 
 @Tags("Category")
 @Route("/v1/admin/categories")
 export class CategoryController extends Controller {
   private categoryService = new CategoryService();
   private readonly _s3Service = new S3Service();
+
+
+  @Get("/")
+  public async getTest(): Promise<any> {
+    try {
+      _logSingletonService.error("Creating user đang bị lỗi 123", "hahaha");
+    } catch (error) {
+      console.log(error);
+    }
+
+  }
+
 
   @Post("/")
   @Security("BearerAuth")
@@ -77,6 +91,7 @@ export class CategoryController extends Controller {
       folderPath,
     };
     const distinctive = uuidv4();
+    _logSingletonService.info("Creating user", dto);
     try {
       if (image_url) {
         const upload = await this._s3Service.uploadSingleFileAsync(

@@ -1,7 +1,7 @@
 // src/server.ts
 import { setupApp } from "./start-up/app";
 
-const PORT = process.env.SSO_PORT || 3000;
+const PORT = process.env.PRODUCT_PORT || 5002;
 
 setupApp()
   .then((app) => {

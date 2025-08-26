@@ -21,11 +21,12 @@ app.use(
     allowedHeaders: ["Content-Type", "Authorization", "x-isencrypt"],
   })
 );
-  s3Utility.s3Init({
+s3Utility.s3Init({
   endpoint: process.env.S3_URL || "",
   accessKeyId: process.env.MINIO_ACCESS_KEY || "",
   secretAccessKey: process.env.MINIO_SECRET_KEY || "",
 });
+
 
 app.use(express.json());
 app.use(setLanguage);
@@ -50,6 +51,7 @@ app.use(
   "/swagger-ui",
   express.static(path.dirname(require.resolve("swagger-ui-dist/package.json")))
 );
+
 
 export const setupApp = async () => {
   await connectToMongoDb(); // ✅ Đảm bảo DB kết nối xong

@@ -1,6 +1,6 @@
 // src/start-up/swagger.ts
 import swaggerUi from "swagger-ui-express";
-import { Express } from "express";
+import { Express,Request} from "express";
 import swaggerDocument from "../routes/admin/swagger.json"; // tsoa tạo ra
 import swaggerPublicDocument from "../routes/public/swagger.json"; // tsoa tạo ra
 import swaggerMobileDocument from "../routes/mobile/swagger.json";
@@ -49,8 +49,7 @@ export function setupSwagger(app: Express): void {
   );
 }
 
-import { Request } from "express"; // hoặc fastify Request tùy bạn
-import * as jwt from "jsonwebtoken";
+
 
 export async function expressAuthentication(
   request: Request,
