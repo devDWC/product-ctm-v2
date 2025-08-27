@@ -19,7 +19,10 @@ import { ProductRepository } from "../../../../repository/mgo-repository/product
 import { ProductExtension } from "../../../../shared/functions/product-extensions";
 import { cloneDeep } from "../../../../shared/functions/utility-functions";
 import { autoMapWithClass } from "../../../../shared/utils/autoMap-untility";
-import { buildMongoQuery } from "../../../../shared/utils/mgo.utility";
+import {
+  buildMongoQuery,
+  buildPagination,
+} from "../../../../shared/utils/mgo.utility";
 import unitOfWork from "../../../../shared/utils/unitOfWork";
 import { S3Service } from "../../../helper-services/s3.service";
 import { isNullOrEmpty } from "../../../helper-services/sp-service";
@@ -124,12 +127,16 @@ export class ProductService {
       sortList: option.sortList,
       conditions: option.conditions,
       baseFilter: { isDeleted: false },
+      keyDenied: [],
     };
 
     const { filter, sort } = buildMongoQuery(mongoBuild);
 
-    const skip = ((option.pageCurrent || 1) - 1) * (option.pageSize || 10);
-    const limit = option.pageSize || 10;
+    const { skip, limit } = buildPagination(
+      option.pageCurrent,
+      option.pageSize,
+      100
+    );
 
     const { data, total } = await this.productRepo.getMany(filter, null, {
       sort,

@@ -11,6 +11,8 @@ import cors from "cors";
 import path from "path";
 import { setLanguage } from "../middleware/set-language.middleware";
 import { s3Utility } from "ctm-utility";
+import { convertCategories } from "../shared/helper/convertMysqlToMongoCategory";
+import { convertProduct } from "../shared/helper/convertMysqlToMongoProduct";
 
 const app = express();
 
@@ -26,8 +28,8 @@ app.use(
 //   accessKeyId: process.env.MINIO_ACCESS_KEY || "",
 //   secretAccessKey: process.env.MINIO_SECRET_KEY || "",
 // });
-
-
+// convertCategories('./ok.json','./categoryMongo.json', './mappedId.json');
+// convertProduct('./PRODUCTDATABASE.products.json','./productMongo.json', './mappedId.json');
 s3Utility.s3Init({
   endpoint: "https://s3-api-stg.chothongminh.com",
   accessKeyId: "zNrCdunwb3BPDJMeRRnC",

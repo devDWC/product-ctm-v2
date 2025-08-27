@@ -24,7 +24,10 @@ import {
 } from "../../shared/utils/response.utility";
 import { S3Service } from "../../services/helper-services/s3.service";
 import { ApiResponse } from "../../model/base/response.dto";
-import { InputQuery } from "../../model/base/input-query.dto";
+import {
+  InputQuery,
+  InputQueryCleaner,
+} from "../../model/base/input-query.dto";
 import { ProductService } from "../../services/mgo-services/product-service/admin/product.admin.service";
 import { _logSingletonService } from "../../services/helper-services/log.service";
 import { accessControlMiddleware } from "../../middleware/access-control.middleware";
@@ -67,7 +70,9 @@ export class ProductController extends Controller {
         conditions: conditions ? JSON.parse(conditions) : [],
       };
 
-      const { data, total } = await this.productService.getAllProducts(option);
+      const { data, total } = await this.productService.getAllProducts(
+        InputQueryCleaner.clean(option)
+      );
       _logSingletonService.info(t(lang, "getAllSuccess", "product"), data);
       return Success(data, t(lang, "getAllSuccess", "product"), total);
     } catch (error: any) {
@@ -110,7 +115,6 @@ export class ProductController extends Controller {
   @Get("/categoryId/{categoryId}")
   @Security("BearerAuth")
   @Middlewares([accessControlMiddleware("product", "get")])
-
   public async getProductByCategoryId(
     @Path() categoryId: string,
     @Query() pageCurrent: number = 1,

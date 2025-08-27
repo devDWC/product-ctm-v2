@@ -1,0 +1,3122 @@
+[
+  {
+    "_id": {
+      "$oid": "6833cdc2349278c2d17f7389"
+    },
+    "productCode": "P000128",
+    "name": "bia Budweiser 330ml",
+    "title": "Thùng 20 lon",
+    "slug": "bia-budweiser-330ml-thung-20-lon",
+    "meta_slug": "bia-budweiser-330ml",
+    "productType": "product-source",
+    "description": "<p>bia Budweiser 330ml</p>",
+    "short_description": "bia Budweiser 330ml",
+    "image_url": "[baseUrl]/chothongminh/product/P000128/6032808e-b216-48ca-8bf1-0eacfff57d8b.webp",
+    "gallery_product": "[\"6032808e-b216-48ca-8bf1-0eacfff57d8b.webp\"]",
+    "price": 150000,
+    "product_extend": "{\"gallery_productExtend\":[\"95f9ca9f-7f93-4d2d-ab61-9ce061749269.webp\"],\"productListExtend\":[{\"extendIndex\":1,\"extend\":{\"id\":\"a83f2126-6519-42ab-8843-3ce85b415bd7\",\"title\":\"Lốc 6 lon\",\"unit\":\"lon\",\"price\":100000,\"sale\":0,\"priceSale\":100000,\"productCode\":\"PE000137\"}}]}",
+    "unit": "lon",
+    "availability": true,
+    "rating": 0,
+    "review_count": 0,
+    "meta_title": "bia Budweiser 330ml",
+    "meta_keywords": "[\"bia Budweiser 330ml\"]",
+    "meta_description": "bia Budweiser 330ml",
+    "affiliateLinks": "",
+    "status": "APPROVE",
+    "categoryId": "41",
+    "referenceKey": "31e5caae-161f-4476-b6cd-65ac2ac4ce93",
+    "userUpdate": "",
+    "userCreate": "",
+    "isDeleted": false,
+    "__v": 0,
+    "createDate": {
+      "$date": "2025-05-26T02:11:14.285Z"
+    },
+    "updateDate": {
+      "$date": "2025-05-26T09:57:40.327Z"
+    },
+    "productId": "c885c4b1-feab-408f-bdcd-98afe172dadc"
+  },
+  {
+    "_id": {
+      "$oid": "6833cdc2349278c2d17f7387"
+    },
+    "productCode": "PE000137",
+    "name": "bia Budweiser 330ml",
+    "title": "Lốc 6 lon",
+    "slug": "bia-budweiser-330ml-loc-6-lon",
+    "meta_slug": "bia-budweiser-330ml-loc-6-lon",
+    "productType": "product-extend",
+    "description": "<p>bia Budweiser 330ml</p>",
+    "short_description": "bia Budweiser 330ml",
+    "image_url": "[baseUrl]/chothongminh/product/PE000137/95f9ca9f-7f93-4d2d-ab61-9ce061749269.webp",
+    "gallery_product": "[\"95f9ca9f-7f93-4d2d-ab61-9ce061749269.webp\"]",
+    "price": 100000,
+    "product_extend": "",
+    "unit": "lon",
+    "availability": true,
+    "rating": 0,
+    "review_count": 0,
+    "meta_title": "bia Budweiser 330ml",
+    "meta_keywords": "[\"bia Budweiser 330ml\"]",
+    "meta_description": "bia Budweiser 330ml",
+    "affiliateLinks": "",
+    "status": "APPROVE",
+    "categoryId": "41",
+    "referenceKey": "31e5caae-161f-4476-b6cd-65ac2ac4ce93",
+    "userUpdate": "",
+    "userCreate": "",
+    "isDeleted": false,
+    "__v": 0,
+    "createDate": {
+      "$date": "2025-05-26T02:11:14.285Z"
+    },
+    "updateDate": {
+      "$date": "2025-05-26T09:57:40.479Z"
+    },
+    "productId": "a83f2126-6519-42ab-8843-3ce85b415bd7"
+  },
+  {
+    "_id": {
+      "$oid": "6833d1ad3cd1182ad88b306f"
+    },
+    "productCode": "P000131",
+    "name": "Trà chanh với sả Fuze Tea 450ml",
+    "title": "Chai",
+    "slug": "tra-chanh-voi-sa-fuze-tea-450ml-chai",
+    "meta_slug": "chai-tra-chanh-voi-sa-fuze-tea-450ml",
+    "productType": "product-source",
+    "description": "<p>Chai Trà chanh với sả Fuze Tea 450ml</p>",
+    "short_description": "Chai Trà chanh với sả Fuze Tea 450ml hehe",
+    "image_url": "[baseUrl]/chothongminh/product/P000131/1df02305-25fe-4004-b0c2-b801bcfc16df.webp",
+    "gallery_product": "[\"1df02305-25fe-4004-b0c2-b801bcfc16df.webp\"]",
+    "price": 150000,
+    "product_extend": "{\"gallery_productExtend\":[\"3ef9745b-244d-4c2a-b5a2-feb46d65e4ec.webp\",\"4b434361-120c-443a-aadb-2d94cc134ca4.webp\"],\"productListExtend\":[{\"extendIndex\":1,\"extend\":{\"id\":\"e5c1d991-5cda-4530-b935-bc2bee82a39f\",\"title\":\"Lốc 6 Chai\",\"unit\":\"Chai\",\"price\":500000,\"sale\":0,\"priceSale\":500000,\"productCode\":\"PE000140\"}},{\"extendIndex\":2,\"extend\":{\"id\":\"1b4174cd-bf6f-4caf-9214-f99566de23a3\",\"title\":\"Lốc 2 Chai\",\"unit\":\"Chai 2\",\"price\":400000,\"sale\":0,\"priceSale\":400000,\"productCode\":\"PE000142\"}}]}",
+    "unit": "450ml",
+    "availability": true,
+    "rating": 0,
+    "review_count": 0,
+    "meta_title": "Chai Trà chanh với sả Fuze Tea 450ml",
+    "meta_keywords": "[\"Trà chanh với sả Fuze Tea 450ml\"]",
+    "meta_description": "Chai Trà chanh với sả Fuze Tea 450ml",
+    "affiliateLinks": "",
+    "status": "APPROVE",
+    "categoryId": "44",
+    "referenceKey": "574923a9-f78a-4b69-b12a-f5a5b01f53c5",
+    "userUpdate": "",
+    "userCreate": "",
+    "isDeleted": false,
+    "__v": 0,
+    "createDate": {
+      "$date": "2025-05-26T02:27:57.944Z"
+    },
+    "updateDate": {
+      "$date": "2025-05-26T09:57:22.949Z"
+    },
+    "productId": "9ce75db5-ee6a-4e6c-bddb-530b5ba386f6"
+  },
+  {
+    "_id": {
+      "$oid": "6833d1ad3cd1182ad88b306d"
+    },
+    "productCode": "PE000140",
+    "name": "Trà chanh với sả Fuze Tea 450ml",
+    "title": "Lốc 6 Chai",
+    "slug": "tra-chanh-voi-sa-fuze-tea-450ml-loc-6-chai",
+    "meta_slug": "tra-chanh-voi-sa-fuze-tea-450ml-loc-6-chai",
+    "productType": "product-extend",
+    "description": "<p>Chai Trà chanh với sả Fuze Tea 450ml</p>",
+    "short_description": "Chai Trà chanh với sả Fuze Tea 450ml hehe",
+    "image_url": "[baseUrl]/chothongminh/product/PE000140/3ef9745b-244d-4c2a-b5a2-feb46d65e4ec.webp",
+    "gallery_product": "[\"3ef9745b-244d-4c2a-b5a2-feb46d65e4ec.webp\"]",
+    "price": 500000,
+    "product_extend": "",
+    "unit": "Chai",
+    "availability": true,
+    "rating": 0,
+    "review_count": 0,
+    "meta_title": "Chai Trà chanh với sả Fuze Tea 450ml",
+    "meta_keywords": "[\"Trà chanh với sả Fuze Tea 450ml\"]",
+    "meta_description": "Chai Trà chanh với sả Fuze Tea 450ml",
+    "affiliateLinks": "",
+    "status": "APPROVE",
+    "categoryId": "44",
+    "referenceKey": "574923a9-f78a-4b69-b12a-f5a5b01f53c5",
+    "userUpdate": "",
+    "userCreate": "",
+    "isDeleted": false,
+    "__v": 0,
+    "createDate": {
+      "$date": "2025-05-26T02:27:57.944Z"
+    },
+    "updateDate": {
+      "$date": "2025-05-26T09:57:23.092Z"
+    },
+    "productId": "e5c1d991-5cda-4530-b935-bc2bee82a39f"
+  },
+  {
+    "_id": {
+      "$oid": "683433f5e090b7784847ef47"
+    },
+    "productCode": "PE000142",
+    "name": "Trà chanh với sả Fuze Tea 450ml",
+    "title": "Lốc 2 Chai",
+    "slug": "tra-chanh-voi-sa-fuze-tea-450ml-loc-2-chai",
+    "meta_slug": "tra-chanh-voi-sa-fuze-tea-450ml-loc-2-chai",
+    "productType": "product-extend",
+    "description": "<p>Chai Trà chanh với sả Fuze Tea 450ml</p>",
+    "short_description": "Chai Trà chanh với sả Fuze Tea 450ml hehe",
+    "image_url": "[baseUrl]/chothongminh/product/PE000142/4b434361-120c-443a-aadb-2d94cc134ca4.webp",
+    "gallery_product": "[\"4b434361-120c-443a-aadb-2d94cc134ca4.webp\"]",
+    "price": 400000,
+    "product_extend": "",
+    "unit": "Chai 2",
+    "availability": true,
+    "rating": 0,
+    "review_count": 0,
+    "meta_title": "Chai Trà chanh với sả Fuze Tea 450ml",
+    "meta_keywords": "[\"Trà chanh với sả Fuze Tea 450ml\"]",
+    "meta_description": "Chai Trà chanh với sả Fuze Tea 450ml",
+    "affiliateLinks": "",
+    "status": "APPROVE",
+    "categoryId": "44",
+    "referenceKey": "574923a9-f78a-4b69-b12a-f5a5b01f53c5",
+    "userUpdate": "",
+    "userCreate": "",
+    "isDeleted": false,
+    "createDate": {
+      "$date": "2025-05-26T09:27:17.295Z"
+    },
+    "updateDate": {
+      "$date": "2025-05-26T09:57:23.229Z"
+    },
+    "__v": 0,
+    "productId": "1b4174cd-bf6f-4caf-9214-f99566de23a3"
+  },
+  {
+    "_id": {
+      "$oid": "6842ed9b5f81b1827f663ab9"
+    },
+    "productCode": "P000144",
+    "name": "Tương ớt nam dương",
+    "title": "Chai",
+    "slug": "tuong-ot-nam-duong",
+    "meta_slug": "tuong-ot-nam-duong",
+    "productType": "product-source",
+    "description": "<p>Tương ớt nam dương</p>",
+    "short_description": "Tương ớt nam dương",
+    "image_url": "[baseUrl]/chothongminh/product/P000144/d2b682dc-3437-43ea-a916-62b2b2b4e3ab.webp",
+    "gallery_product": "[\"d2b682dc-3437-43ea-a916-62b2b2b4e3ab.webp\",\"f32978f9-c913-4cb2-9ff7-ab8b40622114.webp\",\"56a6a879-df67-4ed2-94fd-ea98dc8ff066.webp\"]",
+    "price": 190000,
+    "product_extend": "{\"gallery_productExtend\":[\"bb906cc9-b66e-4ae1-b2ea-cdd8ab5ccd29.webp\",\"99f4cfec-4ed3-42eb-86d7-c0debbaddc67.webp\"],\"productListExtend\":[{\"extendIndex\":1,\"extend\":{\"id\":\"22c43b3b-ba3a-414e-a1a0-63dcd1f72baa\",\"title\":\"500ml\",\"unit\":\"500ml\",\"price\":20000,\"sale\":0,\"priceSale\":20000,\"productCode\":\"PE000175\"}},{\"extendIndex\":2,\"extend\":{\"id\":\"d7fce6f7-d1f3-430a-9d5e-647d5098c789\",\"title\":\"50ml\",\"unit\":\"50ml\",\"price\":50000,\"sale\":0,\"priceSale\":50000,\"productCode\":\"PE000176\"}}]}",
+    "unit": "200ml",
+    "availability": true,
+    "rating": 0,
+    "review_count": 0,
+    "meta_title": "Tương ớt nam dương",
+    "meta_keywords": "[\"Tương ớt nam dương\"]",
+    "meta_description": "Tương ớt nam dương",
+    "affiliateLinks": "",
+    "status": "APPROVE",
+    "categoryId": "127",
+    "referenceKey": "65a0c9af-2c40-48c5-a9fb-75192f869a25",
+    "userUpdate": "",
+    "userCreate": "",
+    "isDeleted": false,
+    "__v": 0,
+    "createDate": {
+      "$date": "2025-06-06T13:31:07.792Z"
+    },
+    "updateDate": {
+      "$date": "2025-06-06T14:33:07.102Z"
+    },
+    "productId": "673fb831-8ada-4d36-9c32-f90d852ac2f6"
+  },
+  {
+    "_id": {
+      "$oid": "6842ed9b5f81b1827f663ab6"
+    },
+    "productCode": "PE000175",
+    "name": "Tương ớt nam dương",
+    "title": "500ml",
+    "slug": "tuong-ot-nam-duong-500ml",
+    "meta_slug": "tuong-ot-nam-duong-500ml",
+    "productType": "product-extend",
+    "description": "<p>Tương ớt nam dương</p>",
+    "short_description": "Tương ớt nam dương",
+    "image_url": "[baseUrl]/chothongminh/product/PE000175/bb906cc9-b66e-4ae1-b2ea-cdd8ab5ccd29.webp",
+    "gallery_product": "[\"bb906cc9-b66e-4ae1-b2ea-cdd8ab5ccd29.webp\"]",
+    "price": 20000,
+    "product_extend": "",
+    "unit": "500ml",
+    "availability": true,
+    "rating": 0,
+    "review_count": 0,
+    "meta_title": "Tương ớt nam dương",
+    "meta_keywords": "[\"Tương ớt nam dương\"]",
+    "meta_description": "Tương ớt nam dương",
+    "affiliateLinks": "",
+    "status": "APPROVE",
+    "categoryId": "127",
+    "referenceKey": "65a0c9af-2c40-48c5-a9fb-75192f869a25",
+    "userUpdate": "",
+    "userCreate": "",
+    "isDeleted": false,
+    "__v": 0,
+    "createDate": {
+      "$date": "2025-06-06T13:31:07.793Z"
+    },
+    "updateDate": {
+      "$date": "2025-06-06T14:33:07.220Z"
+    },
+    "productId": "22c43b3b-ba3a-414e-a1a0-63dcd1f72baa"
+  },
+  {
+    "_id": {
+      "$oid": "6842ed9b5f81b1827f663ab7"
+    },
+    "productCode": "PE000176",
+    "name": "Tương ớt nam dương",
+    "title": "50ml",
+    "slug": "tuong-ot-nam-duong-50ml",
+    "meta_slug": "tuong-ot-nam-duong-50ml",
+    "productType": "product-extend",
+    "description": "<p>Tương ớt nam dương</p>",
+    "short_description": "Tương ớt nam dương",
+    "image_url": "[baseUrl]/chothongminh/product/PE000176/99f4cfec-4ed3-42eb-86d7-c0debbaddc67.webp",
+    "gallery_product": "[\"99f4cfec-4ed3-42eb-86d7-c0debbaddc67.webp\"]",
+    "price": 50000,
+    "product_extend": "",
+    "unit": "50ml",
+    "availability": true,
+    "rating": 0,
+    "review_count": 0,
+    "meta_title": "Tương ớt nam dương",
+    "meta_keywords": "[\"Tương ớt nam dương\"]",
+    "meta_description": "Tương ớt nam dương",
+    "affiliateLinks": "",
+    "status": "APPROVE",
+    "categoryId": "127",
+    "referenceKey": "65a0c9af-2c40-48c5-a9fb-75192f869a25",
+    "userUpdate": "",
+    "userCreate": "",
+    "isDeleted": false,
+    "__v": 0,
+    "createDate": {
+      "$date": "2025-06-06T13:31:07.793Z"
+    },
+    "updateDate": {
+      "$date": "2025-06-06T14:33:07.337Z"
+    },
+    "productId": "d7fce6f7-d1f3-430a-9d5e-647d5098c789"
+  },
+  {
+    "_id": {
+      "$oid": "6842ee2f5f81b1827f663b5d"
+    },
+    "productCode": "P000146",
+    "name": "tiêu củ heo ",
+    "title": "đâsdasdasd",
+    "slug": "tieu-cu-heo",
+    "meta_slug": "tieu-cu-heo",
+    "productType": "product-source",
+    "description": "<p>tiêu củ heo&nbsp;</p>",
+    "short_description": "tiêu củ heo ",
+    "image_url": "[baseUrl]/chothongminh/product/P000146/9e866d96-9a50-41ea-94a3-8018d4be7061.webp",
+    "gallery_product": "[\"9e866d96-9a50-41ea-94a3-8018d4be7061.webp\"]",
+    "price": 150000,
+    "product_extend": "{\"gallery_productExtend\":[\"890c7212-5211-47a4-bc24-b45e46a38f5f.webp\"],\"productListExtend\":[{\"extendIndex\":1,\"extend\":{\"id\":\"826c6713-aa5d-455f-8565-12bdb1cea618\",\"title\":\"2 trai\",\"unit\":\"2 trai\",\"price\":50000,\"sale\":0,\"priceSale\":50000,\"productCode\":\"PE000178\"}}]}",
+    "unit": "213123",
+    "availability": true,
+    "rating": 0,
+    "review_count": 0,
+    "meta_title": "tiêu củ heo ",
+    "meta_keywords": "[\"tiêu củ heo\"]",
+    "meta_description": "tiêu củ heo ",
+    "affiliateLinks": "",
+    "status": "APPROVE",
+    "categoryId": "123",
+    "referenceKey": "5137b97f-39a8-4a02-abbe-94c4b9aa0dd8",
+    "userUpdate": "",
+    "userCreate": "",
+    "isDeleted": false,
+    "__v": 0,
+    "createDate": {
+      "$date": "2025-06-06T13:33:35.550Z"
+    },
+    "updateDate": {
+      "$date": "2025-06-06T14:07:49.930Z"
+    },
+    "productId": "8e41e5d4-8db9-4bbc-b451-667822a1cd8f"
+  },
+  {
+    "_id": {
+      "$oid": "6842f53ea83fc9fd4c9d9311"
+    },
+    "productCode": "PE000178",
+    "name": "tiêu củ heo ",
+    "title": "2 trai",
+    "slug": "tieu-cu-heo-2-trai",
+    "meta_slug": "tieu-cu-heo-2-trai",
+    "productType": "product-extend",
+    "description": "<p>tiêu củ heo&nbsp;</p>",
+    "short_description": "tiêu củ heo ",
+    "image_url": "[baseUrl]/chothongminh/product/PE000178/890c7212-5211-47a4-bc24-b45e46a38f5f.webp",
+    "gallery_product": "[\"890c7212-5211-47a4-bc24-b45e46a38f5f.webp\"]",
+    "price": 50000,
+    "product_extend": "",
+    "unit": "2 trai",
+    "availability": true,
+    "rating": 0,
+    "review_count": 0,
+    "meta_title": "tiêu củ heo ",
+    "meta_keywords": "[\"tiêu củ heo\"]",
+    "meta_description": "tiêu củ heo ",
+    "affiliateLinks": "",
+    "status": "APPROVE",
+    "categoryId": "123",
+    "referenceKey": "5137b97f-39a8-4a02-abbe-94c4b9aa0dd8",
+    "userUpdate": "",
+    "userCreate": "",
+    "isDeleted": false,
+    "createDate": {
+      "$date": "2025-06-06T14:03:42.236Z"
+    },
+    "updateDate": {
+      "$date": "2025-06-06T14:07:50.051Z"
+    },
+    "__v": 0,
+    "productId": "826c6713-aa5d-455f-8565-12bdb1cea618"
+  },
+  {
+    "_id": {
+      "$oid": "6843be305123ac16393bd222"
+    },
+    "productCode": "P000147",
+    "name": "Ba chỉ bò Mỹ cắt nướng Gofood",
+    "title": "Ba chỉ bò Mỹ cắt nướng Gofood 200g",
+    "slug": "ba-chi-bo-my-cat-nuong-gofood",
+    "meta_slug": "ba-chi-bo-my-cat-nuong-gofood",
+    "productType": "product-source",
+    "description": "<p>Ba chỉ bò Mỹ cắt nướng Gofood</p>",
+    "short_description": "Ba chỉ bò Mỹ cắt nướng Gofood",
+    "image_url": "[baseUrl]/chothongminh/product/P000147/e4edd58e-1ab8-413a-89ec-c61a38a212e2.webp",
+    "gallery_product": "[\"e4edd58e-1ab8-413a-89ec-c61a38a212e2.webp\",\"f4b7765b-5119-4c6e-87da-8757075027f9.webp\",\"59cf135e-e639-46c0-bdb8-1ad05f86728d.webp\"]",
+    "price": 100000,
+    "product_extend": "{\"gallery_productExtend\":[\"e33a3734-857b-42ba-8b57-49a1b0a9fabf.webp\",\"0877605e-d7fd-429d-9fa0-12b0ae85bdbd.webp\"],\"productListExtend\":[{\"extendIndex\":1,\"extend\":{\"id\":\"2cce55a3-0ad4-4d72-85aa-109d83e7e77a\",\"title\":\"Ba chỉ bò Mỹ cắt nướng Gofood 400g\",\"unit\":\"Vỉ\",\"price\":140000,\"sale\":0,\"priceSale\":140000,\"productCode\":\"PE000181\"}},{\"extendIndex\":2,\"extend\":{\"id\":\"ca1d0e6a-8eac-4bdf-b10f-5b62ebd62ecc\",\"title\":\"Ba chỉ bò Mỹ cắt nướng Gofood 600g\",\"unit\":\"Phần\",\"price\":180000,\"sale\":0,\"priceSale\":180000,\"productCode\":\"PE000182\"}}]}",
+    "unit": "Phần",
+    "availability": true,
+    "rating": 0,
+    "review_count": 0,
+    "meta_title": "Ba chỉ bò Mỹ cắt nướng Gofood",
+    "meta_keywords": "[\"Ba chỉ bò Mỹ cắt nướng Gofood\"]",
+    "meta_description": "Ba chỉ bò Mỹ cắt nướng Gofood",
+    "affiliateLinks": "",
+    "status": "APPROVE",
+    "categoryId": "21",
+    "referenceKey": "56664082-0753-40fe-bcb9-f021dbf15029",
+    "userUpdate": "",
+    "userCreate": "",
+    "isDeleted": false,
+    "__v": 0,
+    "createDate": {
+      "$date": "2025-06-07T04:21:04.751Z"
+    },
+    "updateDate": {
+      "$date": "2025-06-07T04:35:23.312Z"
+    },
+    "productId": "4e72d69b-d6f5-4eff-9ca5-ef0805ba3606"
+  },
+  {
+    "_id": {
+      "$oid": "6843be815123ac16393bd253"
+    },
+    "productCode": "PE000181",
+    "name": "Ba chỉ bò Mỹ cắt nướng Gofood",
+    "title": "Ba chỉ bò Mỹ cắt nướng Gofood 400g",
+    "slug": "ba-chi-bo-my-cat-nuong-gofood-ba-chi-bo-my-cat-nuong-gofood-400g",
+    "meta_slug": "ba-chi-bo-my-cat-nuong-gofood-ba-chi-bo-my-cat-nuong-gofood-400g",
+    "productType": "product-extend",
+    "description": "<p>Ba chỉ bò Mỹ cắt nướng Gofood</p>",
+    "short_description": "Ba chỉ bò Mỹ cắt nướng Gofood",
+    "image_url": "[baseUrl]/chothongminh/product/PE000181/e33a3734-857b-42ba-8b57-49a1b0a9fabf.webp",
+    "gallery_product": "[\"e33a3734-857b-42ba-8b57-49a1b0a9fabf.webp\"]",
+    "price": 140000,
+    "product_extend": "",
+    "unit": "Vỉ",
+    "availability": true,
+    "rating": 0,
+    "review_count": 0,
+    "meta_title": "Ba chỉ bò Mỹ cắt nướng Gofood",
+    "meta_keywords": "[\"Ba chỉ bò Mỹ cắt nướng Gofood\"]",
+    "meta_description": "Ba chỉ bò Mỹ cắt nướng Gofood",
+    "affiliateLinks": "",
+    "status": "APPROVE",
+    "categoryId": "21",
+    "referenceKey": "56664082-0753-40fe-bcb9-f021dbf15029",
+    "userUpdate": "",
+    "userCreate": "",
+    "isDeleted": false,
+    "createDate": {
+      "$date": "2025-06-07T04:22:25.790Z"
+    },
+    "updateDate": {
+      "$date": "2025-06-07T04:35:23.318Z"
+    },
+    "__v": 0,
+    "productId": "2cce55a3-0ad4-4d72-85aa-109d83e7e77a"
+  },
+  {
+    "_id": {
+      "$oid": "6843bea95123ac16393bd260"
+    },
+    "productCode": "PE000182",
+    "name": "Ba chỉ bò Mỹ cắt nướng Gofood",
+    "title": "Ba chỉ bò Mỹ cắt nướng Gofood 600g",
+    "slug": "ba-chi-bo-my-cat-nuong-gofood-ba-chi-bo-my-cat-nuong-gofood-600g",
+    "meta_slug": "ba-chi-bo-my-cat-nuong-gofood-ba-chi-bo-my-cat-nuong-gofood-600g",
+    "productType": "product-extend",
+    "description": "<p>Ba chỉ bò Mỹ cắt nướng Gofood</p>",
+    "short_description": "Ba chỉ bò Mỹ cắt nướng Gofood",
+    "image_url": "[baseUrl]/chothongminh/product/PE000182/0877605e-d7fd-429d-9fa0-12b0ae85bdbd.webp",
+    "gallery_product": "[\"0877605e-d7fd-429d-9fa0-12b0ae85bdbd.webp\"]",
+    "price": 180000,
+    "product_extend": "",
+    "unit": "Phần",
+    "availability": true,
+    "rating": 0,
+    "review_count": 0,
+    "meta_title": "Ba chỉ bò Mỹ cắt nướng Gofood",
+    "meta_keywords": "[\"Ba chỉ bò Mỹ cắt nướng Gofood\"]",
+    "meta_description": "Ba chỉ bò Mỹ cắt nướng Gofood",
+    "affiliateLinks": "",
+    "status": "APPROVE",
+    "categoryId": "21",
+    "referenceKey": "56664082-0753-40fe-bcb9-f021dbf15029",
+    "userUpdate": "",
+    "userCreate": "",
+    "isDeleted": false,
+    "createDate": {
+      "$date": "2025-06-07T04:23:05.794Z"
+    },
+    "updateDate": {
+      "$date": "2025-06-07T04:35:23.323Z"
+    },
+    "__v": 0,
+    "productId": "ca1d0e6a-8eac-4bdf-b10f-5b62ebd62ecc"
+  },
+  {
+    "_id": {
+      "$oid": "6843bfb35123ac16393bd3be"
+    },
+    "productCode": "P000148",
+    "name": "Ba chỉ bò Mỹ cắt lẩu Gofood",
+    "title": "Ba chỉ bò Mỹ cắt lẩu Gofood 200g ",
+    "slug": "ba-chi-bo-my-cat-lau-gofood",
+    "meta_slug": "ba-chi-bo-my-cat-lau-gofood",
+    "productType": "product-source",
+    "description": "<p>Ba chỉ bò Mỹ cắt lẩu Gofood</p>",
+    "short_description": "Ba chỉ bò Mỹ cắt lẩu Gofood",
+    "image_url": "[baseUrl]/chothongminh/product/P000148/a2722a2e-e99e-458d-b05f-6f9be04ec130.webp",
+    "gallery_product": "[\"a2722a2e-e99e-458d-b05f-6f9be04ec130.webp\",\"c7a46041-b285-4de3-afe7-321f05b2477e.webp\",\"ffe4e686-6408-4e3d-ae54-f55080385c03.webp\"]",
+    "price": 90000,
+    "product_extend": "{\"gallery_productExtend\":[\"83c219b3-d341-4065-9eda-b4626310ebb6.webp\",\"fdc77f75-032d-40a5-b43b-e25c0b2159d1.webp\"],\"productListExtend\":[{\"extendIndex\":1,\"extend\":{\"id\":\"b20b3114-3621-40b5-be2b-5c09fd5b7b24\",\"title\":\"Ba chỉ bò Mỹ cắt lẩu Gofood 300g \",\"unit\":\"Phần\",\"price\":150000,\"sale\":0,\"priceSale\":150000,\"productCode\":\"PE000192\"}},{\"extendIndex\":2,\"extend\":{\"id\":\"b26b3eaf-5f2e-4433-821e-5028fc1e9d19\",\"title\":\"Ba chỉ bò Mỹ cắt lẩu Gofood 500g \",\"unit\":\"Đĩa\",\"price\":200000,\"sale\":0,\"priceSale\":200000,\"productCode\":\"PE000193\"}}]}",
+    "unit": "Phần",
+    "availability": true,
+    "rating": 0,
+    "review_count": 0,
+    "meta_title": "Ba chỉ bò Mỹ cắt lẩu Gofood",
+    "meta_keywords": "[\"Ba chỉ bò Mỹ cắt lẩu Gofood\"]",
+    "meta_description": "Ba chỉ bò Mỹ cắt lẩu Gofood",
+    "affiliateLinks": "",
+    "status": "APPROVE",
+    "categoryId": "21",
+    "referenceKey": "ce741dce-a1be-4947-917c-293f3443a664",
+    "userUpdate": "",
+    "userCreate": "",
+    "isDeleted": false,
+    "__v": 0,
+    "createDate": {
+      "$date": "2025-06-07T04:27:31.815Z"
+    },
+    "updateDate": {
+      "$date": "2025-06-07T07:02:07.074Z"
+    },
+    "productId": "fe60c292-8873-4873-9258-bc8e6683555d"
+  },
+  {
+    "_id": {
+      "$oid": "6843c2245123ac16393bd8e2"
+    },
+    "productCode": "P000149",
+    "name": "Thịt bò Úc",
+    "title": "Thịt bò Úc 200g",
+    "slug": "thit-bo-uc",
+    "meta_slug": "thit-bo-uc",
+    "productType": "product-source",
+    "description": "<p>Thịt bò Úc</p>",
+    "short_description": "Thịt bò Úc",
+    "image_url": "[baseUrl]/chothongminh/product/P000149/558f7ec4-e176-4096-a407-f425414f2640.webp",
+    "gallery_product": "[\"558f7ec4-e176-4096-a407-f425414f2640.webp\",\"57b9d036-af68-40f5-8054-e3847cc25802.webp\",\"ada5d0c3-07fe-4145-a8ed-e09963a1fea2.webp\"]",
+    "price": 100000,
+    "product_extend": "{\"gallery_productExtend\":[\"ea244ea7-9419-4043-8a91-37d519d5a302.webp\",\"08a8165c-deff-4b98-986c-78ed6e00473d.webp\"],\"productListExtend\":[{\"extendIndex\":1,\"extend\":{\"id\":\"b043ee8f-ed2e-4e5f-902c-996f05c00c9c\",\"title\":\"Thịt bò Úc 300g\",\"unit\":\"Đĩa\",\"price\":110000,\"sale\":0,\"priceSale\":110000,\"productCode\":\"PE000184\"}},{\"extendIndex\":2,\"extend\":{\"id\":\"039f4771-e03f-4e36-a197-0a7165f50da4\",\"title\":\"Thịt bò Úc 400g\",\"unit\":\"Vỉ\",\"price\":120000,\"sale\":0,\"priceSale\":120000,\"productCode\":\"PE000185\"}}]}",
+    "unit": "Phần",
+    "availability": true,
+    "rating": 0,
+    "review_count": 0,
+    "meta_title": "Thịt bò Úc",
+    "meta_keywords": "[\"Thịt bò Úc\"]",
+    "meta_description": "Thịt bò Úc",
+    "affiliateLinks": "",
+    "status": "APPROVE",
+    "categoryId": "21",
+    "referenceKey": "c2d2c70f-f7b6-444b-ac0b-c23ed336c62e",
+    "userUpdate": "",
+    "userCreate": "",
+    "isDeleted": false,
+    "__v": 0,
+    "createDate": {
+      "$date": "2025-06-07T04:37:56.283Z"
+    },
+    "updateDate": {
+      "$date": "2025-06-07T04:38:54.249Z"
+    },
+    "productId": "b1200273-d246-4239-8423-d1cc663034ff"
+  },
+  {
+    "_id": {
+      "$oid": "6843c25e5123ac16393bd944"
+    },
+    "productCode": "PE000184",
+    "name": "Thịt bò Úc",
+    "title": "Thịt bò Úc 300g",
+    "slug": "thit-bo-uc-thit-bo-uc-300g",
+    "meta_slug": "thit-bo-uc-thit-bo-uc-300g",
+    "productType": "product-extend",
+    "description": "<p>Thịt bò Úc</p>",
+    "short_description": "Thịt bò Úc",
+    "image_url": "[baseUrl]/chothongminh/product/PE000184/ea244ea7-9419-4043-8a91-37d519d5a302.webp",
+    "gallery_product": "[\"ea244ea7-9419-4043-8a91-37d519d5a302.webp\"]",
+    "price": 110000,
+    "product_extend": "",
+    "unit": "Đĩa",
+    "availability": true,
+    "rating": 0,
+    "review_count": 0,
+    "meta_title": "Thịt bò Úc",
+    "meta_keywords": "[\"Thịt bò Úc\"]",
+    "meta_description": "Thịt bò Úc",
+    "affiliateLinks": "",
+    "status": "APPROVE",
+    "categoryId": "21",
+    "referenceKey": "c2d2c70f-f7b6-444b-ac0b-c23ed336c62e",
+    "userUpdate": "",
+    "userCreate": "",
+    "isDeleted": false,
+    "createDate": {
+      "$date": "2025-06-07T04:38:54.020Z"
+    },
+    "updateDate": {
+      "$date": "2025-06-07T04:38:54.020Z"
+    },
+    "__v": 0,
+    "productId": "b043ee8f-ed2e-4e5f-902c-996f05c00c9c"
+  },
+  {
+    "_id": {
+      "$oid": "6843c25e5123ac16393bd946"
+    },
+    "productCode": "PE000185",
+    "name": "Thịt bò Úc",
+    "title": "Thịt bò Úc 400g",
+    "slug": "thit-bo-uc-thit-bo-uc-400g",
+    "meta_slug": "thit-bo-uc-thit-bo-uc-400g",
+    "productType": "product-extend",
+    "description": "<p>Thịt bò Úc</p>",
+    "short_description": "Thịt bò Úc",
+    "image_url": "[baseUrl]/chothongminh/product/PE000185/08a8165c-deff-4b98-986c-78ed6e00473d.webp",
+    "gallery_product": "[\"08a8165c-deff-4b98-986c-78ed6e00473d.webp\"]",
+    "price": 120000,
+    "product_extend": "",
+    "unit": "Vỉ",
+    "availability": true,
+    "rating": 0,
+    "review_count": 0,
+    "meta_title": "Thịt bò Úc",
+    "meta_keywords": "[\"Thịt bò Úc\"]",
+    "meta_description": "Thịt bò Úc",
+    "affiliateLinks": "",
+    "status": "APPROVE",
+    "categoryId": "21",
+    "referenceKey": "c2d2c70f-f7b6-444b-ac0b-c23ed336c62e",
+    "userUpdate": "",
+    "userCreate": "",
+    "isDeleted": false,
+    "createDate": {
+      "$date": "2025-06-07T04:38:54.134Z"
+    },
+    "updateDate": {
+      "$date": "2025-06-07T04:38:54.134Z"
+    },
+    "__v": 0,
+    "productId": "039f4771-e03f-4e36-a197-0a7165f50da4"
+  },
+  {
+    "_id": {
+      "$oid": "6843cf219827aff01669f205"
+    },
+    "productCode": "PE000186",
+    "name": "Bài nổi bật 2",
+    "title": "test",
+    "slug": "bai-noi-bat-2-test",
+    "meta_slug": "bai-noi-bat-2-test",
+    "productType": "product-extend",
+    "description": "<p>ádasd</p>",
+    "short_description": "sdasd",
+    "image_url": "[baseUrl]/chothongminh/product/PE000186/50e867f9-7d7f-4397-b4b9-0821c654bbab.webp",
+    "gallery_product": "",
+    "price": 123123,
+    "product_extend": "{\"gallery_productExtend\":null,\"productListExtend\":[{\"extendIndex\":1,\"extend\":{\"id\":\"f9ed5351-3328-4c07-a673-c9df2214bca3\",\"title\":\"test\",\"unit\":\"123123\",\"price\":123123,\"sale\":0,\"priceSale\":123123}}]}",
+    "unit": "123123",
+    "availability": true,
+    "rating": 0,
+    "review_count": 0,
+    "meta_title": "213123123123",
+    "meta_keywords": "[\"sadasd\"]",
+    "meta_description": "sadasd",
+    "affiliateLinks": "",
+    "status": "PENDING",
+    "categoryId": "126",
+    "referenceKey": "a59f5a8b-c91a-465e-bad3-cb0b4ffb5b55",
+    "userUpdate": "",
+    "userCreate": "",
+    "isDeleted": false,
+    "__v": 0,
+    "createDate": {
+      "$date": "2025-06-07T05:33:21.812Z"
+    },
+    "updateDate": {
+      "$date": "2025-06-07T05:33:21.812Z"
+    },
+    "productId": "4d935da6-cba3-4d84-8a82-b991d0ca4f45"
+  },
+  {
+    "_id": {
+      "$oid": "6843cf5e9827aff01669f22b"
+    },
+    "productCode": "PE000187",
+    "name": "bài viết 1",
+    "title": "so1",
+    "slug": "bai-viet-1-so1",
+    "meta_slug": "bai-viet-1-so1",
+    "productType": "product-extend",
+    "description": "<p>so1</p>",
+    "short_description": "so1",
+    "image_url": "[baseUrl]/chothongminh/product/PE000187/56cc3a50-cb42-491d-8de9-8a671509f63f.webp",
+    "gallery_product": "",
+    "price": 213123,
+    "product_extend": "{\"gallery_productExtend\":null,\"productListExtend\":[{\"extendIndex\":1,\"extend\":{\"id\":\"1c5eeb2f-2846-4c56-9ec1-211f0b3c5987\",\"title\":\"so1\",\"unit\":\"so1\",\"price\":213123,\"sale\":0,\"priceSale\":213123}}]}",
+    "unit": "so1",
+    "availability": true,
+    "rating": 0,
+    "review_count": 0,
+    "meta_title": "so1",
+    "meta_keywords": "[\"so1\"]",
+    "meta_description": "sadasdasd",
+    "affiliateLinks": "",
+    "status": "PENDING",
+    "categoryId": "125",
+    "referenceKey": "a8dc93da-8735-46f1-8c2c-d54210c601f5",
+    "userUpdate": "",
+    "userCreate": "",
+    "isDeleted": false,
+    "__v": 0,
+    "createDate": {
+      "$date": "2025-06-07T05:34:22.708Z"
+    },
+    "updateDate": {
+      "$date": "2025-06-07T05:34:22.708Z"
+    },
+    "productId": "2ed3f098-b559-4dd6-a7e2-b8e7ab4dba13"
+  },
+  {
+    "_id": {
+      "$oid": "6843e3ef5123ac16393be650"
+    },
+    "productCode": "PE000192",
+    "name": "Ba chỉ bò Mỹ cắt lẩu Gofood",
+    "title": "Ba chỉ bò Mỹ cắt lẩu Gofood 300g ",
+    "slug": "ba-chi-bo-my-cat-lau-gofood-ba-chi-bo-my-cat-lau-gofood-300g",
+    "meta_slug": "ba-chi-bo-my-cat-lau-gofood-ba-chi-bo-my-cat-lau-gofood-300g",
+    "productType": "product-extend",
+    "description": "<p>Ba chỉ bò Mỹ cắt lẩu Gofood</p>",
+    "short_description": "Ba chỉ bò Mỹ cắt lẩu Gofood",
+    "image_url": "[baseUrl]/chothongminh/product/PE000192/83c219b3-d341-4065-9eda-b4626310ebb6.webp",
+    "gallery_product": "[\"83c219b3-d341-4065-9eda-b4626310ebb6.webp\"]",
+    "price": 150000,
+    "product_extend": "",
+    "unit": "Phần",
+    "availability": true,
+    "rating": 0,
+    "review_count": 0,
+    "meta_title": "Ba chỉ bò Mỹ cắt lẩu Gofood",
+    "meta_keywords": "[\"Ba chỉ bò Mỹ cắt lẩu Gofood\"]",
+    "meta_description": "Ba chỉ bò Mỹ cắt lẩu Gofood",
+    "affiliateLinks": "",
+    "status": "APPROVE",
+    "categoryId": "21",
+    "referenceKey": "ce741dce-a1be-4947-917c-293f3443a664",
+    "userUpdate": "",
+    "userCreate": "",
+    "isDeleted": false,
+    "createDate": {
+      "$date": "2025-06-07T07:02:06.832Z"
+    },
+    "updateDate": {
+      "$date": "2025-06-07T07:02:06.832Z"
+    },
+    "__v": 0,
+    "productId": "b20b3114-3621-40b5-be2b-5c09fd5b7b24"
+  },
+  {
+    "_id": {
+      "$oid": "6843e3ef5123ac16393be652"
+    },
+    "productCode": "PE000193",
+    "name": "Ba chỉ bò Mỹ cắt lẩu Gofood",
+    "title": "Ba chỉ bò Mỹ cắt lẩu Gofood 500g ",
+    "slug": "ba-chi-bo-my-cat-lau-gofood-ba-chi-bo-my-cat-lau-gofood-500g",
+    "meta_slug": "ba-chi-bo-my-cat-lau-gofood-ba-chi-bo-my-cat-lau-gofood-500g",
+    "productType": "product-extend",
+    "description": "<p>Ba chỉ bò Mỹ cắt lẩu Gofood</p>",
+    "short_description": "Ba chỉ bò Mỹ cắt lẩu Gofood",
+    "image_url": "[baseUrl]/chothongminh/product/PE000193/fdc77f75-032d-40a5-b43b-e25c0b2159d1.webp",
+    "gallery_product": "[\"fdc77f75-032d-40a5-b43b-e25c0b2159d1.webp\"]",
+    "price": 200000,
+    "product_extend": "",
+    "unit": "Đĩa",
+    "availability": true,
+    "rating": 0,
+    "review_count": 0,
+    "meta_title": "Ba chỉ bò Mỹ cắt lẩu Gofood",
+    "meta_keywords": "[\"Ba chỉ bò Mỹ cắt lẩu Gofood\"]",
+    "meta_description": "Ba chỉ bò Mỹ cắt lẩu Gofood",
+    "affiliateLinks": "",
+    "status": "APPROVE",
+    "categoryId": "21",
+    "referenceKey": "ce741dce-a1be-4947-917c-293f3443a664",
+    "userUpdate": "",
+    "userCreate": "",
+    "isDeleted": false,
+    "createDate": {
+      "$date": "2025-06-07T07:02:06.961Z"
+    },
+    "updateDate": {
+      "$date": "2025-06-07T07:02:06.961Z"
+    },
+    "__v": 0,
+    "productId": "b26b3eaf-5f2e-4433-821e-5028fc1e9d19"
+  },
+  {
+    "_id": {
+      "$oid": "6843e6275123ac16393be7f0"
+    },
+    "productCode": "P000161",
+    "name": "Ba chỉ bò Úc cắt nướng Gofood",
+    "title": "Ba chỉ bò Úc cắt nướng Gofood 300g",
+    "slug": "ba-chi-bo-uc-cat-nuong-gofood",
+    "meta_slug": "ba-chi-bo-uc-cat-nuong-gofood",
+    "productType": "product-source",
+    "description": "<p>Ba chỉ bò Úc cắt nướng Gofood</p>",
+    "short_description": "Ba chỉ bò Úc cắt nướng Gofood",
+    "image_url": "[baseUrl]/chothongminh/product/P000161/fd32c9da-3723-4045-b570-905204c57877.webp",
+    "gallery_product": "[\"fd32c9da-3723-4045-b570-905204c57877.webp\",\"e161991c-a1d7-4d1a-9a2f-f90bc9d37c72.webp\",\"7f1cc4e2-717b-4219-8ec8-6587ab6d7479.webp\"]",
+    "price": 200000,
+    "product_extend": "{\"gallery_productExtend\":[\"c24db7cb-f7ac-497f-99bf-6f02339cd8b7.webp\",\"333366da-f87f-43bd-afc3-acf655e02695.webp\"],\"productListExtend\":[{\"extendIndex\":1,\"extend\":{\"id\":\"25f46303-6652-4114-88e4-5ad74b7975bf\",\"title\":\"Ba chỉ bò Úc cắt nướng Gofood 400g\",\"unit\":\"Phần\",\"price\":100000,\"sale\":0,\"priceSale\":100000,\"productCode\":\"PE000194\"}},{\"extendIndex\":2,\"extend\":{\"id\":\"4a154c51-afd1-4950-af1e-0612320d537f\",\"title\":\"Ba chỉ bò Úc cắt nướng Gofood 250g\",\"unit\":\"Đĩa\",\"price\":90000,\"sale\":0,\"priceSale\":90000,\"productCode\":\"PE000195\"}}]}",
+    "unit": "Vỉ",
+    "availability": true,
+    "rating": 0,
+    "review_count": 0,
+    "meta_title": "Ba chỉ bò Úc cắt nướng Gofood",
+    "meta_keywords": "[\"Ba chỉ bò Úc cắt nướng Gofood\"]",
+    "meta_description": "Ba chỉ bò Úc cắt nướng Gofood",
+    "affiliateLinks": "",
+    "status": "APPROVE",
+    "categoryId": "21",
+    "referenceKey": "17552a76-014a-4d8f-b10d-b2a5ceb29a29",
+    "userUpdate": "",
+    "userCreate": "",
+    "isDeleted": false,
+    "__v": 0,
+    "createDate": {
+      "$date": "2025-06-07T07:11:35.756Z"
+    },
+    "updateDate": {
+      "$date": "2025-06-07T07:13:28.108Z"
+    },
+    "productId": "ad2bfbf7-8870-454d-8e4c-34de680e4e52"
+  },
+  {
+    "_id": {
+      "$oid": "6843e6985123ac16393be86e"
+    },
+    "productCode": "PE000194",
+    "name": "Ba chỉ bò Úc cắt nướng Gofood",
+    "title": "Ba chỉ bò Úc cắt nướng Gofood 400g",
+    "slug": "ba-chi-bo-uc-cat-nuong-gofood-ba-chi-bo-uc-cat-nuong-gofood-400g",
+    "meta_slug": "ba-chi-bo-uc-cat-nuong-gofood-ba-chi-bo-uc-cat-nuong-gofood-400g",
+    "productType": "product-extend",
+    "description": "<p>Ba chỉ bò Úc cắt nướng Gofood</p>",
+    "short_description": "Ba chỉ bò Úc cắt nướng Gofood",
+    "image_url": "[baseUrl]/chothongminh/product/PE000194/c24db7cb-f7ac-497f-99bf-6f02339cd8b7.webp",
+    "gallery_product": "[\"c24db7cb-f7ac-497f-99bf-6f02339cd8b7.webp\"]",
+    "price": 100000,
+    "product_extend": "",
+    "unit": "Phần",
+    "availability": true,
+    "rating": 0,
+    "review_count": 0,
+    "meta_title": "Ba chỉ bò Úc cắt nướng Gofood",
+    "meta_keywords": "[\"Ba chỉ bò Úc cắt nướng Gofood\"]",
+    "meta_description": "Ba chỉ bò Úc cắt nướng Gofood",
+    "affiliateLinks": "",
+    "status": "APPROVE",
+    "categoryId": "21",
+    "referenceKey": "17552a76-014a-4d8f-b10d-b2a5ceb29a29",
+    "userUpdate": "",
+    "userCreate": "",
+    "isDeleted": false,
+    "createDate": {
+      "$date": "2025-06-07T07:13:27.878Z"
+    },
+    "updateDate": {
+      "$date": "2025-06-07T07:13:27.878Z"
+    },
+    "__v": 0,
+    "productId": "25f46303-6652-4114-88e4-5ad74b7975bf"
+  },
+  {
+    "_id": {
+      "$oid": "6843e6985123ac16393be870"
+    },
+    "productCode": "PE000195",
+    "name": "Ba chỉ bò Úc cắt nướng Gofood",
+    "title": "Ba chỉ bò Úc cắt nướng Gofood 250g",
+    "slug": "ba-chi-bo-uc-cat-nuong-gofood-ba-chi-bo-uc-cat-nuong-gofood-250g",
+    "meta_slug": "ba-chi-bo-uc-cat-nuong-gofood-ba-chi-bo-uc-cat-nuong-gofood-250g",
+    "productType": "product-extend",
+    "description": "<p>Ba chỉ bò Úc cắt nướng Gofood</p>",
+    "short_description": "Ba chỉ bò Úc cắt nướng Gofood",
+    "image_url": "[baseUrl]/chothongminh/product/PE000195/333366da-f87f-43bd-afc3-acf655e02695.webp",
+    "gallery_product": "[\"333366da-f87f-43bd-afc3-acf655e02695.webp\"]",
+    "price": 90000,
+    "product_extend": "",
+    "unit": "Đĩa",
+    "availability": true,
+    "rating": 0,
+    "review_count": 0,
+    "meta_title": "Ba chỉ bò Úc cắt nướng Gofood",
+    "meta_keywords": "[\"Ba chỉ bò Úc cắt nướng Gofood\"]",
+    "meta_description": "Ba chỉ bò Úc cắt nướng Gofood",
+    "affiliateLinks": "",
+    "status": "APPROVE",
+    "categoryId": "21",
+    "referenceKey": "17552a76-014a-4d8f-b10d-b2a5ceb29a29",
+    "userUpdate": "",
+    "userCreate": "",
+    "isDeleted": false,
+    "createDate": {
+      "$date": "2025-06-07T07:13:27.999Z"
+    },
+    "updateDate": {
+      "$date": "2025-06-07T07:13:27.999Z"
+    },
+    "__v": 0,
+    "productId": "4a154c51-afd1-4950-af1e-0612320d537f"
+  },
+  {
+    "_id": {
+      "$oid": "6843e81e5123ac16393be9c5"
+    },
+    "productCode": "P000162",
+    "name": "Bánh bao ca dé Thọ Phát",
+    "title": "Bánh bao ca dé Thọ Phát",
+    "slug": "banh-bao-ca-de-tho-phat",
+    "meta_slug": "banh-bao-ca-de-tho-phat",
+    "productType": "product-source",
+    "description": "<p>Bánh bao ca dé Thọ Phát</p>",
+    "short_description": "Bánh bao ca dé Thọ Phát",
+    "image_url": "[baseUrl]/chothongminh/product/P000162/48690d13-2c06-4f58-952b-80686cd03c6a.webp",
+    "gallery_product": "[\"48690d13-2c06-4f58-952b-80686cd03c6a.webp\",\"3f0b0269-1fed-46e9-a36d-b07d0cda173d.webp\",\"9d3ca681-86a2-4a21-9b89-19409cc475eb.webp\",\"7d25d82d-35cd-407c-9cd0-d8ff0304e41e.webp\",\"66614254-8154-4d6f-93de-5d8280b808cc.webp\"]",
+    "price": 50000,
+    "product_extend": "{\"gallery_productExtend\":[\"c482b0ff-4606-4fbe-aa8d-ea29e61f7be4.webp\"],\"productListExtend\":[{\"extendIndex\":1,\"extend\":{\"id\":\"a96e725b-d526-404d-ae28-807129053100\",\"title\":\"Dĩa bánh bao ca dé Thọ Phát\",\"unit\":\"Dĩa\",\"price\":45000,\"sale\":0,\"priceSale\":45000,\"productCode\":\"PE000196\"}}]}",
+    "unit": "Bịt",
+    "availability": true,
+    "rating": 0,
+    "review_count": 0,
+    "meta_title": "Bánh bao ca dé Thọ Phát",
+    "meta_keywords": "[\"Bánh bao ca dé Thọ Phát\"]",
+    "meta_description": "Bánh bao ca dé Thọ Phát",
+    "affiliateLinks": "",
+    "status": "APPROVE",
+    "categoryId": "50",
+    "referenceKey": "eb40f79b-0ab9-4f00-88d2-92647edb1484",
+    "userUpdate": "",
+    "userCreate": "",
+    "isDeleted": false,
+    "__v": 0,
+    "createDate": {
+      "$date": "2025-06-07T07:19:58.455Z"
+    },
+    "updateDate": {
+      "$date": "2025-06-07T07:20:46.881Z"
+    },
+    "productId": "0c4fa824-550e-42d0-afe9-63a69199b96d"
+  },
+  {
+    "_id": {
+      "$oid": "6843e81e5123ac16393be9c3"
+    },
+    "productCode": "PE000196",
+    "name": "Bánh bao ca dé Thọ Phát",
+    "title": "Dĩa bánh bao ca dé Thọ Phát",
+    "slug": "banh-bao-ca-de-tho-phat-dia-banh-bao-ca-de-tho-phat",
+    "meta_slug": "banh-bao-ca-de-tho-phat-dia-banh-bao-ca-de-tho-phat",
+    "productType": "product-extend",
+    "description": "<p>Bánh bao ca dé Thọ Phát</p>",
+    "short_description": "Bánh bao ca dé Thọ Phát",
+    "image_url": "[baseUrl]/chothongminh/product/PE000196/c482b0ff-4606-4fbe-aa8d-ea29e61f7be4.webp",
+    "gallery_product": "[\"c482b0ff-4606-4fbe-aa8d-ea29e61f7be4.webp\"]",
+    "price": 45000,
+    "product_extend": "",
+    "unit": "Dĩa",
+    "availability": true,
+    "rating": 0,
+    "review_count": 0,
+    "meta_title": "Bánh bao ca dé Thọ Phát",
+    "meta_keywords": "[\"Bánh bao ca dé Thọ Phát\"]",
+    "meta_description": "Bánh bao ca dé Thọ Phát",
+    "affiliateLinks": "",
+    "status": "APPROVE",
+    "categoryId": "50",
+    "referenceKey": "eb40f79b-0ab9-4f00-88d2-92647edb1484",
+    "userUpdate": "",
+    "userCreate": "",
+    "isDeleted": false,
+    "__v": 0,
+    "createDate": {
+      "$date": "2025-06-07T07:19:58.455Z"
+    },
+    "updateDate": {
+      "$date": "2025-06-07T07:20:46.892Z"
+    },
+    "productId": "a96e725b-d526-404d-ae28-807129053100"
+  },
+  {
+    "_id": {
+      "$oid": "6843e8d15123ac16393beaa8"
+    },
+    "productCode": "P000163",
+    "name": "Bánh bao không nhân Thọ Phát",
+    "title": "Bánh bao không nhân Thọ Phát",
+    "slug": "banh-bao-khong-nhan-tho-phat",
+    "meta_slug": "banh-bao-khong-nhan-tho-phat",
+    "productType": "product-source",
+    "description": "<p>Chân giò heo C.P&nbsp;là sản phẩm được chế biến từ phần&nbsp;chân heo&nbsp;(giò heo) tươi ngon, có nguồn gốc rõ ràng, đảm bảo an toàn vệ sinh thực phẩm.&nbsp;Thịt heo&nbsp;được sản xuất và đóng gói bởi thương hiệu&nbsp;thịt heo&nbsp;C.P&nbsp;– một trong những tập đoàn thực phẩm hàng đầu khu vực châu Á, chân giò heo C.P luôn giữ được độ tươi ngon, săn chắc và đầy đủ giá trị dinh dưỡng.</p><p>Tùy theo phần cắt, chân giò có thể bao gồm khoanh giò, sú giò, móng giò lợn hoặc chân giò sau, phù hợp cho nhiều món ăn từ đơn giản đến cầu kỳ.</p><p><img src=\"https://cdnv2.tgdd.vn/bhx-static/bhx/Products/Images/8781/233783/bhx/cdntgddvnproductsimages8781226838bhxchan-gio-heo-tui-1kg-202012302247564830_202409160905068010.jpg\"></p><h3><strong>Ưu điểm nổi bật của chân giò heo C.P</strong></h3><p><br></p><ul><li>Thịt giò heo chắc, da giòn, gân mềm – không quá béo, không bị hôi.</li><li>Được kiểm soát chất lượng chặt chẽ, đạt chuẩn an toàn thực phẩm quốc tế.</li><li>Giữ được vị ngọt tự nhiên của thịt, đặc biệt khi ninh, hầm hoặc luộc.</li><li>Đóng gói tiện lợi theo khoanh, dễ bảo quản và chế biến.</li></ul><h3><strong>Giá bán chân giò heo C.P hiện nay?</strong></h3><p>Nhiều người thắc mắc giò heo bao nhiêu 1kg, hay cụ thể hơn giá giò heo C.P hiện nay là bao nhiêu? Tùy theo loại (chân trước, chân giò sau, giò khoanh, hay móng giò), giá sẽ dao động từ 100.000 – 130.000 đồng/kg</p><h3><strong>Lợi ích khi sử dụng chân giò heo</strong></h3><p><br></p><ul><li>Cung cấp collagen tự nhiên: Tốt cho da, tóc và khớp.</li><li>Giàu protein, sắt và vitamin B: Giúp tăng cường sức khỏe, hồi phục thể lực.</li><li>Rất phù hợp cho phụ nữ sau sinh hoặc người mới ốm dậy, đặc biệt là các món hầm từ giò heo.</li><li>Hợp với nhiều phong cách ẩm thực: Từ món truyền thống như giò heo hầm thuốc bắc đến các món kiểu Tây như súp chân giò.</li><li><img src=\"https://cdnv2.tgdd.vn/bhx-static/bhx/Products/Images/8781/233783/bhx/cdntgddvnproductsimages8781226838bhxchan-gio-heo-tui-1kg-202012302247574977_202409160905082312.jpg\"></li></ul><h3><strong>Cách sơ chế chân giò heo C.P</strong></h3><p>Để chan gio không bị hôi và mềm ngon khi chế biến, bạn cần sơ chế đúng cách:</p><p><br></p><ul><li>Rửa sạch chân giò với nước muối loãng, có thể thêm giấm hoặc rượu trắng để khử mùi.</li><li>Dùng dao rạch nhẹ phần da, cạo kỹ để sạch lông nếu còn sót.</li><li>Trụng sơ giò heo trong nước sôi khoảng 2 phút để loại bỏ bọt bẩn, sau đó vớt ra rửa lại lần nữa.</li><li>Thái theo khoanh giò heo hoặc để nguyên miếng tùy theo món ăn định nấu.</li></ul><h3><strong>Các món ăn ngon từ chân giò heo C.P</strong></h3><p><br></p><ul><li>Giò heo hầm đu đủ hoặc hạt sen</li><li>Chân giò kho trứng cút hoặc nước dừa</li><li>Giò heo luộc mắm gừng</li><li>Giò heo giả cầy</li><li>Súp chân giò hầm rau củ</li><li>…</li><li><img src=\"https://bizweb.dktcdn.net/100/489/006/files/gio-heo-nau-gi-ngon-7.jpg?v=1701325774174\"></li></ul><h3><strong>Cách bảo quản và sử dụng</strong></h3><p><br></p><ul><li>Nếu chưa dùng ngay, bạn nên để giò heo vào ngăn đông ở -18°C.</li><li>Khi cần sử dụng, rã đông tự nhiên trong ngăn mát từ 8–12 tiếng hoặc ngâm kín trong nước mát.</li><li>Không cấp đông lại nếu đã rã đông. Nên chia nhỏ khẩu phần trước khi cấp đông để tiện sử dụng.</li><li>Giò khoanh, móng giò hay sú giò nên được bảo quản riêng từng phần để tránh ảnh hưởng hương vị.</li></ul>",
+    "short_description": "Chân giò heo C.P là sản phẩm được chế biến từ phần chân heo (giò heo) tươi ngon, có nguồn gốc rõ ràng, đảm bảo an toàn vệ sinh thực phẩm. Thịt heo được sản xuất và đóng gói bởi thương hiệu thịt heo C.P – một trong những tập đoàn thực phẩm hàng đầu khu vực châu Á, chân giò heo C.P luôn giữ được độ tươi ngon, săn chắc và đầy đủ giá trị dinh dưỡng.",
+    "image_url": "[baseUrl]/chothongminh/product/P000163/32271d6e-25d3-4f01-be49-cdd4d85a4f94.webp",
+    "gallery_product": "[\"32271d6e-25d3-4f01-be49-cdd4d85a4f94.webp\",\"003ca4d9-0d1c-4ed5-b47b-ac982dbe01a7.webp\",\"63fd4d27-bde2-4a17-a190-3c4711ea5f19.webp\",\"fb70965f-fab8-4717-8b3f-74f216b27294.webp\",\"12d7cc24-7686-4c6c-8296-5b0a6ad6cf11.webp\",\"3a89b028-946f-4fb1-a305-7e1c971eee33.webp\"]",
+    "price": 45000,
+    "product_extend": "{\"gallery_productExtend\":[\"1e2e1e4a-763c-4e08-8633-34229f7caa15.webp\"],\"productListExtend\":[{\"extendIndex\":1,\"extend\":{\"id\":\"83de5ced-edf7-4f74-a60d-269da91cd939\",\"title\":\"Dĩa bánh bao không nhân Thọ Phát\",\"unit\":\"Dĩa\",\"price\":30000,\"sale\":0,\"priceSale\":30000,\"productCode\":\"PE000197\"}}]}",
+    "unit": "Bịt",
+    "availability": true,
+    "rating": 0,
+    "review_count": 0,
+    "meta_title": "Bánh bao không nhân Thọ Phát",
+    "meta_keywords": "[\"Bánh bao không nhân Thọ Phát\"]",
+    "meta_description": "Bánh bao không nhân Thọ Phát",
+    "affiliateLinks": "",
+    "status": "APPROVE",
+    "categoryId": "7b101cf4-19b8-4db9-96e3-7c413d181ad8",
+    "referenceKey": "a5157112-d019-4593-8b7b-21c38223b7d3",
+    "userUpdate": "",
+    "userCreate": "",
+    "isDeleted": false,
+    "__v": 0,
+    "createDate": {
+      "$date": "2025-06-07T07:22:57.645Z"
+    },
+    "updateDate": {
+      "$date": "2025-06-28T08:49:53.985Z"
+    },
+    "productId": "fc66f784-8430-46ba-88e7-e4914b4d5c7c"
+  },
+  {
+    "_id": {
+      "$oid": "6843e8d15123ac16393beaa6"
+    },
+    "productCode": "PE000197",
+    "name": "Bánh bao không nhân Thọ Phát",
+    "title": "Dĩa bánh bao không nhân Thọ Phát",
+    "slug": "banh-bao-khong-nhan-tho-phat-dia-banh-bao-khong-nhan-tho-phat",
+    "meta_slug": "banh-bao-khong-nhan-tho-phat-dia-banh-bao-khong-nhan-tho-phat",
+    "productType": "product-extend",
+    "description": "<p>Chân giò heo C.P&nbsp;là sản phẩm được chế biến từ phần&nbsp;chân heo&nbsp;(giò heo) tươi ngon, có nguồn gốc rõ ràng, đảm bảo an toàn vệ sinh thực phẩm.&nbsp;Thịt heo&nbsp;được sản xuất và đóng gói bởi thương hiệu&nbsp;thịt heo&nbsp;C.P&nbsp;– một trong những tập đoàn thực phẩm hàng đầu khu vực châu Á, chân giò heo C.P luôn giữ được độ tươi ngon, săn chắc và đầy đủ giá trị dinh dưỡng.</p><p>Tùy theo phần cắt, chân giò có thể bao gồm khoanh giò, sú giò, móng giò lợn hoặc chân giò sau, phù hợp cho nhiều món ăn từ đơn giản đến cầu kỳ.</p><p><img src=\"https://cdnv2.tgdd.vn/bhx-static/bhx/Products/Images/8781/233783/bhx/cdntgddvnproductsimages8781226838bhxchan-gio-heo-tui-1kg-202012302247564830_202409160905068010.jpg\"></p><h3><strong>Ưu điểm nổi bật của chân giò heo C.P</strong></h3><p><br></p><ul><li>Thịt giò heo chắc, da giòn, gân mềm – không quá béo, không bị hôi.</li><li>Được kiểm soát chất lượng chặt chẽ, đạt chuẩn an toàn thực phẩm quốc tế.</li><li>Giữ được vị ngọt tự nhiên của thịt, đặc biệt khi ninh, hầm hoặc luộc.</li><li>Đóng gói tiện lợi theo khoanh, dễ bảo quản và chế biến.</li></ul><h3><strong>Giá bán chân giò heo C.P hiện nay?</strong></h3><p>Nhiều người thắc mắc giò heo bao nhiêu 1kg, hay cụ thể hơn giá giò heo C.P hiện nay là bao nhiêu? Tùy theo loại (chân trước, chân giò sau, giò khoanh, hay móng giò), giá sẽ dao động từ 100.000 – 130.000 đồng/kg</p><h3><strong>Lợi ích khi sử dụng chân giò heo</strong></h3><p><br></p><ul><li>Cung cấp collagen tự nhiên: Tốt cho da, tóc và khớp.</li><li>Giàu protein, sắt và vitamin B: Giúp tăng cường sức khỏe, hồi phục thể lực.</li><li>Rất phù hợp cho phụ nữ sau sinh hoặc người mới ốm dậy, đặc biệt là các món hầm từ giò heo.</li><li>Hợp với nhiều phong cách ẩm thực: Từ món truyền thống như giò heo hầm thuốc bắc đến các món kiểu Tây như súp chân giò.</li><li><img src=\"https://cdnv2.tgdd.vn/bhx-static/bhx/Products/Images/8781/233783/bhx/cdntgddvnproductsimages8781226838bhxchan-gio-heo-tui-1kg-202012302247574977_202409160905082312.jpg\"></li></ul><h3><strong>Cách sơ chế chân giò heo C.P</strong></h3><p>Để chan gio không bị hôi và mềm ngon khi chế biến, bạn cần sơ chế đúng cách:</p><p><br></p><ul><li>Rửa sạch chân giò với nước muối loãng, có thể thêm giấm hoặc rượu trắng để khử mùi.</li><li>Dùng dao rạch nhẹ phần da, cạo kỹ để sạch lông nếu còn sót.</li><li>Trụng sơ giò heo trong nước sôi khoảng 2 phút để loại bỏ bọt bẩn, sau đó vớt ra rửa lại lần nữa.</li><li>Thái theo khoanh giò heo hoặc để nguyên miếng tùy theo món ăn định nấu.</li></ul><h3><strong>Các món ăn ngon từ chân giò heo C.P</strong></h3><p><br></p><ul><li>Giò heo hầm đu đủ hoặc hạt sen</li><li>Chân giò kho trứng cút hoặc nước dừa</li><li>Giò heo luộc mắm gừng</li><li>Giò heo giả cầy</li><li>Súp chân giò hầm rau củ</li><li>…</li><li><img src=\"https://bizweb.dktcdn.net/100/489/006/files/gio-heo-nau-gi-ngon-7.jpg?v=1701325774174\"></li></ul><h3><strong>Cách bảo quản và sử dụng</strong></h3><p><br></p><ul><li>Nếu chưa dùng ngay, bạn nên để giò heo vào ngăn đông ở -18°C.</li><li>Khi cần sử dụng, rã đông tự nhiên trong ngăn mát từ 8–12 tiếng hoặc ngâm kín trong nước mát.</li><li>Không cấp đông lại nếu đã rã đông. Nên chia nhỏ khẩu phần trước khi cấp đông để tiện sử dụng.</li><li>Giò khoanh, móng giò hay sú giò nên được bảo quản riêng từng phần để tránh ảnh hưởng hương vị.</li></ul>",
+    "short_description": "Bánh bao không nhân Thọ Phát",
+    "image_url": "[baseUrl]/chothongminh/product/PE000197/1e2e1e4a-763c-4e08-8633-34229f7caa15.webp",
+    "gallery_product": "[\"1e2e1e4a-763c-4e08-8633-34229f7caa15.webp\"]",
+    "price": 30000,
+    "product_extend": "",
+    "unit": "Dĩa",
+    "availability": true,
+    "rating": 0,
+    "review_count": 0,
+    "meta_title": "Bánh bao không nhân Thọ Phát",
+    "meta_keywords": "[\"Bánh bao không nhân Thọ Phát\"]",
+    "meta_description": "Bánh bao không nhân Thọ Phát",
+    "affiliateLinks": "",
+    "status": "APPROVE",
+    "categoryId": "7b101cf4-19b8-4db9-96e3-7c413d181ad8",
+    "referenceKey": "a5157112-d019-4593-8b7b-21c38223b7d3",
+    "userUpdate": "",
+    "userCreate": "",
+    "isDeleted": false,
+    "__v": 0,
+    "createDate": {
+      "$date": "2025-06-07T07:22:57.645Z"
+    },
+    "updateDate": {
+      "$date": "2025-06-28T08:49:53.996Z"
+    },
+    "productId": "83de5ced-edf7-4f74-a60d-269da91cd939"
+  },
+  {
+    "_id": {
+      "$oid": "6843e96c5123ac16393bebd1"
+    },
+    "productCode": "P000164",
+    "name": "Bánh bao nhân chay Thọ Phát",
+    "title": "Bánh bao nhân chay Thọ Phát 6 bánh",
+    "slug": "banh-bao-nhan-chay-tho-phat",
+    "meta_slug": "banh-bao-nhan-chay-tho-phat",
+    "productType": "product-source",
+    "description": "<p>Bánh bao nhân chay Thọ Phát</p>",
+    "short_description": "Bánh bao nhân chay Thọ Phát",
+    "image_url": "[baseUrl]/chothongminh/product/P000164/97bc55c5-bb5f-4916-941a-4e7444c48106.webp",
+    "gallery_product": "[\"97bc55c5-bb5f-4916-941a-4e7444c48106.webp\",\"91b3cd46-137e-484c-bedd-fae51bb12951.webp\",\"94bc41a8-2313-4618-96d7-a54d2dc2ee2a.webp\",\"d38a5254-5aba-47d9-a2df-b729cf902141.webp\"]",
+    "price": 25000,
+    "product_extend": "{\"gallery_productExtend\":[\"4910ea83-e4bc-485b-abc8-74e9e011795b.webp\"],\"productListExtend\":[{\"extendIndex\":1,\"extend\":{\"id\":\"d3da7d53-18fd-48ef-8a25-d649fb30c4d8\",\"title\":\"Dĩa bánh bao nhân chay Thọ Phát 5 bánh\",\"unit\":\"Dĩa\",\"price\":20000,\"sale\":0,\"priceSale\":20000,\"productCode\":\"PE000198\"}}]}",
+    "unit": "Bịt",
+    "availability": true,
+    "rating": 0,
+    "review_count": 0,
+    "meta_title": "Bánh bao nhân chay Thọ Phát",
+    "meta_keywords": "[\"Bánh bao nhân chay Thọ Phát\"]",
+    "meta_description": "Bánh bao nhân chay Thọ Phát",
+    "affiliateLinks": "",
+    "status": "APPROVE",
+    "categoryId": "50",
+    "referenceKey": "e608d413-b849-4b1c-9c61-e99ddadfe160",
+    "userUpdate": "",
+    "userCreate": "",
+    "isDeleted": false,
+    "__v": 0,
+    "createDate": {
+      "$date": "2025-06-07T07:25:32.941Z"
+    },
+    "updateDate": {
+      "$date": "2025-06-07T07:25:32.941Z"
+    },
+    "productId": "f81255dd-8b91-46ab-b171-847db3a585be"
+  },
+  {
+    "_id": {
+      "$oid": "6843e96c5123ac16393bebcf"
+    },
+    "productCode": "PE000198",
+    "name": "Bánh bao nhân chay Thọ Phát",
+    "title": "Dĩa bánh bao nhân chay Thọ Phát 5 bánh",
+    "slug": "banh-bao-nhan-chay-tho-phat-dia-banh-bao-nhan-chay-tho-phat-5-banh",
+    "meta_slug": "banh-bao-nhan-chay-tho-phat-dia-banh-bao-nhan-chay-tho-phat-5-banh",
+    "productType": "product-extend",
+    "description": "<p>Bánh bao nhân chay Thọ Phát</p>",
+    "short_description": "Bánh bao nhân chay Thọ Phát",
+    "image_url": "[baseUrl]/chothongminh/product/PE000198/4910ea83-e4bc-485b-abc8-74e9e011795b.webp",
+    "gallery_product": "",
+    "price": 20000,
+    "product_extend": "{\"gallery_productExtend\":null,\"productListExtend\":[{\"extendIndex\":1,\"extend\":{\"id\":\"d3da7d53-18fd-48ef-8a25-d649fb30c4d8\",\"title\":\"Dĩa bánh bao nhân chay Thọ Phát 5 bánh\",\"unit\":\"Dĩa\",\"price\":20000,\"sale\":0,\"priceSale\":20000}}]}",
+    "unit": "Dĩa",
+    "availability": true,
+    "rating": 0,
+    "review_count": 0,
+    "meta_title": "Bánh bao nhân chay Thọ Phát",
+    "meta_keywords": "[\"Bánh bao nhân chay Thọ Phát\"]",
+    "meta_description": "Bánh bao nhân chay Thọ Phát",
+    "affiliateLinks": "",
+    "status": "APPROVE",
+    "categoryId": "50",
+    "referenceKey": "e608d413-b849-4b1c-9c61-e99ddadfe160",
+    "userUpdate": "",
+    "userCreate": "",
+    "isDeleted": false,
+    "__v": 0,
+    "createDate": {
+      "$date": "2025-06-07T07:25:32.941Z"
+    },
+    "updateDate": {
+      "$date": "2025-06-07T07:25:32.941Z"
+    },
+    "productId": "db2ec268-58ab-4127-a748-c5540d9d97f2"
+  },
+  {
+    "_id": {
+      "$oid": "6843ea675123ac16393becf0"
+    },
+    "productCode": "P000165",
+    "name": "Bánh bao nhân khoai môn CP",
+    "title": "Bánh bao nhân khoai môn CP",
+    "slug": "banh-bao-nhan-khoai-mon-cp",
+    "meta_slug": "banh-bao-nhan-khoai-mon-cp",
+    "productType": "product-source",
+    "description": "<p>Bánh bao nhân khoai môn CP</p>",
+    "short_description": "Bánh bao nhân khoai môn CP",
+    "image_url": "[baseUrl]/chothongminh/product/P000165/db902c43-03fd-4035-bbb5-9a7936ecfd34.webp",
+    "gallery_product": "[\"db902c43-03fd-4035-bbb5-9a7936ecfd34.webp\",\"2ce4ef8e-9d91-41ba-9c85-e4c91760ce2a.webp\",\"e4a57483-d794-4d8f-b730-f85d0ac5d4de.webp\",\"931840fd-09bf-4d2b-9a21-3d7feec5c15a.webp\",\"78b0176e-66ed-4d57-9414-b2a45204db66.webp\",\"4674c9ac-f063-4633-b110-420533bb367a.webp\",\"51d2f1db-447c-4aff-aec1-2c3aec24dcda.webp\"]",
+    "price": 50000,
+    "product_extend": "{\"gallery_productExtend\":[\"e09ddf59-1a86-4d35-94ec-500c6a755dd9.webp\"],\"productListExtend\":[{\"extendIndex\":1,\"extend\":{\"id\":\"9141f620-84cb-4a7d-9cf8-dfa06b4ee343\",\"title\":\"Khây bánh bao nhân khoai môn CP 6 bánh\",\"unit\":\"Khây\",\"price\":45000,\"sale\":0,\"priceSale\":45000,\"productCode\":\"PE000199\"}}]}",
+    "unit": "Bịt",
+    "availability": true,
+    "rating": 0,
+    "review_count": 0,
+    "meta_title": "Bánh bao nhân khoai môn CP",
+    "meta_keywords": "[\"Bánh bao nhân khoai môn CP\"]",
+    "meta_description": "Bánh bao nhân khoai môn CP",
+    "affiliateLinks": "",
+    "status": "APPROVE",
+    "categoryId": "50",
+    "referenceKey": "608c0384-338f-4f5b-8c2c-9559a7a184b7",
+    "userUpdate": "",
+    "userCreate": "",
+    "isDeleted": false,
+    "__v": 0,
+    "createDate": {
+      "$date": "2025-06-07T07:29:43.493Z"
+    },
+    "updateDate": {
+      "$date": "2025-06-07T07:29:43.493Z"
+    },
+    "productId": "e0ddfb19-44ad-47f6-80e2-65848d6abb7f"
+  },
+  {
+    "_id": {
+      "$oid": "6843ea675123ac16393becee"
+    },
+    "productCode": "PE000199",
+    "name": "Bánh bao nhân khoai môn CP",
+    "title": "Khây bánh bao nhân khoai môn CP 6 bánh",
+    "slug": "banh-bao-nhan-khoai-mon-cp-khay-banh-bao-nhan-khoai-mon-cp-6-banh",
+    "meta_slug": "banh-bao-nhan-khoai-mon-cp-khay-banh-bao-nhan-khoai-mon-cp-6-banh",
+    "productType": "product-extend",
+    "description": "<p>Bánh bao nhân khoai môn CP</p>",
+    "short_description": "Bánh bao nhân khoai môn CP",
+    "image_url": "[baseUrl]/chothongminh/product/PE000199/e09ddf59-1a86-4d35-94ec-500c6a755dd9.webp",
+    "gallery_product": "",
+    "price": 45000,
+    "product_extend": "{\"gallery_productExtend\":null,\"productListExtend\":[{\"extendIndex\":1,\"extend\":{\"id\":\"9141f620-84cb-4a7d-9cf8-dfa06b4ee343\",\"title\":\"Khây bánh bao nhân khoai môn CP 6 bánh\",\"unit\":\"Khây\",\"price\":45000,\"sale\":0,\"priceSale\":45000}}]}",
+    "unit": "Khây",
+    "availability": true,
+    "rating": 0,
+    "review_count": 0,
+    "meta_title": "Bánh bao nhân khoai môn CP",
+    "meta_keywords": "[\"Bánh bao nhân khoai môn CP\"]",
+    "meta_description": "Bánh bao nhân khoai môn CP",
+    "affiliateLinks": "",
+    "status": "APPROVE",
+    "categoryId": "50",
+    "referenceKey": "608c0384-338f-4f5b-8c2c-9559a7a184b7",
+    "userUpdate": "",
+    "userCreate": "",
+    "isDeleted": false,
+    "__v": 0,
+    "createDate": {
+      "$date": "2025-06-07T07:29:43.493Z"
+    },
+    "updateDate": {
+      "$date": "2025-06-07T07:29:43.493Z"
+    },
+    "productId": "f58cfe11-7680-4617-b907-1f3280be45df"
+  },
+  {
+    "_id": {
+      "$oid": "6843eaa65123ac16393bed02"
+    },
+    "productCode": "P000166",
+    "name": "Bánh bao nhân thịt heo BBQ CP",
+    "title": "Bánh bao nhân thịt heo BBQ CP",
+    "slug": "banh-bao-nhan-thit-heo-bbq-cp",
+    "meta_slug": "banh-bao-nhan-thit-heo-bbq-cp",
+    "productType": "product-source",
+    "description": "<p>Bánh bao nhân thịt heo BBQ CP</p>",
+    "short_description": "Bánh bao nhân thịt heo BBQ CP",
+    "image_url": "[baseUrl]/chothongminh/product/P000166/d55e69d8-db9c-4ae5-a914-4d2843c27651.webp",
+    "gallery_product": "[\"d55e69d8-db9c-4ae5-a914-4d2843c27651.webp\",\"ce167b68-3a72-4358-badc-095a60438878.webp\",\"72599f25-7aea-49e6-ab6c-957481f61e28.webp\",\"17069bb0-669c-404c-9ff9-39546c00b13f.webp\",\"7df23711-d22e-48b0-a65e-5fa5f30fa835.webp\"]",
+    "price": 50000,
+    "product_extend": "",
+    "unit": "Bịt",
+    "availability": true,
+    "rating": 0,
+    "review_count": 0,
+    "meta_title": "Bánh bao nhân thịt heo BBQ CP",
+    "meta_keywords": "[\"Bánh bao nhân thịt heo BBQ CP\"]",
+    "meta_description": "Bánh bao nhân thịt heo BBQ CP",
+    "affiliateLinks": "",
+    "status": "APPROVE",
+    "categoryId": "50",
+    "referenceKey": "7a786bf1-9b0a-4b4f-a6fa-43466a414df7",
+    "userUpdate": "",
+    "userCreate": "",
+    "isDeleted": false,
+    "__v": 0,
+    "createDate": {
+      "$date": "2025-06-07T07:30:46.987Z"
+    },
+    "updateDate": {
+      "$date": "2025-06-07T07:30:46.987Z"
+    },
+    "productId": "7fc60465-2883-4714-94ce-26dc3fc04035"
+  },
+  {
+    "_id": {
+      "$oid": "6843eaf65123ac16393bed69"
+    },
+    "productCode": "P000167",
+    "name": "Bánh bao nhân thịt heo trứng cút CP",
+    "title": "Bánh bao nhân thịt heo trứng cút CP",
+    "slug": "banh-bao-nhan-thit-heo-trung-cut-cp-test",
+    "meta_slug": "banh-bao-nhan-thit-heo-trung-cut-cp",
+    "productType": "product-source",
+    "description": "<p>Bánh bao nhân thịt heo trứng cút CP</p>",
+    "short_description": "Bánh bao nhân thịt heo trứng cút CP",
+    "image_url": "[baseUrl]/chothongminh/product/P000167/75e70e1b-2480-46e9-9a12-eca6a54f6d31.webp",
+    "gallery_product": "[\"75e70e1b-2480-46e9-9a12-eca6a54f6d31.webp\",\"7de950bd-bd60-4c2a-a789-1ac682c2b322.webp\",\"ab0a110b-ef02-4e07-bb86-fb8ce2810470.webp\",\"e8cf77c9-0456-4dcc-bf34-8c3ca9e99317.webp\",\"e6b4061f-e3f9-453a-8f5f-c480ceba686a.webp\",\"584ea1ea-cc12-4d65-b9e5-337a39563fa4.webp\"]",
+    "price": 60000,
+    "product_extend": "",
+    "unit": "Bịt",
+    "availability": true,
+    "rating": 0,
+    "review_count": 0,
+    "meta_title": "Bánh bao nhân thịt heo trứng cút CP",
+    "meta_keywords": "[\"Bánh bao nhân thịt heo trứng cút CP\"]",
+    "meta_description": "Bánh bao nhân thịt heo trứng cút CP",
+    "affiliateLinks": "",
+    "status": "APPROVE",
+    "categoryId": "863f82e6-def9-4851-81e9-cfe444d5e5d7",
+    "referenceKey": "b6f882a0-b30f-4aa0-85fe-082fe08b9aed",
+    "userUpdate": "",
+    "userCreate": "",
+    "isDeleted": false,
+    "__v": 0,
+    "createDate": {
+      "$date": "2025-06-07T07:32:06.445Z"
+    },
+    "updateDate": {
+      "$date": "2025-06-26T06:30:46.266Z"
+    },
+    "productId": "b174e0f7-edcc-4784-b1b5-1808ce28c2cf"
+  },
+  {
+    "_id": {
+      "$oid": "6843eb545123ac16393bed7c"
+    },
+    "productCode": "P000168",
+    "name": "Bánh bao nhân thịt heo trứng cút La Cusina",
+    "title": "Bánh bao nhân thịt heo trứng cút La Cusina",
+    "slug": "banh-bao-nhan-thit-heo-trung-cut-la-cusina",
+    "meta_slug": "banh-bao-nhan-thit-heo-trung-cut-la-cusina",
+    "productType": "product-source",
+    "description": "<p>Bánh bao nhân thịt heo trứng cút La Cusina</p>",
+    "short_description": "Bánh bao nhân thịt heo trứng cút La Cusina",
+    "image_url": "[baseUrl]/chothongminh/product/P000168/aa64cd72-6dc0-47af-9755-a16e7ed154fb.webp",
+    "gallery_product": "[\"aa64cd72-6dc0-47af-9755-a16e7ed154fb.webp\",\"fec39b78-8415-4552-a58e-79c7c619bb4c.webp\",\"0aed31dc-7d92-4a0f-9c6c-12a8e0a7c84a.webp\",\"b57b129d-a5e8-45ca-8739-a76214bea6fc.webp\",\"bb0a61da-00b9-4141-aeb2-27ae552c2751.webp\",\"e89f3f9f-437a-4ca9-b958-6a23c87a3de8.webp\",\"cea9590c-9290-4961-abff-77b052ff7c59.webp\"]",
+    "price": 70000,
+    "product_extend": "{\"gallery_productExtend\":[\"1bfd1938-868e-4fef-bac1-e7b2bd2a83b6.webp\"],\"productListExtend\":[{\"extendIndex\":1,\"extend\":{\"id\":\"fb665dac-d8d0-4788-b4c4-a82a6cd83da6\",\"title\":\"Bánh bao nhân thịt heo trứng cút La Cusina\",\"unit\":\"Cái\",\"price\":15000,\"sale\":0,\"priceSale\":15000,\"productCode\":\"PE000200\"}}]}",
+    "unit": "Bịt",
+    "availability": true,
+    "rating": 0,
+    "review_count": 0,
+    "meta_title": "Bánh bao nhân thịt heo trứng cút La Cusina",
+    "meta_keywords": "[\"Bánh bao nhân thịt heo trứng cút La Cusina\"]",
+    "meta_description": "Bánh bao nhân thịt heo trứng cút La Cusina",
+    "affiliateLinks": "",
+    "status": "APPROVE",
+    "categoryId": "50",
+    "referenceKey": "d58d2fac-343b-4bbf-b76c-f3c6e47e8f1c",
+    "userUpdate": "",
+    "userCreate": "",
+    "isDeleted": false,
+    "__v": 0,
+    "createDate": {
+      "$date": "2025-06-07T07:33:40.153Z"
+    },
+    "updateDate": {
+      "$date": "2025-06-07T07:33:40.153Z"
+    },
+    "productId": "32e4c3a7-27c5-4220-95d8-51e19df84c15"
+  },
+  {
+    "_id": {
+      "$oid": "6843eb535123ac16393bed7a"
+    },
+    "productCode": "PE000200",
+    "name": "Bánh bao nhân thịt heo trứng cút La Cusina",
+    "title": "Bánh bao nhân thịt heo trứng cút La Cusina",
+    "slug": "banh-bao-nhan-thit-heo-trung-cut-la-cusina-banh-bao-nhan-thit-heo-trung-cut-la-cusina",
+    "meta_slug": "banh-bao-nhan-thit-heo-trung-cut-la-cusina-banh-bao-nhan-thit-heo-trung-cut-la-cusina",
+    "productType": "product-extend",
+    "description": "<p>Bánh bao nhân thịt heo trứng cút La Cusina</p>",
+    "short_description": "Bánh bao nhân thịt heo trứng cút La Cusina",
+    "image_url": "[baseUrl]/chothongminh/product/PE000200/1bfd1938-868e-4fef-bac1-e7b2bd2a83b6.webp",
+    "gallery_product": "",
+    "price": 15000,
+    "product_extend": "{\"gallery_productExtend\":null,\"productListExtend\":[{\"extendIndex\":1,\"extend\":{\"id\":\"fb665dac-d8d0-4788-b4c4-a82a6cd83da6\",\"title\":\"Bánh bao nhân thịt heo trứng cút La Cusina\",\"unit\":\"Cái\",\"price\":15000,\"sale\":0,\"priceSale\":15000}}]}",
+    "unit": "Cái",
+    "availability": true,
+    "rating": 0,
+    "review_count": 0,
+    "meta_title": "Bánh bao nhân thịt heo trứng cút La Cusina",
+    "meta_keywords": "[\"Bánh bao nhân thịt heo trứng cút La Cusina\"]",
+    "meta_description": "Bánh bao nhân thịt heo trứng cút La Cusina",
+    "affiliateLinks": "",
+    "status": "APPROVE",
+    "categoryId": "50",
+    "referenceKey": "d58d2fac-343b-4bbf-b76c-f3c6e47e8f1c",
+    "userUpdate": "",
+    "userCreate": "",
+    "isDeleted": false,
+    "__v": 0,
+    "createDate": {
+      "$date": "2025-06-07T07:33:40.153Z"
+    },
+    "updateDate": {
+      "$date": "2025-06-07T07:33:40.153Z"
+    },
+    "productId": "18a0182c-53e2-4b0e-8732-f09e143cd512"
+  },
+  {
+    "_id": {
+      "$oid": "6843ebe35123ac16393bee31"
+    },
+    "productCode": "P000169",
+    "name": "Bánh bao nhân thịt heo trứng cút Thọ Phát",
+    "title": "Bánh bao nhân thịt heo trứng cút Thọ Phát",
+    "slug": "banh-bao-nhan-thit-heo-trung-cut-tho-phat",
+    "meta_slug": "banh-bao-nhan-thit-heo-trung-cut-tho-phat",
+    "productType": "product-source",
+    "description": "<p>Bánh bao nhân thịt heo trứng cút Thọ Phát</p>",
+    "short_description": "Bánh bao nhân thịt heo trứng cút Thọ Phát",
+    "image_url": "[baseUrl]/chothongminh/product/P000169/3805f162-7df5-4e15-b8bf-1490ea838fbf.webp",
+    "gallery_product": "[\"3805f162-7df5-4e15-b8bf-1490ea838fbf.webp\",\"1584429e-4f4e-4705-891c-50e840f3e3df.webp\",\"9f3d7eed-e473-4b2f-a56b-ec12d355f9e0.webp\",\"bafd8021-3075-49b7-9321-9f228ea32ebd.webp\",\"ef54a084-ceef-4911-85ff-63c8be7d71d7.webp\",\"5305bf4e-2ece-45af-a988-cf29f4335380.webp\",\"20b2885a-e92c-4098-b110-a74bda04d00a.webp\"]",
+    "price": 65000,
+    "product_extend": "{\"gallery_productExtend\":[\"7e833139-d6a9-4771-a33a-94361f58f000.webp\"],\"productListExtend\":[{\"extendIndex\":1,\"extend\":{\"id\":\"d8101003-f150-479b-9b81-8e963891233c\",\"title\":\"Bánh bao nhân thịt heo trứng cút Thọ Phát 4 cái\",\"unit\":\"4 cái\",\"price\":45000,\"sale\":0,\"priceSale\":45000,\"productCode\":\"PE000201\"}}]}",
+    "unit": "Bịt",
+    "availability": true,
+    "rating": 0,
+    "review_count": 0,
+    "meta_title": "Bánh bao nhân thịt heo trứng cút Thọ Phát",
+    "meta_keywords": "[\"Bánh bao nhân thịt heo trứng cút Thọ Phát\"]",
+    "meta_description": "Bánh bao nhân thịt heo trứng cút Thọ Phát",
+    "affiliateLinks": "",
+    "status": "APPROVE",
+    "categoryId": "50",
+    "referenceKey": "72e34d56-68c5-4e28-9cbe-ca02236f66ab",
+    "userUpdate": "",
+    "userCreate": "",
+    "isDeleted": false,
+    "__v": 0,
+    "createDate": {
+      "$date": "2025-06-07T07:36:03.086Z"
+    },
+    "updateDate": {
+      "$date": "2025-06-07T07:36:03.086Z"
+    },
+    "productId": "f6a98ec1-9922-414f-a3e3-311953bf78e0"
+  },
+  {
+    "_id": {
+      "$oid": "6843ebe25123ac16393bee2f"
+    },
+    "productCode": "PE000201",
+    "name": "Bánh bao nhân thịt heo trứng cút Thọ Phát",
+    "title": "Bánh bao nhân thịt heo trứng cút Thọ Phát 4 cái",
+    "slug": "banh-bao-nhan-thit-heo-trung-cut-tho-phat-banh-bao-nhan-thit-heo-trung-cut-tho-phat-4-cai",
+    "meta_slug": "banh-bao-nhan-thit-heo-trung-cut-tho-phat-banh-bao-nhan-thit-heo-trung-cut-tho-phat-4-cai",
+    "productType": "product-extend",
+    "description": "<p>Bánh bao nhân thịt heo trứng cút Thọ Phát</p>",
+    "short_description": "Bánh bao nhân thịt heo trứng cút Thọ Phát",
+    "image_url": "[baseUrl]/chothongminh/product/PE000201/7e833139-d6a9-4771-a33a-94361f58f000.webp",
+    "gallery_product": "",
+    "price": 45000,
+    "product_extend": "{\"gallery_productExtend\":null,\"productListExtend\":[{\"extendIndex\":1,\"extend\":{\"id\":\"d8101003-f150-479b-9b81-8e963891233c\",\"title\":\"Bánh bao nhân thịt heo trứng cút Thọ Phát 4 cái\",\"unit\":\"4 cái\",\"price\":45000,\"sale\":0,\"priceSale\":45000}}]}",
+    "unit": "4 cái",
+    "availability": true,
+    "rating": 0,
+    "review_count": 0,
+    "meta_title": "Bánh bao nhân thịt heo trứng cút Thọ Phát",
+    "meta_keywords": "[\"Bánh bao nhân thịt heo trứng cút Thọ Phát\"]",
+    "meta_description": "Bánh bao nhân thịt heo trứng cút Thọ Phát",
+    "affiliateLinks": "",
+    "status": "APPROVE",
+    "categoryId": "50",
+    "referenceKey": "72e34d56-68c5-4e28-9cbe-ca02236f66ab",
+    "userUpdate": "",
+    "userCreate": "",
+    "isDeleted": false,
+    "__v": 0,
+    "createDate": {
+      "$date": "2025-06-07T07:36:03.086Z"
+    },
+    "updateDate": {
+      "$date": "2025-06-07T07:36:03.086Z"
+    },
+    "productId": "c96f3311-ac5e-433c-82e4-d13808710342"
+  },
+  {
+    "_id": {
+      "$oid": "6843ec755123ac16393bef78"
+    },
+    "productCode": "P000170",
+    "name": "Bánh bao nhân thịt heo trứng muối Thọ Phát",
+    "title": "Bánh bao nhân thịt heo trứng muối Thọ Phát",
+    "slug": "banh-bao-nhan-thit-heo-trung-muoi-tho-phat",
+    "meta_slug": "banh-bao-nhan-thit-heo-trung-muoi-tho-phat",
+    "productType": "product-source",
+    "description": "<p>Bánh bao nhân thịt heo trứng muối Thọ Phát</p>",
+    "short_description": "Bánh bao nhân thịt heo trứng muối Thọ Phát",
+    "image_url": "[baseUrl]/chothongminh/product/P000170/3524c4f4-9a9c-42de-9613-a94f980fa689.webp",
+    "gallery_product": "[\"3524c4f4-9a9c-42de-9613-a94f980fa689.webp\",\"91486017-923a-4be3-b845-3c7de7e2cc23.webp\",\"7d0a1343-6005-44aa-8958-a56c11ebb2c9.webp\",\"730f36da-141c-40be-acd4-60e781490984.webp\",\"26b8afcc-d5e2-4565-ba91-5c41d4b79630.webp\"]",
+    "price": 15000,
+    "product_extend": "{\"gallery_productExtend\":[\"40f91a2a-70ba-4c04-a32b-c9c4c1928c88.webp\",\"5edd7651-32dc-470c-875f-45b7494ea5cd.webp\",\"cd0e8cbb-9a0a-4a3b-bf0a-34845c149f69.webp\"],\"productListExtend\":[{\"extendIndex\":1,\"extend\":{\"id\":\"ad1727b3-34d3-4435-98f7-9809608c82dc\",\"title\":\"Bịt bánh bao nhân thịt heo trứng muối Thọ Phát 4 cái\",\"unit\":\"Bịt 4 cái\",\"price\":30000,\"sale\":0,\"priceSale\":30000,\"productCode\":\"PE000202\"}},{\"extendIndex\":2,\"extend\":{\"id\":\"c255b72e-f9ba-42b0-b9ac-35f37d1c89c6\",\"title\":\"Bịt bánh bao nhân thịt heo trứng muối Thọ Phát 4 cái 2\",\"unit\":\"Bịt 4 cái\",\"price\":50000,\"sale\":0,\"priceSale\":50000,\"productCode\":\"PE000249\"}},{\"extendIndex\":3,\"extend\":{\"id\":\"be825cfa-e136-41e8-8308-e5d2bddf457c\",\"title\":\"Bịt bánh bao nhân thịt heo trứng muối Thọ Phát 4 cái 9\",\"unit\":\"Bịt 4 cái\",\"price\":60000,\"sale\":0,\"priceSale\":60000,\"productCode\":\"PE000254\"}}]}",
+    "unit": "Cái",
+    "availability": true,
+    "rating": 0,
+    "review_count": 0,
+    "meta_title": "Bánh bao nhân thịt heo trứng muối Thọ Phát",
+    "meta_keywords": "[\"Bánh bao nhân thịt heo trứng muối Thọ Phát\"]",
+    "meta_description": "Bánh bao nhân thịt heo trứng muối Thọ Phát",
+    "affiliateLinks": "",
+    "status": "APPROVE",
+    "categoryId": "8b06a696-ed18-4e19-8824-6530c6256e93",
+    "referenceKey": "08ebed19-763c-4976-b2a0-5fadf73b8888",
+    "userUpdate": "",
+    "userCreate": "",
+    "isDeleted": false,
+    "__v": 0,
+    "createDate": {
+      "$date": "2025-06-07T07:38:29.635Z"
+    },
+    "updateDate": {
+      "$date": "2025-07-21T15:53:47.633Z"
+    },
+    "productId": "5cefa737-a354-4383-99d8-cb7a6ddc6122"
+  },
+  {
+    "_id": {
+      "$oid": "6843ec945123ac16393bef86"
+    },
+    "productCode": "PE000202",
+    "name": "Bánh bao nhân thịt heo trứng muối Thọ Phát",
+    "title": "Bịt bánh bao nhân thịt heo trứng muối Thọ Phát 4 cái",
+    "slug": "banh-bao-nhan-thit-heo-trung-muoi-tho-phat-bit-banh-bao-nhan-thit-heo-trung-muoi-tho-phat-4-cai",
+    "meta_slug": "banh-bao-nhan-thit-heo-trung-muoi-tho-phat-bit-banh-bao-nhan-thit-heo-trung-muoi-tho-phat-4-cai",
+    "productType": "product-extend",
+    "description": "<p>Bánh bao nhân thịt heo trứng muối Thọ Phát</p>",
+    "short_description": "Bánh bao nhân thịt heo trứng muối Thọ Phát",
+    "image_url": "[baseUrl]/chothongminh/product/PE000202/40f91a2a-70ba-4c04-a32b-c9c4c1928c88.webp",
+    "gallery_product": "[\"40f91a2a-70ba-4c04-a32b-c9c4c1928c88.webp\"]",
+    "price": 30000,
+    "product_extend": "",
+    "unit": "Bịt 4 cái",
+    "availability": true,
+    "rating": 0,
+    "review_count": 0,
+    "meta_title": "Bánh bao nhân thịt heo trứng muối Thọ Phát",
+    "meta_keywords": "[\"Bánh bao nhân thịt heo trứng muối Thọ Phát\"]",
+    "meta_description": "Bánh bao nhân thịt heo trứng muối Thọ Phát",
+    "affiliateLinks": "",
+    "status": "APPROVE",
+    "categoryId": "8b06a696-ed18-4e19-8824-6530c6256e93",
+    "referenceKey": "08ebed19-763c-4976-b2a0-5fadf73b8888",
+    "userUpdate": "",
+    "userCreate": "",
+    "isDeleted": false,
+    "createDate": {
+      "$date": "2025-06-07T07:39:00.294Z"
+    },
+    "updateDate": {
+      "$date": "2025-07-21T15:53:47.663Z"
+    },
+    "__v": 0,
+    "productId": "ad1727b3-34d3-4435-98f7-9809608c82dc"
+  },
+  {
+    "_id": {
+      "$oid": "6843edfa5123ac16393bf15e"
+    },
+    "productCode": "P000171",
+    "name": "Bánh bao nhân thịt trứng cút CP",
+    "title": "Bánh bao nhân thịt trứng cút CP",
+    "slug": "banh-bao-nhan-thit-trung-cut-cp",
+    "meta_slug": "banh-bao-nhan-thit-trung-cut-cp",
+    "productType": "product-source",
+    "description": "<p>Bánh bao nhân thịt trứng cút CP</p>",
+    "short_description": "Bánh bao nhân thịt trứng cút CP",
+    "image_url": "[baseUrl]/chothongminh/product/P000171/84f1e5cf-9a74-46d7-a936-ddea880b38e1.webp",
+    "gallery_product": "[\"84f1e5cf-9a74-46d7-a936-ddea880b38e1.webp\",\"4a21ec23-abe6-4950-8b33-90de31395648.webp\",\"21ef9a0a-a789-4cbf-b4a3-94892baf6ab9.webp\",\"733b5fd9-28d7-4a2c-98b3-00cd86922aa7.webp\",\"49cdcd6b-0e50-40b3-b277-79b5a112150c.webp\",\"9c97341e-5463-4ba3-bc55-5441b66eb469.webp\",\"17d8f718-afdd-4acc-841b-092e918d570c.webp\"]",
+    "price": 50000,
+    "product_extend": "{\"gallery_productExtend\":[\"d87b8e76-6c68-442b-b5b2-953f1fbca159.webp\"],\"productListExtend\":[{\"extendIndex\":1,\"extend\":{\"id\":\"4e517723-9007-47c7-b523-47702af55bd0\",\"title\":\"Bánh bao nhân thịt trứng cút CP\",\"unit\":\"Cái\",\"price\":15000,\"sale\":0,\"priceSale\":15000,\"productCode\":\"PE000203\"}}]}",
+    "unit": "Bịt",
+    "availability": true,
+    "rating": 0,
+    "review_count": 0,
+    "meta_title": "Bánh bao nhân thịt trứng cút CP",
+    "meta_keywords": "[\"Bánh bao nhân thịt trứng cút CP\"]",
+    "meta_description": "Bánh bao nhân thịt trứng cút CP",
+    "affiliateLinks": "",
+    "status": "APPROVE",
+    "categoryId": "50",
+    "referenceKey": "2249a467-e8e5-48cc-87ae-84e7717031c0",
+    "userUpdate": "",
+    "userCreate": "",
+    "isDeleted": false,
+    "__v": 0,
+    "createDate": {
+      "$date": "2025-06-07T07:44:58.194Z"
+    },
+    "updateDate": {
+      "$date": "2025-06-07T07:44:58.194Z"
+    },
+    "productId": "bd8a3f70-f926-4228-88cd-d437179bd306"
+  },
+  {
+    "_id": {
+      "$oid": "6843edf95123ac16393bf15c"
+    },
+    "productCode": "PE000203",
+    "name": "Bánh bao nhân thịt trứng cút CP",
+    "title": "Bánh bao nhân thịt trứng cút CP",
+    "slug": "banh-bao-nhan-thit-trung-cut-cp-banh-bao-nhan-thit-trung-cut-cp",
+    "meta_slug": "banh-bao-nhan-thit-trung-cut-cp-banh-bao-nhan-thit-trung-cut-cp",
+    "productType": "product-extend",
+    "description": "<p>Bánh bao nhân thịt trứng cút CP</p>",
+    "short_description": "Bánh bao nhân thịt trứng cút CP",
+    "image_url": "[baseUrl]/chothongminh/product/PE000203/d87b8e76-6c68-442b-b5b2-953f1fbca159.webp",
+    "gallery_product": "",
+    "price": 15000,
+    "product_extend": "{\"gallery_productExtend\":null,\"productListExtend\":[{\"extendIndex\":1,\"extend\":{\"id\":\"4e517723-9007-47c7-b523-47702af55bd0\",\"title\":\"Bánh bao nhân thịt trứng cút CP\",\"unit\":\"Cái\",\"price\":15000,\"sale\":0,\"priceSale\":15000}}]}",
+    "unit": "Cái",
+    "availability": true,
+    "rating": 0,
+    "review_count": 0,
+    "meta_title": "Bánh bao nhân thịt trứng cút CP",
+    "meta_keywords": "[\"Bánh bao nhân thịt trứng cút CP\"]",
+    "meta_description": "Bánh bao nhân thịt trứng cút CP",
+    "affiliateLinks": "",
+    "status": "APPROVE",
+    "categoryId": "50",
+    "referenceKey": "2249a467-e8e5-48cc-87ae-84e7717031c0",
+    "userUpdate": "",
+    "userCreate": "",
+    "isDeleted": false,
+    "__v": 0,
+    "createDate": {
+      "$date": "2025-06-07T07:44:58.194Z"
+    },
+    "updateDate": {
+      "$date": "2025-06-07T07:44:58.194Z"
+    },
+    "productId": "131588c9-f7ff-4e3f-8980-9520fc42d45f"
+  },
+  {
+    "_id": {
+      "$oid": "6843ee4b5123ac16393bf195"
+    },
+    "productCode": "P000172",
+    "name": "Bánh bao nhân trứng sữa CP",
+    "title": "Bánh bao nhân trứng sữa CP",
+    "slug": "banh-bao-nhan-trung-sua-cp",
+    "meta_slug": "banh-bao-nhan-trung-sua-cp",
+    "productType": "product-source",
+    "description": "<p>Bánh bao nhân trứng sữa CP</p>",
+    "short_description": "Bánh bao nhân trứng sữa CP",
+    "image_url": "[baseUrl]/chothongminh/product/P000172/062fe4c3-5bed-4f6e-84f2-46500d4a00d0.webp",
+    "gallery_product": "[\"062fe4c3-5bed-4f6e-84f2-46500d4a00d0.webp\",\"96c22e72-5d01-490e-aacf-320f9e6f87fe.webp\",\"535cf173-1e50-4298-b8ea-06adb6230805.webp\",\"b6b77918-e2c8-49cf-90a5-297459491de6.webp\",\"c5e73666-ceb2-40bf-b7d4-d03a8c4b222d.webp\",\"14036aa5-fa48-44c4-afc8-85d7e798ab55.webp\",\"d202c5a9-3b32-41e7-911f-476529fdd517.webp\"]",
+    "price": 45000,
+    "product_extend": "{\"gallery_productExtend\":[\"709e0a58-b3a1-479e-ade9-d63ade5aeee4.webp\"],\"productListExtend\":[{\"extendIndex\":1,\"extend\":{\"id\":\"1129569f-18b0-4e64-a5ba-57ba81127824\",\"title\":\"Bánh bao nhân trứng sữa CP\",\"unit\":\"2 cái\",\"price\":25000,\"sale\":0,\"priceSale\":25000,\"productCode\":\"PE000204\"}}]}",
+    "unit": "Bịt",
+    "availability": true,
+    "rating": 0,
+    "review_count": 0,
+    "meta_title": "Bánh bao nhân trứng sữa CP",
+    "meta_keywords": "[\"Bánh bao nhân trứng sữa CP\"]",
+    "meta_description": "Bánh bao nhân trứng sữa CP",
+    "affiliateLinks": "",
+    "status": "APPROVE",
+    "categoryId": "50",
+    "referenceKey": "c3c10340-400e-4f7c-b542-a55f07f0c6cd",
+    "userUpdate": "",
+    "userCreate": "",
+    "isDeleted": false,
+    "__v": 0,
+    "createDate": {
+      "$date": "2025-06-07T07:46:19.826Z"
+    },
+    "updateDate": {
+      "$date": "2025-06-07T07:47:52.190Z"
+    },
+    "productId": "409f7502-dfcc-46b6-ad77-e947caa2e4ea"
+  },
+  {
+    "_id": {
+      "$oid": "6843ee4b5123ac16393bf193"
+    },
+    "productCode": "PE000204",
+    "name": "Bánh bao nhân trứng sữa CP",
+    "title": "Bánh bao nhân trứng sữa CP",
+    "slug": "banh-bao-nhan-trung-sua-cp-banh-bao-nhan-trung-sua-cp",
+    "meta_slug": "banh-bao-nhan-trung-sua-cp-banh-bao-nhan-trung-sua-cp",
+    "productType": "product-extend",
+    "description": "<p>Bánh bao nhân trứng sữa CP</p>",
+    "short_description": "Bánh bao nhân trứng sữa CP",
+    "image_url": "[baseUrl]/chothongminh/product/PE000204/709e0a58-b3a1-479e-ade9-d63ade5aeee4.webp",
+    "gallery_product": "[\"709e0a58-b3a1-479e-ade9-d63ade5aeee4.webp\"]",
+    "price": 25000,
+    "product_extend": "",
+    "unit": "2 cái",
+    "availability": true,
+    "rating": 0,
+    "review_count": 0,
+    "meta_title": "Bánh bao nhân trứng sữa CP",
+    "meta_keywords": "[\"Bánh bao nhân trứng sữa CP\"]",
+    "meta_description": "Bánh bao nhân trứng sữa CP",
+    "affiliateLinks": "",
+    "status": "APPROVE",
+    "categoryId": "50",
+    "referenceKey": "c3c10340-400e-4f7c-b542-a55f07f0c6cd",
+    "userUpdate": "",
+    "userCreate": "",
+    "isDeleted": false,
+    "__v": 0,
+    "createDate": {
+      "$date": "2025-06-07T07:46:19.826Z"
+    },
+    "updateDate": {
+      "$date": "2025-06-07T07:47:52.197Z"
+    },
+    "productId": "1129569f-18b0-4e64-a5ba-57ba81127824"
+  },
+  {
+    "_id": {
+      "$oid": "6843ef4d5123ac16393bf22b"
+    },
+    "productCode": "P000173",
+    "name": "Bánh bò trứng Richy Karo",
+    "title": "Bánh bò trứng Richy Karo gói 270g",
+    "slug": "banh-bo-trung-richy-karo",
+    "meta_slug": "banh-bo-trung-richy-karo-goi-270g",
+    "productType": "product-source",
+    "description": "<p>Bánh bò trứng Richy Karo gói 270g</p>",
+    "short_description": "Bánh bò trứng Richy Karo gói 270g",
+    "image_url": "[baseUrl]/chothongminh/product/P000173/49f74838-07a3-491d-81f4-be04c5efcd1b.webp",
+    "gallery_product": "[\"49f74838-07a3-491d-81f4-be04c5efcd1b.webp\",\"631debac-2935-4ebe-9af2-067421f40954.webp\",\"66f109f3-b07c-4294-9991-ff75804c257e.webp\",\"11d588fa-60bd-4a0f-98fe-d1a94c8066c5.webp\",\"0acb7904-d9ed-4556-be83-91c1b9419081.webp\",\"f12eb97b-8466-43ad-9a6c-92fada967dae.webp\"]",
+    "price": 7000,
+    "product_extend": "{\"gallery_productExtend\":[\"739a5678-a633-4c1c-baa2-f6ba4a33afe4.webp\"],\"productListExtend\":[{\"extendIndex\":1,\"extend\":{\"id\":\"26d95577-10d6-4ff7-a1b1-adc52afa8a09\",\"title\":\"Bánh bò trứng Richy Karo túi 6 gói\",\"unit\":\"Túi 6 gói\",\"price\":30000,\"sale\":0,\"priceSale\":30000,\"productCode\":\"PE000205\"}}]}",
+    "unit": "Gói",
+    "availability": true,
+    "rating": 0,
+    "review_count": 0,
+    "meta_title": "Bánh bò trứng Richy Karo gói 270g",
+    "meta_keywords": "[\"Bánh bò trứng Richy Karo gói 270g\"]",
+    "meta_description": "Bánh bò trứng Richy Karo gói 270g",
+    "affiliateLinks": "",
+    "status": "APPROVE",
+    "categoryId": "50",
+    "referenceKey": "483de36e-52dd-421b-834e-dc288f1800ef",
+    "userUpdate": "",
+    "userCreate": "",
+    "isDeleted": false,
+    "__v": 0,
+    "createDate": {
+      "$date": "2025-06-07T07:50:37.530Z"
+    },
+    "updateDate": {
+      "$date": "2025-06-07T07:50:37.530Z"
+    },
+    "productId": "2c7a6cd1-993f-42be-b30d-a4980d34a89e"
+  },
+  {
+    "_id": {
+      "$oid": "6843ef4d5123ac16393bf229"
+    },
+    "productCode": "PE000205",
+    "name": "Bánh bò trứng Richy Karo",
+    "title": "Bánh bò trứng Richy Karo túi 6 gói",
+    "slug": "banh-bo-trung-richy-karo-banh-bo-trung-richy-karo-tui-6-goi",
+    "meta_slug": "banh-bo-trung-richy-karo-banh-bo-trung-richy-karo-tui-6-goi",
+    "productType": "product-extend",
+    "description": "<p>Bánh bò trứng Richy Karo gói 270g</p>",
+    "short_description": "Bánh bò trứng Richy Karo gói 270g",
+    "image_url": "[baseUrl]/chothongminh/product/PE000205/739a5678-a633-4c1c-baa2-f6ba4a33afe4.webp",
+    "gallery_product": "",
+    "price": 30000,
+    "product_extend": "{\"gallery_productExtend\":null,\"productListExtend\":[{\"extendIndex\":1,\"extend\":{\"id\":\"26d95577-10d6-4ff7-a1b1-adc52afa8a09\",\"title\":\"Bánh bò trứng Richy Karo túi 6 gói\",\"unit\":\"Túi 6 gói\",\"price\":30000,\"sale\":0,\"priceSale\":30000}}]}",
+    "unit": "Túi 6 gói",
+    "availability": true,
+    "rating": 0,
+    "review_count": 0,
+    "meta_title": "Bánh bò trứng Richy Karo gói 270g",
+    "meta_keywords": "[\"Bánh bò trứng Richy Karo gói 270g\"]",
+    "meta_description": "Bánh bò trứng Richy Karo gói 270g",
+    "affiliateLinks": "",
+    "status": "APPROVE",
+    "categoryId": "50",
+    "referenceKey": "483de36e-52dd-421b-834e-dc288f1800ef",
+    "userUpdate": "",
+    "userCreate": "",
+    "isDeleted": false,
+    "__v": 0,
+    "createDate": {
+      "$date": "2025-06-07T07:50:37.530Z"
+    },
+    "updateDate": {
+      "$date": "2025-06-07T07:50:37.530Z"
+    },
+    "productId": "a3ce26b4-c680-46e4-9f11-9dd8aad9cb85"
+  },
+  {
+    "_id": {
+      "$oid": "6844234a466f8f582b49d7ca"
+    },
+    "productCode": "P000175",
+    "name": "Sườn Hoàng Đế Gofood",
+    "title": "Sườn Hoàng Đế Gofood 300g",
+    "slug": "suon-hoang-de-gofood-suon-hoang-de-gofood-300g",
+    "meta_slug": "suon-hoang-de-gofood",
+    "productType": "product-source",
+    "description": "<p>Sườn Hoàng Đế Gofood</p>",
+    "short_description": "Sườn Hoàng Đế Gofood",
+    "image_url": "[baseUrl]/chothongminh/product/P000175/63ff1434-7593-488b-a62a-b22f94ae6a6a.webp",
+    "gallery_product": "[\"63ff1434-7593-488b-a62a-b22f94ae6a6a.webp\",\"4a06a2a5-4b5f-4962-abc2-f0229454a269.webp\",\"acceb5c7-426a-414c-b155-981f33217d1e.webp\"]",
+    "price": 300000,
+    "product_extend": "{\"gallery_productExtend\":[\"805da020-2029-429b-b559-04029c003d45.webp\"],\"productListExtend\":[{\"extendIndex\":1,\"extend\":{\"id\":\"2b32fb70-924c-4736-a6a2-b0eb3b91b175\",\"title\":\"Sườn Hoàng Đế Gofood 200g\",\"unit\":\"Khây 200g\",\"price\":180000,\"sale\":0,\"priceSale\":180000,\"productCode\":\"PE000207\"}}]}",
+    "unit": "Khây",
+    "availability": true,
+    "rating": 0,
+    "review_count": 0,
+    "meta_title": "Sườn Hoàng Đế Gofood",
+    "meta_keywords": "[\"Sườn Hoàng Đế Gofood\"]",
+    "meta_description": "Sườn Hoàng Đế Gofood",
+    "affiliateLinks": "",
+    "status": "APPROVE",
+    "categoryId": "21",
+    "referenceKey": "8fb257f1-9837-4807-97f5-6ec00c1096c0",
+    "userUpdate": "",
+    "userCreate": "",
+    "isDeleted": false,
+    "__v": 0,
+    "createDate": {
+      "$date": "2025-06-07T11:32:26.015Z"
+    },
+    "updateDate": {
+      "$date": "2025-06-07T11:32:26.015Z"
+    },
+    "productId": "0cd19984-3068-44c3-b082-25cb6375fe17"
+  },
+  {
+    "_id": {
+      "$oid": "68442349466f8f582b49d7c8"
+    },
+    "productCode": "PE000207",
+    "name": "Sườn Hoàng Đế Gofood",
+    "title": "Sườn Hoàng Đế Gofood 200g",
+    "slug": "suon-hoang-de-gofood-suon-hoang-de-gofood-200g",
+    "meta_slug": "suon-hoang-de-gofood-suon-hoang-de-gofood-200g",
+    "productType": "product-extend",
+    "description": "<p>Sườn Hoàng Đế Gofood</p>",
+    "short_description": "Sườn Hoàng Đế Gofood",
+    "image_url": "[baseUrl]/chothongminh/product/PE000207/805da020-2029-429b-b559-04029c003d45.webp",
+    "gallery_product": "",
+    "price": 180000,
+    "product_extend": "{\"gallery_productExtend\":null,\"productListExtend\":[{\"extendIndex\":1,\"extend\":{\"id\":\"2b32fb70-924c-4736-a6a2-b0eb3b91b175\",\"title\":\"Sườn Hoàng Đế Gofood 200g\",\"unit\":\"Khây 200g\",\"price\":180000,\"sale\":0,\"priceSale\":180000}}]}",
+    "unit": "Khây 200g",
+    "availability": true,
+    "rating": 0,
+    "review_count": 0,
+    "meta_title": "Sườn Hoàng Đế Gofood",
+    "meta_keywords": "[\"Sườn Hoàng Đế Gofood\"]",
+    "meta_description": "Sườn Hoàng Đế Gofood",
+    "affiliateLinks": "",
+    "status": "APPROVE",
+    "categoryId": "21",
+    "referenceKey": "8fb257f1-9837-4807-97f5-6ec00c1096c0",
+    "userUpdate": "",
+    "userCreate": "",
+    "isDeleted": false,
+    "__v": 0,
+    "createDate": {
+      "$date": "2025-06-07T11:32:26.015Z"
+    },
+    "updateDate": {
+      "$date": "2025-06-07T11:32:26.015Z"
+    },
+    "productId": "4ed4c27b-3084-4889-b68b-a6a0e2e2ae9e"
+  },
+  {
+    "_id": {
+      "$oid": "684423d4466f8f582b49d890"
+    },
+    "productCode": "P000176",
+    "name": "Thịt ba chỉ bò Mỹ cắt cuộn Orifood",
+    "title": "Thịt ba chỉ bò Mỹ cắt cuộn Orifood 300g",
+    "slug": "thit-ba-chi-bo-my-cat-cuon-orifood-thit-ba-chi-bo-my-cat-cuon-orifood-300g",
+    "meta_slug": "thit-ba-chi-bo-my-cat-cuon-orifood",
+    "productType": "product-source",
+    "description": "<p>Thịt ba chỉ bò Mỹ cắt cuộn Orifood</p>",
+    "short_description": "Thịt ba chỉ bò Mỹ cắt cuộn Orifood",
+    "image_url": "[baseUrl]/chothongminh/product/P000176/c7768e29-d8c7-4407-b021-b459e569dd2a.webp",
+    "gallery_product": "[\"c7768e29-d8c7-4407-b021-b459e569dd2a.webp\",\"d36ab1a1-06df-4448-88cf-b2fa65db7bfe.webp\",\"aea53a5a-7a7e-41b6-af57-52addd0dfa72.webp\",\"1fe56290-8e7c-4926-85aa-799ea9dbde18.webp\"]",
+    "price": 150000,
+    "product_extend": "",
+    "unit": "300g",
+    "availability": true,
+    "rating": 0,
+    "review_count": 0,
+    "meta_title": "Thịt ba chỉ bò Mỹ cắt cuộn Orifood",
+    "meta_keywords": "[\"Thịt ba chỉ bò Mỹ cắt cuộn Orifood\"]",
+    "meta_description": "Thịt ba chỉ bò Mỹ cắt cuộn Orifood",
+    "affiliateLinks": "",
+    "status": "APPROVE",
+    "categoryId": "21",
+    "referenceKey": "a40c79f3-a090-4f8c-ab28-7ae916df590d",
+    "userUpdate": "",
+    "userCreate": "",
+    "isDeleted": false,
+    "__v": 0,
+    "createDate": {
+      "$date": "2025-06-07T11:34:44.956Z"
+    },
+    "updateDate": {
+      "$date": "2025-06-07T11:34:44.956Z"
+    },
+    "productId": "129ed7df-590a-48b7-bc4f-9bae0de9a533"
+  },
+  {
+    "_id": {
+      "$oid": "6844253a1b7de0abeddae879"
+    },
+    "productCode": "P000177",
+    "name": "Bò Bít Tết Ức MRT",
+    "title": "300g",
+    "slug": "bo-bit-tet-uc-mrt-300g",
+    "meta_slug": "bo-bit-tet-uc-mrt",
+    "productType": "product-source",
+    "description": "<p>Bò Bít Tết Ức MRT</p>",
+    "short_description": "Bò Bít Tết Ức MRT",
+    "image_url": "[baseUrl]/chothongminh/product/P000177/edd54ac8-590d-46bc-a4b2-c8ccb7a4149a.webp",
+    "gallery_product": "[\"edd54ac8-590d-46bc-a4b2-c8ccb7a4149a.webp\"]",
+    "price": 250000,
+    "product_extend": "",
+    "unit": "300g",
+    "availability": true,
+    "rating": 0,
+    "review_count": 0,
+    "meta_title": "Bò Bít Tết Ức MRT",
+    "meta_keywords": "[\"Bò Bít Tết Ức MRT\"]",
+    "meta_description": "Bò Bít Tết Ức MRT",
+    "affiliateLinks": "",
+    "status": "APPROVE",
+    "categoryId": "21",
+    "referenceKey": "3599d914-4050-4839-92f1-2477eaaab483",
+    "userUpdate": "",
+    "userCreate": "",
+    "isDeleted": false,
+    "__v": 0,
+    "createDate": {
+      "$date": "2025-06-07T11:40:42.333Z"
+    },
+    "updateDate": {
+      "$date": "2025-06-07T11:40:42.333Z"
+    },
+    "productId": "b6082862-d712-4bac-89a6-40c5cbf52763"
+  },
+  {
+    "_id": {
+      "$oid": "684425d91b7de0abeddae8be"
+    },
+    "productCode": "PE000208",
+    "name": "Bia Blanc 1664 chai 330ml1",
+    "title": "Thùng Bia Blanc 1664",
+    "slug": "bia-blanc-1664-chai-330ml1-thung-bia-blanc-1664",
+    "meta_slug": "bia-blanc-1664-chai-330ml1-thung-bia-blanc-1664",
+    "productType": "product-extend",
+    "description": "<p>Bia Blanc 1664 chai 330ml</p>",
+    "short_description": "Bia Blanc 1664 chai 330ml",
+    "image_url": "[baseUrl]/chothongminh/product/PE000208/9eecbb9b-d910-44ea-af2c-efc1f6096a50.webp",
+    "gallery_product": "[\"9eecbb9b-d910-44ea-af2c-efc1f6096a50.webp\"]",
+    "price": 250000,
+    "product_extend": "",
+    "unit": "Thùng 24 Lon",
+    "availability": true,
+    "rating": 0,
+    "review_count": 0,
+    "meta_title": "Bia Blanc 1664 chai 330ml",
+    "meta_keywords": "[\"Bia Blanc 1664 chai 330ml\"]",
+    "meta_description": "Bia Blanc 1664 chai 330ml",
+    "affiliateLinks": "",
+    "status": "PENDING",
+    "categoryId": "7b101cf4-19b8-4db9-96e3-7c413d181ad8",
+    "referenceKey": "11794408-ac8f-4bb1-bce0-587cd60e9aa3",
+    "userUpdate": "",
+    "userCreate": "",
+    "isDeleted": false,
+    "__v": 0,
+    "createDate": {
+      "$date": "2025-06-07T11:43:21.711Z"
+    },
+    "updateDate": {
+      "$date": "2025-06-26T04:54:28.692Z"
+    },
+    "productId": "3d1dc8f3-67db-4282-bf3d-f44397804dfb"
+  },
+  {
+    "_id": {
+      "$oid": "684425d91b7de0abeddae8bd"
+    },
+    "productCode": "PE000209",
+    "name": "Bia Blanc 1664 chai 330ml1",
+    "title": "Lốc 6 Lon Bia Blanc 1664",
+    "slug": "bia-blanc-1664-chai-330ml1-loc-6-lon-bia-blanc-1664",
+    "meta_slug": "bia-blanc-1664-chai-330ml1-loc-6-lon-bia-blanc-1664",
+    "productType": "product-extend",
+    "description": "<p>Bia Blanc 1664 chai 330ml</p>",
+    "short_description": "Bia Blanc 1664 chai 330ml",
+    "image_url": "[baseUrl]/chothongminh/product/PE000209/2f34cfd7-74e6-47bb-923f-48e1a4676b35.webp",
+    "gallery_product": "[\"2f34cfd7-74e6-47bb-923f-48e1a4676b35.webp\"]",
+    "price": 90000,
+    "product_extend": "",
+    "unit": "Lốc 6 Lon",
+    "availability": true,
+    "rating": 0,
+    "review_count": 0,
+    "meta_title": "Bia Blanc 1664 chai 330ml",
+    "meta_keywords": "[\"Bia Blanc 1664 chai 330ml\"]",
+    "meta_description": "Bia Blanc 1664 chai 330ml",
+    "affiliateLinks": "",
+    "status": "PENDING",
+    "categoryId": "7b101cf4-19b8-4db9-96e3-7c413d181ad8",
+    "referenceKey": "11794408-ac8f-4bb1-bce0-587cd60e9aa3",
+    "userUpdate": "",
+    "userCreate": "",
+    "isDeleted": false,
+    "__v": 0,
+    "createDate": {
+      "$date": "2025-06-07T11:43:21.711Z"
+    },
+    "updateDate": {
+      "$date": "2025-06-26T04:54:28.700Z"
+    },
+    "productId": "dc03656e-9498-4fef-9fb1-122ac72de06f"
+  },
+  {
+    "_id": {
+      "$oid": "684434d974df16ecfc43c93b"
+    },
+    "productCode": "P000179",
+    "name": "Bia Blanc 1664 Lon 330ml",
+    "title": "Bia Blanc 1664 Lon 330ml",
+    "slug": "bia-blanc-1664",
+    "meta_slug": "bia-blanc-1664",
+    "productType": "product-source",
+    "description": "<p>Bia Blanc 1664</p>",
+    "short_description": "Bia Blanc 1664",
+    "image_url": "[baseUrl]/chothongminh/product/P000179/407ff494-f4d0-4fab-8abd-13130e5dd138.webp",
+    "gallery_product": "[\"407ff494-f4d0-4fab-8abd-13130e5dd138.webp\",\"0bd1f6c7-b8e6-46fc-8305-cc928fddc809.webp\",\"d82c9b10-ae74-471c-8020-c09b73c1f7c1.webp\",\"92dee5a1-c4a8-44dc-bf68-e685828ce1a9.webp\",\"1ea14e0b-91b1-4742-ae7f-2ae4a9eadeff.webp\"]",
+    "price": 15000,
+    "product_extend": "{\"gallery_productExtend\":[\"8c67d069-f15a-4769-b7f7-b9f538c25d48.webp\",\"51c2769c-63ed-4ac7-b03f-d75c9ed7e339.webp\"],\"productListExtend\":[{\"extendIndex\":1,\"extend\":{\"id\":\"90fb5135-2eba-45ce-8d11-95d5474418df\",\"title\":\"Bia Blanc 1664 Thùng 24 Lon\",\"unit\":\"Thùng\",\"price\":245000,\"sale\":0,\"priceSale\":245000,\"productCode\":\"PE000211\"}},{\"extendIndex\":2,\"extend\":{\"id\":\"bb532e1a-ce02-45fc-b98d-c3649791cc26\",\"title\":\"Bia Blanc 1664 Lốc 6 Lon\",\"unit\":\"Lốc\",\"price\":90000,\"sale\":0,\"priceSale\":90000,\"productCode\":\"PE000210\"}}]}",
+    "unit": "Lon",
+    "availability": true,
+    "rating": 0,
+    "review_count": 0,
+    "meta_title": "Bia Blanc 1664",
+    "meta_keywords": "[\"Bia Blanc 1664\"]",
+    "meta_description": "Bia Blanc 1664",
+    "affiliateLinks": "",
+    "status": "APPROVE",
+    "categoryId": "41",
+    "referenceKey": "636ba84b-9ef9-41d8-9283-d395e8e9d76e",
+    "userUpdate": "",
+    "userCreate": "",
+    "isDeleted": false,
+    "__v": 0,
+    "createDate": {
+      "$date": "2025-06-07T12:47:21.450Z"
+    },
+    "updateDate": {
+      "$date": "2025-06-07T12:48:03.878Z"
+    },
+    "productId": "f75fec22-d180-4b51-88bf-cda9bc86c9d5"
+  },
+  {
+    "_id": {
+      "$oid": "684434d974df16ecfc43c938"
+    },
+    "productCode": "PE000211",
+    "name": "Bia Blanc 1664 Lon 330ml",
+    "title": "Bia Blanc 1664 Thùng 24 Lon",
+    "slug": "bia-blanc-1664-lon-330ml-bia-blanc-1664-thung-24-lon",
+    "meta_slug": "bia-blanc-1664-lon-330ml-bia-blanc-1664-thung-24-lon",
+    "productType": "product-extend",
+    "description": "<p>Bia Blanc 1664</p>",
+    "short_description": "Bia Blanc 1664",
+    "image_url": "[baseUrl]/chothongminh/product/PE000211/8c67d069-f15a-4769-b7f7-b9f538c25d48.webp",
+    "gallery_product": "[\"8c67d069-f15a-4769-b7f7-b9f538c25d48.webp\"]",
+    "price": 245000,
+    "product_extend": "",
+    "unit": "Thùng",
+    "availability": true,
+    "rating": 0,
+    "review_count": 0,
+    "meta_title": "Bia Blanc 1664",
+    "meta_keywords": "[\"Bia Blanc 1664\"]",
+    "meta_description": "Bia Blanc 1664",
+    "affiliateLinks": "",
+    "status": "APPROVE",
+    "categoryId": "41",
+    "referenceKey": "636ba84b-9ef9-41d8-9283-d395e8e9d76e",
+    "userUpdate": "",
+    "userCreate": "",
+    "isDeleted": false,
+    "__v": 0,
+    "createDate": {
+      "$date": "2025-06-07T12:47:21.450Z"
+    },
+    "updateDate": {
+      "$date": "2025-06-07T12:48:03.888Z"
+    },
+    "productId": "90fb5135-2eba-45ce-8d11-95d5474418df"
+  },
+  {
+    "_id": {
+      "$oid": "684434d974df16ecfc43c939"
+    },
+    "productCode": "PE000210",
+    "name": "Bia Blanc 1664 Lon 330ml",
+    "title": "Bia Blanc 1664 Lốc 6 Lon",
+    "slug": "bia-blanc-1664-lon-330ml-bia-blanc-1664-loc-6-lon",
+    "meta_slug": "bia-blanc-1664-lon-330ml-bia-blanc-1664-loc-6-lon",
+    "productType": "product-extend",
+    "description": "<p>Bia Blanc 1664</p>",
+    "short_description": "Bia Blanc 1664",
+    "image_url": "[baseUrl]/chothongminh/product/PE000210/51c2769c-63ed-4ac7-b03f-d75c9ed7e339.webp",
+    "gallery_product": "[\"51c2769c-63ed-4ac7-b03f-d75c9ed7e339.webp\"]",
+    "price": 90000,
+    "product_extend": "",
+    "unit": "Lốc",
+    "availability": true,
+    "rating": 0,
+    "review_count": 0,
+    "meta_title": "Bia Blanc 1664",
+    "meta_keywords": "[\"Bia Blanc 1664\"]",
+    "meta_description": "Bia Blanc 1664",
+    "affiliateLinks": "",
+    "status": "APPROVE",
+    "categoryId": "41",
+    "referenceKey": "636ba84b-9ef9-41d8-9283-d395e8e9d76e",
+    "userUpdate": "",
+    "userCreate": "",
+    "isDeleted": false,
+    "__v": 0,
+    "createDate": {
+      "$date": "2025-06-07T12:47:21.450Z"
+    },
+    "updateDate": {
+      "$date": "2025-06-07T12:48:03.896Z"
+    },
+    "productId": "bb532e1a-ce02-45fc-b98d-c3649791cc26"
+  },
+  {
+    "_id": {
+      "$oid": "684435d174df16ecfc43ca27"
+    },
+    "productCode": "P000180",
+    "name": "Bia Budweiser Lon 250ml phiên bản giới hạn",
+    "title": "Bia Budweiser Lon 250ml phiên bản giới hạn",
+    "slug": "bia-budweiser-lon-250ml-phien-ban-gioi-han-bia-budweiser-lon-250ml-phien-ban-gioi-han",
+    "meta_slug": "bia-budweiser-lon-250ml-phien-ban-gioi-han",
+    "productType": "product-source",
+    "description": "<p>Bia Budweiser Lon 250ml phiên bản giới hạn</p>",
+    "short_description": "Bia Budweiser Lon 250ml phiên bản giới hạn",
+    "image_url": "[baseUrl]/chothongminh/product/P000180/40bf4b31-dcaa-481c-baa7-ca4c752731a5.webp",
+    "gallery_product": "[\"40bf4b31-dcaa-481c-baa7-ca4c752731a5.webp\",\"f0a1bf33-8435-42a6-bc03-6e1d308fd324.webp\",\"f1ded159-ad0c-45bb-8baa-809e0bd443aa.webp\",\"61e08fa1-19a2-479c-8275-a10bee75ca19.webp\"]",
+    "price": 15000,
+    "product_extend": "{\"gallery_productExtend\":[\"25b790bd-ab91-4bc7-b72d-414a3da8daaa.webp\"],\"productListExtend\":[{\"extendIndex\":1,\"extend\":{\"id\":\"169a7072-9bb4-4a91-abe5-9cc7d87ad722\",\"title\":\"Bia Budweiser Thùng 24 Lon\",\"unit\":\"Thùng\",\"price\":300000,\"sale\":0,\"priceSale\":300000,\"productCode\":\"PE000212\"}}]}",
+    "unit": "Lon",
+    "availability": true,
+    "rating": 0,
+    "review_count": 0,
+    "meta_title": "Bia Budweiser Lon 250ml phiên bản giới hạn",
+    "meta_keywords": "[\"Bia Budweiser Lon 250ml phiên bản giới hạn\"]",
+    "meta_description": "Bia Budweiser Lon 250ml phiên bản giới hạn",
+    "affiliateLinks": "",
+    "status": "APPROVE",
+    "categoryId": "41",
+    "referenceKey": "7dfda047-68c0-4451-97d8-5864df8bd6f1",
+    "userUpdate": "",
+    "userCreate": "",
+    "isDeleted": false,
+    "__v": 0,
+    "createDate": {
+      "$date": "2025-06-07T12:51:29.295Z"
+    },
+    "updateDate": {
+      "$date": "2025-06-07T12:51:29.295Z"
+    },
+    "productId": "aeae2916-9b9a-43ba-8016-247965db80fe"
+  },
+  {
+    "_id": {
+      "$oid": "684435d074df16ecfc43ca25"
+    },
+    "productCode": "PE000212",
+    "name": "Bia Budweiser Lon 250ml phiên bản giới hạn",
+    "title": "Bia Budweiser Thùng 24 Lon",
+    "slug": "bia-budweiser-lon-250ml-phien-ban-gioi-han-bia-budweiser-thung-24-lon",
+    "meta_slug": "bia-budweiser-lon-250ml-phien-ban-gioi-han-bia-budweiser-thung-24-lon",
+    "productType": "product-extend",
+    "description": "<p>Bia Budweiser Lon 250ml phiên bản giới hạn</p>",
+    "short_description": "Bia Budweiser Lon 250ml phiên bản giới hạn",
+    "image_url": "[baseUrl]/chothongminh/product/PE000212/25b790bd-ab91-4bc7-b72d-414a3da8daaa.webp",
+    "gallery_product": "",
+    "price": 300000,
+    "product_extend": "{\"gallery_productExtend\":null,\"productListExtend\":[{\"extendIndex\":1,\"extend\":{\"id\":\"169a7072-9bb4-4a91-abe5-9cc7d87ad722\",\"title\":\"Bia Budweiser Thùng 24 Lon\",\"unit\":\"Thùng\",\"price\":300000,\"sale\":0,\"priceSale\":300000}}]}",
+    "unit": "Thùng",
+    "availability": true,
+    "rating": 0,
+    "review_count": 0,
+    "meta_title": "Bia Budweiser Lon 250ml phiên bản giới hạn",
+    "meta_keywords": "[\"Bia Budweiser Lon 250ml phiên bản giới hạn\"]",
+    "meta_description": "Bia Budweiser Lon 250ml phiên bản giới hạn",
+    "affiliateLinks": "",
+    "status": "APPROVE",
+    "categoryId": "41",
+    "referenceKey": "7dfda047-68c0-4451-97d8-5864df8bd6f1",
+    "userUpdate": "",
+    "userCreate": "",
+    "isDeleted": false,
+    "__v": 0,
+    "createDate": {
+      "$date": "2025-06-07T12:51:29.296Z"
+    },
+    "updateDate": {
+      "$date": "2025-06-07T12:51:29.296Z"
+    },
+    "productId": "079388a4-3833-4fcf-8d2e-204bd96cff6f"
+  },
+  {
+    "_id": {
+      "$oid": "684437cf74df16ecfc43caff"
+    },
+    "productCode": "P000181",
+    "name": "Bia Heineken Lon Bạc 330ml",
+    "title": "Bia Heineken Lon Bạc 330ml",
+    "slug": "bia-heineken-lon-bac-330ml",
+    "meta_slug": "bia-heineken-bac-330ml",
+    "productType": "product-source",
+    "description": "<p>Bia Heineken Bạc 330ml</p>",
+    "short_description": "Bia Heineken Bạc 330ml",
+    "image_url": "[baseUrl]/chothongminh/product/P000181/ccd15b33-4e77-43b4-ab97-e3a5c123df04.webp",
+    "gallery_product": "[\"ccd15b33-4e77-43b4-ab97-e3a5c123df04.webp\",\"993fb9b6-0273-4cdf-afe6-514031e0e635.webp\",\"2505541d-29df-439a-a429-0b3f765fa377.webp\",\"51f720be-96ba-462a-ac81-3ddc4daedb15.webp\",\"68d2d54a-2ff2-433f-8d9c-9bfe2106c2cf.webp\"]",
+    "price": 13000,
+    "product_extend": "{\"gallery_productExtend\":[\"d0d447fb-ac4e-403a-9c11-a1907eff627d.webp\",\"a0b61293-5311-493d-bd66-3c410ba8bdb5.webp\"],\"productListExtend\":[{\"extendIndex\":1,\"extend\":{\"id\":\"10c49cad-59d5-4aaf-86be-99690fc27aed\",\"title\":\"Bia Heineken Bạc Thùng 24 Lon\",\"unit\":\"Thùng 24 Lon\",\"price\":245000,\"sale\":0,\"priceSale\":245000,\"productCode\":\"PE000214\"}},{\"extendIndex\":2,\"extend\":{\"id\":\"f8e2eb99-4619-4d7b-8759-2242e504c84f\",\"title\":\"Bia Heineken Bạc Lốc 6 Lon\",\"unit\":\"Lốc 6 Lon\",\"price\":80000,\"sale\":0,\"priceSale\":80000,\"productCode\":\"PE000213\"}}]}",
+    "unit": "Lon",
+    "availability": true,
+    "rating": 0,
+    "review_count": 0,
+    "meta_title": "Bia Heineken Bạc 330ml",
+    "meta_keywords": "[\"Bia Heineken Bạc 330ml\"]",
+    "meta_description": "Bia Heineken Bạc 330ml",
+    "affiliateLinks": "",
+    "status": "APPROVE",
+    "categoryId": "41",
+    "referenceKey": "a4d37371-7066-4f4c-8ad5-542288f2992c",
+    "userUpdate": "",
+    "userCreate": "",
+    "isDeleted": false,
+    "__v": 0,
+    "createDate": {
+      "$date": "2025-06-07T12:59:59.404Z"
+    },
+    "updateDate": {
+      "$date": "2025-06-07T13:06:15.970Z"
+    },
+    "productId": "a5d37ae0-4387-47b7-b318-90a39313df5a"
+  },
+  {
+    "_id": {
+      "$oid": "684437cf74df16ecfc43cafd"
+    },
+    "productCode": "PE000214",
+    "name": "Bia Heineken Lon Bạc 330ml",
+    "title": "Bia Heineken Bạc Thùng 24 Lon",
+    "slug": "bia-heineken-lon-bac-330ml-bia-heineken-bac-thung-24-lon",
+    "meta_slug": "bia-heineken-lon-bac-330ml-bia-heineken-bac-thung-24-lon",
+    "productType": "product-extend",
+    "description": "<p>Bia Heineken Bạc 330ml</p>",
+    "short_description": "Bia Heineken Bạc 330ml",
+    "image_url": "[baseUrl]/chothongminh/product/PE000214/d0d447fb-ac4e-403a-9c11-a1907eff627d.webp",
+    "gallery_product": "[\"d0d447fb-ac4e-403a-9c11-a1907eff627d.webp\"]",
+    "price": 245000,
+    "product_extend": "",
+    "unit": "Thùng 24 Lon",
+    "availability": true,
+    "rating": 0,
+    "review_count": 0,
+    "meta_title": "Bia Heineken Bạc 330ml",
+    "meta_keywords": "[\"Bia Heineken Bạc 330ml\"]",
+    "meta_description": "Bia Heineken Bạc 330ml",
+    "affiliateLinks": "",
+    "status": "APPROVE",
+    "categoryId": "41",
+    "referenceKey": "a4d37371-7066-4f4c-8ad5-542288f2992c",
+    "userUpdate": "",
+    "userCreate": "",
+    "isDeleted": false,
+    "__v": 0,
+    "createDate": {
+      "$date": "2025-06-07T12:59:59.404Z"
+    },
+    "updateDate": {
+      "$date": "2025-06-07T13:06:15.977Z"
+    },
+    "productId": "10c49cad-59d5-4aaf-86be-99690fc27aed"
+  },
+  {
+    "_id": {
+      "$oid": "684437cf74df16ecfc43cafc"
+    },
+    "productCode": "PE000213",
+    "name": "Bia Heineken Lon Bạc 330ml",
+    "title": "Bia Heineken Bạc Lốc 6 Lon",
+    "slug": "bia-heineken-lon-bac-330ml-bia-heineken-bac-loc-6-lon",
+    "meta_slug": "bia-heineken-lon-bac-330ml-bia-heineken-bac-loc-6-lon",
+    "productType": "product-extend",
+    "description": "<p>Bia Heineken Bạc 330ml</p>",
+    "short_description": "Bia Heineken Bạc 330ml",
+    "image_url": "[baseUrl]/chothongminh/product/PE000213/a0b61293-5311-493d-bd66-3c410ba8bdb5.webp",
+    "gallery_product": "[\"a0b61293-5311-493d-bd66-3c410ba8bdb5.webp\"]",
+    "price": 80000,
+    "product_extend": "",
+    "unit": "Lốc 6 Lon",
+    "availability": true,
+    "rating": 0,
+    "review_count": 0,
+    "meta_title": "Bia Heineken Bạc 330ml",
+    "meta_keywords": "[\"Bia Heineken Bạc 330ml\"]",
+    "meta_description": "Bia Heineken Bạc 330ml",
+    "affiliateLinks": "",
+    "status": "APPROVE",
+    "categoryId": "41",
+    "referenceKey": "a4d37371-7066-4f4c-8ad5-542288f2992c",
+    "userUpdate": "",
+    "userCreate": "",
+    "isDeleted": false,
+    "__v": 0,
+    "createDate": {
+      "$date": "2025-06-07T12:59:59.404Z"
+    },
+    "updateDate": {
+      "$date": "2025-06-07T13:06:15.986Z"
+    },
+    "productId": "f8e2eb99-4619-4d7b-8759-2242e504c84f"
+  },
+  {
+    "_id": {
+      "$oid": "68443c0e74df16ecfc43cc2a"
+    },
+    "productCode": "P000182",
+    "name": "Bia Red Ruby Lon 330ml",
+    "title": "Bia Red Ruby Lon 330ml",
+    "slug": "bia-red-ruby-lon-330ml",
+    "meta_slug": "bia-red-ruby-330ml",
+    "productType": "product-source",
+    "description": "<p>Bia Red Ruby 330ml</p>",
+    "short_description": "Bia Red Ruby 330ml",
+    "image_url": "[baseUrl]/chothongminh/product/P000182/2ec89918-e1b7-49f9-a09f-1385309273df.webp",
+    "gallery_product": "[\"2ec89918-e1b7-49f9-a09f-1385309273df.webp\",\"9361cd33-77b8-4a48-b45a-17d2829a55d4.webp\",\"2a58d1a3-ab52-4c4d-b1ce-cf9aae042074.webp\",\"51463e5b-5d77-4bc9-82ef-bdf846b842ba.webp\",\"6570646f-22e2-4c4b-a1f9-737757a85216.webp\"]",
+    "price": 15000,
+    "product_extend": "{\"gallery_productExtend\":[\"06576c06-9b21-4667-8f89-f08a1335e926.webp\",\"892103a1-4b31-474e-9e69-bfc6f07cded4.webp\"],\"productListExtend\":[{\"extendIndex\":1,\"extend\":{\"id\":\"bb55031d-7a08-4d63-b600-c0a1752a32f1\",\"title\":\"Bia Red Ruby Thùng 24 Lon\",\"unit\":\"Thùng 24 Lon\",\"price\":254000,\"sale\":0,\"priceSale\":254000,\"productCode\":\"PE000216\"}},{\"extendIndex\":2,\"extend\":{\"id\":\"29b33144-56ba-4128-9316-b39acea14fee\",\"title\":\"Bia Red Ruby Lốc 6 Lon\",\"unit\":\"Lốc 6 Lon\",\"price\":50000,\"sale\":0,\"priceSale\":50000,\"productCode\":\"PE000215\"}}]}",
+    "unit": "Lon",
+    "availability": true,
+    "rating": 0,
+    "review_count": 0,
+    "meta_title": "Bia Red Ruby 330ml",
+    "meta_keywords": "[\"Bia Red Ruby 330ml\"]",
+    "meta_description": "Bia Red Ruby 330ml",
+    "affiliateLinks": "",
+    "status": "APPROVE",
+    "categoryId": "41",
+    "referenceKey": "d73a9c2c-6ed4-47bc-93ed-91e7732645c1",
+    "userUpdate": "",
+    "userCreate": "",
+    "isDeleted": false,
+    "__v": 0,
+    "createDate": {
+      "$date": "2025-06-07T13:18:06.659Z"
+    },
+    "updateDate": {
+      "$date": "2025-06-07T13:24:44.632Z"
+    },
+    "productId": "defafaf5-2a4c-4a61-932e-a85b6e96940b"
+  },
+  {
+    "_id": {
+      "$oid": "68443c0e74df16ecfc43cc28"
+    },
+    "productCode": "PE000216",
+    "name": "Bia Red Ruby Lon 330ml",
+    "title": "Bia Red Ruby Thùng 24 Lon",
+    "slug": "bia-red-ruby-lon-330ml-bia-red-ruby-thung-24-lon",
+    "meta_slug": "bia-red-ruby-lon-330ml-bia-red-ruby-thung-24-lon",
+    "productType": "product-extend",
+    "description": "<p>Bia Red Ruby 330ml</p>",
+    "short_description": "Bia Red Ruby 330ml",
+    "image_url": "[baseUrl]/chothongminh/product/PE000216/06576c06-9b21-4667-8f89-f08a1335e926.webp",
+    "gallery_product": "[\"06576c06-9b21-4667-8f89-f08a1335e926.webp\"]",
+    "price": 254000,
+    "product_extend": "",
+    "unit": "Thùng 24 Lon",
+    "availability": true,
+    "rating": 0,
+    "review_count": 0,
+    "meta_title": "Bia Red Ruby 330ml",
+    "meta_keywords": "[\"Bia Red Ruby 330ml\"]",
+    "meta_description": "Bia Red Ruby 330ml",
+    "affiliateLinks": "",
+    "status": "APPROVE",
+    "categoryId": "41",
+    "referenceKey": "d73a9c2c-6ed4-47bc-93ed-91e7732645c1",
+    "userUpdate": "",
+    "userCreate": "",
+    "isDeleted": false,
+    "__v": 0,
+    "createDate": {
+      "$date": "2025-06-07T13:18:06.659Z"
+    },
+    "updateDate": {
+      "$date": "2025-06-07T13:24:44.642Z"
+    },
+    "productId": "bb55031d-7a08-4d63-b600-c0a1752a32f1"
+  },
+  {
+    "_id": {
+      "$oid": "68443c0e74df16ecfc43cc27"
+    },
+    "productCode": "PE000215",
+    "name": "Bia Red Ruby Lon 330ml",
+    "title": "Bia Red Ruby Lốc 6 Lon",
+    "slug": "bia-red-ruby-lon-330ml-bia-red-ruby-loc-6-lon",
+    "meta_slug": "bia-red-ruby-lon-330ml-bia-red-ruby-loc-6-lon",
+    "productType": "product-extend",
+    "description": "<p>Bia Red Ruby 330ml</p>",
+    "short_description": "Bia Red Ruby 330ml",
+    "image_url": "[baseUrl]/chothongminh/product/PE000215/892103a1-4b31-474e-9e69-bfc6f07cded4.webp",
+    "gallery_product": "[\"892103a1-4b31-474e-9e69-bfc6f07cded4.webp\"]",
+    "price": 50000,
+    "product_extend": "",
+    "unit": "Lốc 6 Lon",
+    "availability": true,
+    "rating": 0,
+    "review_count": 0,
+    "meta_title": "Bia Red Ruby 330ml",
+    "meta_keywords": "[\"Bia Red Ruby 330ml\"]",
+    "meta_description": "Bia Red Ruby 330ml",
+    "affiliateLinks": "",
+    "status": "APPROVE",
+    "categoryId": "41",
+    "referenceKey": "d73a9c2c-6ed4-47bc-93ed-91e7732645c1",
+    "userUpdate": "",
+    "userCreate": "",
+    "isDeleted": false,
+    "__v": 0,
+    "createDate": {
+      "$date": "2025-06-07T13:18:06.659Z"
+    },
+    "updateDate": {
+      "$date": "2025-06-07T13:24:44.649Z"
+    },
+    "productId": "29b33144-56ba-4128-9316-b39acea14fee"
+  },
+  {
+    "_id": {
+      "$oid": "6844faacd05305bab111d591"
+    },
+    "productCode": "P000183",
+    "name": "Ba rọi heo C.P",
+    "title": "Ba rọi heo C.P",
+    "slug": "ba-roi-heo-cp-ba-roi-heo-cp",
+    "meta_slug": "ba-roi-heo-cp",
+    "productType": "product-source",
+    "description": "<p>Ba rọi heo C.P</p>",
+    "short_description": "Ba rọi heo C.P",
+    "image_url": "[baseUrl]/chothongminh/product/P000183/ef60c207-d347-425c-b410-9bca070f378f.webp",
+    "gallery_product": "[\"ef60c207-d347-425c-b410-9bca070f378f.webp\",\"c9330c33-3b42-4897-a63b-40c39d1fb3dc.webp\",\"a0285495-958f-4a50-99b0-b131bf5a04b6.webp\",\"5a0e673f-8809-4ed8-bd09-e4ccfcfb5e64.webp\"]",
+    "price": 53000,
+    "product_extend": "",
+    "unit": "Ký",
+    "availability": true,
+    "rating": 0,
+    "review_count": 0,
+    "meta_title": "Ba rọi heo C.P",
+    "meta_keywords": "[\"Ba rọi heo C.P\"]",
+    "meta_description": "Ba rọi heo C.P",
+    "affiliateLinks": "",
+    "status": "APPROVE",
+    "categoryId": "20",
+    "referenceKey": "2feb788a-6f3f-4ddb-8768-2f5a674c69e1",
+    "userUpdate": "",
+    "userCreate": "",
+    "isDeleted": false,
+    "__v": 0,
+    "createDate": {
+      "$date": "2025-06-08T02:51:24.910Z"
+    },
+    "updateDate": {
+      "$date": "2025-06-08T02:51:24.910Z"
+    },
+    "productId": "6237a009-e4ce-4c50-b19f-c6d9497119df"
+  },
+  {
+    "_id": {
+      "$oid": "6844fb23d05305bab111d5a4"
+    },
+    "productCode": "P000184",
+    "name": "Thịt Đùi Heo C.P Khay 300g",
+    "title": "Thịt Đùi Heo C.P Khay 300g",
+    "slug": "thit-dui-heo-cp-khay-300g-thit-dui-heo-cp-khay-300g",
+    "meta_slug": "thit-dui-heo-cp-khay-300g",
+    "productType": "product-source",
+    "description": "<p>Thịt Đùi Heo C.P Khay 300g</p>",
+    "short_description": "Thịt Đùi Heo C.P Khay 300g",
+    "image_url": "[baseUrl]/chothongminh/product/P000184/6219e154-c283-41d5-8fbf-d097d5fd2dd8.webp",
+    "gallery_product": "[\"6219e154-c283-41d5-8fbf-d097d5fd2dd8.webp\",\"9381b680-1ea1-4993-ae64-e1d50c8de025.webp\",\"562015f1-bda4-4c66-8670-aeccd462495e.webp\",\"b54b7252-42b4-4002-9bb2-f18e9f0d562a.webp\",\"1f052837-dd87-4ff3-88c4-e654019825a6.webp\",\"4d2cd265-f3a4-41ba-a49e-54f0751936d3.webp\"]",
+    "price": 39000,
+    "product_extend": "{\"gallery_productExtend\":[\"78c7dbfb-b499-4fc4-b8bd-102912ab15c0.webp\"],\"productListExtend\":[{\"extendIndex\":1,\"extend\":{\"id\":\"43e48af5-79e7-4d9c-9f01-2a8c98f3b689\",\"title\":\"Thịt Đùi Heo C.P Khay 400g\",\"unit\":\"400g\",\"price\":45000,\"sale\":0,\"priceSale\":45000,\"productCode\":\"PE000217\"}}]}",
+    "unit": "300g",
+    "availability": true,
+    "rating": 0,
+    "review_count": 0,
+    "meta_title": "Thịt Đùi Heo C.P Khay 300g",
+    "meta_keywords": "[\"Thịt Đùi Heo C.P Khay 300g\"]",
+    "meta_description": "Thịt Đùi Heo C.P Khay 300g",
+    "affiliateLinks": "",
+    "status": "APPROVE",
+    "categoryId": "20",
+    "referenceKey": "2ea371b4-e7dd-4d99-9c72-5ac4388f9eea",
+    "userUpdate": "",
+    "userCreate": "",
+    "isDeleted": false,
+    "__v": 0,
+    "createDate": {
+      "$date": "2025-06-08T02:53:23.478Z"
+    },
+    "updateDate": {
+      "$date": "2025-06-08T02:53:23.478Z"
+    },
+    "productId": "755b2bf8-7c00-48f5-ad8a-736446eda7b6"
+  },
+  {
+    "_id": {
+      "$oid": "6844fb23d05305bab111d5a2"
+    },
+    "productCode": "PE000217",
+    "name": "Thịt Đùi Heo C.P Khay 300g",
+    "title": "Thịt Đùi Heo C.P Khay 400g",
+    "slug": "thit-dui-heo-cp-khay-300g-thit-dui-heo-cp-khay-400g",
+    "meta_slug": "thit-dui-heo-cp-khay-300g-thit-dui-heo-cp-khay-400g",
+    "productType": "product-extend",
+    "description": "<p>Thịt Đùi Heo C.P Khay 300g</p>",
+    "short_description": "Thịt Đùi Heo C.P Khay 300g",
+    "image_url": "[baseUrl]/chothongminh/product/PE000217/78c7dbfb-b499-4fc4-b8bd-102912ab15c0.webp",
+    "gallery_product": "",
+    "price": 45000,
+    "product_extend": "{\"gallery_productExtend\":null,\"productListExtend\":[{\"extendIndex\":1,\"extend\":{\"id\":\"43e48af5-79e7-4d9c-9f01-2a8c98f3b689\",\"title\":\"Thịt Đùi Heo C.P Khay 400g\",\"unit\":\"400g\",\"price\":45000,\"sale\":0,\"priceSale\":45000}}]}",
+    "unit": "400g",
+    "availability": true,
+    "rating": 0,
+    "review_count": 0,
+    "meta_title": "Thịt Đùi Heo C.P Khay 300g",
+    "meta_keywords": "[\"Thịt Đùi Heo C.P Khay 300g\"]",
+    "meta_description": "Thịt Đùi Heo C.P Khay 300g",
+    "affiliateLinks": "",
+    "status": "APPROVE",
+    "categoryId": "20",
+    "referenceKey": "2ea371b4-e7dd-4d99-9c72-5ac4388f9eea",
+    "userUpdate": "",
+    "userCreate": "",
+    "isDeleted": false,
+    "__v": 0,
+    "createDate": {
+      "$date": "2025-06-08T02:53:23.478Z"
+    },
+    "updateDate": {
+      "$date": "2025-06-08T02:53:23.478Z"
+    },
+    "productId": "e9a95ddf-6831-4588-8011-85c07447d5ed"
+  },
+  {
+    "_id": {
+      "$oid": "6844fbc9d05305bab111d5f0"
+    },
+    "productCode": "P000185",
+    "name": "Thịt nạc heo C.P 300g",
+    "title": "Thịt nạc heo C.P 300g",
+    "slug": "thit-nac-heo-cp-300g-thit-nac-heo-cp-300g",
+    "meta_slug": "thit-nac-heo-cp-300g",
+    "productType": "product-source",
+    "description": "<h6><br></h6><h1><strong>Thịt nạc heo C.P 300g</strong></h1><p><br></p>",
+    "short_description": "Thịt nạc heo C.P 300g",
+    "image_url": "[baseUrl]/chothongminh/product/P000185/b4893831-c6cc-4690-a936-3b87f9606277.webp",
+    "gallery_product": "[\"b4893831-c6cc-4690-a936-3b87f9606277.webp\",\"fb0af3c8-e338-4fc1-8e4d-03f63c4eabe2.webp\",\"d2e5b44f-1255-4886-a39c-5af45fbf1378.webp\",\"15f07479-92a7-49e8-bf16-b02f6a94e551.webp\",\"f377c4b2-d3e1-49fd-b3c5-7181fdf41c62.webp\",\"fe1bfac0-ef15-4480-8f07-483ed71a7775.webp\"]",
+    "price": 44000,
+    "product_extend": "{\"gallery_productExtend\":[\"cee0203b-c681-4285-b432-837361218dbd.webp\"],\"productListExtend\":[{\"extendIndex\":1,\"extend\":{\"id\":\"d9c4fb50-e18a-47bd-a031-539b363762ed\",\"title\":\"Thịt nạc heo C.P 500g\",\"unit\":\"Thịt nạc heo C.P 500g\",\"price\":60000,\"sale\":0,\"priceSale\":60000,\"productCode\":\"PE000218\"}}]}",
+    "unit": "300g",
+    "availability": true,
+    "rating": 0,
+    "review_count": 0,
+    "meta_title": "Thịt nạc heo C.P 300g",
+    "meta_keywords": "[\"Thịt nạc heo C.P 300g\"]",
+    "meta_description": "Thịt nạc heo C.P 300g",
+    "affiliateLinks": "",
+    "status": "APPROVE",
+    "categoryId": "20",
+    "referenceKey": "d3a4f9ba-7af9-43a5-91ff-0638284e309c",
+    "userUpdate": "",
+    "userCreate": "",
+    "isDeleted": false,
+    "__v": 0,
+    "createDate": {
+      "$date": "2025-06-08T02:56:09.990Z"
+    },
+    "updateDate": {
+      "$date": "2025-06-08T02:56:09.990Z"
+    },
+    "productId": "66f162ee-3fcf-490e-a30c-e8bdb06696da"
+  },
+  {
+    "_id": {
+      "$oid": "6844fbc9d05305bab111d5ee"
+    },
+    "productCode": "PE000218",
+    "name": "Thịt nạc heo C.P 300g",
+    "title": "Thịt nạc heo C.P 500g",
+    "slug": "thit-nac-heo-cp-300g-thit-nac-heo-cp-500g",
+    "meta_slug": "thit-nac-heo-cp-300g-thit-nac-heo-cp-500g",
+    "productType": "product-extend",
+    "description": "<h6><br></h6><h1><strong>Thịt nạc heo C.P 300g</strong></h1><p><br></p>",
+    "short_description": "Thịt nạc heo C.P 300g",
+    "image_url": "[baseUrl]/chothongminh/product/PE000218/cee0203b-c681-4285-b432-837361218dbd.webp",
+    "gallery_product": "",
+    "price": 60000,
+    "product_extend": "{\"gallery_productExtend\":null,\"productListExtend\":[{\"extendIndex\":1,\"extend\":{\"id\":\"d9c4fb50-e18a-47bd-a031-539b363762ed\",\"title\":\"Thịt nạc heo C.P 500g\",\"unit\":\"Thịt nạc heo C.P 500g\",\"price\":60000,\"sale\":0,\"priceSale\":60000}}]}",
+    "unit": "Thịt nạc heo C.P 500g",
+    "availability": true,
+    "rating": 0,
+    "review_count": 0,
+    "meta_title": "Thịt nạc heo C.P 300g",
+    "meta_keywords": "[\"Thịt nạc heo C.P 300g\"]",
+    "meta_description": "Thịt nạc heo C.P 300g",
+    "affiliateLinks": "",
+    "status": "APPROVE",
+    "categoryId": "20",
+    "referenceKey": "d3a4f9ba-7af9-43a5-91ff-0638284e309c",
+    "userUpdate": "",
+    "userCreate": "",
+    "isDeleted": false,
+    "__v": 0,
+    "createDate": {
+      "$date": "2025-06-08T02:56:09.990Z"
+    },
+    "updateDate": {
+      "$date": "2025-06-08T02:56:09.990Z"
+    },
+    "productId": "37be2eea-4bcf-46e5-af06-71c7fb4bb2f1"
+  },
+  {
+    "_id": {
+      "$oid": "6844fc44d05305bab111d602"
+    },
+    "productCode": "P000186",
+    "name": "Ức gà phi lê có da 500g",
+    "title": "Ức gà phi lê có da 500g",
+    "slug": "uc-ga-phi-le-co-da-500g-uc-ga-phi-le-co-da-500g",
+    "meta_slug": "uc-ga-phi-le-co-da-500g",
+    "productType": "product-source",
+    "description": "<p>Ức gà phi lê có da 500g</p>",
+    "short_description": "Ức gà phi lê có da 500g",
+    "image_url": "[baseUrl]/chothongminh/product/P000186/9e3067cc-c92b-4bdc-b2be-a51a6d237d30.webp",
+    "gallery_product": "[\"9e3067cc-c92b-4bdc-b2be-a51a6d237d30.webp\",\"0064bac2-9b7c-4b3c-969e-966e6326a3c9.webp\",\"4a904df1-9a75-49d2-9d0d-4458eaf70f1c.webp\",\"a3f99bc4-597c-49f4-80c8-28c9222e7d3f.webp\",\"eb364996-5d59-451e-a291-456bcde57e16.webp\"]",
+    "price": 53000,
+    "product_extend": "",
+    "unit": "3 cái",
+    "availability": true,
+    "rating": 0,
+    "review_count": 0,
+    "meta_title": "Ức gà phi lê có da 500g",
+    "meta_keywords": "[\"Ức gà phi lê có da 500g\"]",
+    "meta_description": "Ức gà phi lê có da 500g",
+    "affiliateLinks": "",
+    "status": "APPROVE",
+    "categoryId": "22",
+    "referenceKey": "7aa00ac9-bb3e-4919-8f2d-724d23686e62",
+    "userUpdate": "",
+    "userCreate": "",
+    "isDeleted": false,
+    "__v": 0,
+    "createDate": {
+      "$date": "2025-06-08T02:58:12.272Z"
+    },
+    "updateDate": {
+      "$date": "2025-06-08T02:58:12.272Z"
+    },
+    "productId": "ed5daa06-c3ee-4d6b-8cf1-db2d9bce5820"
+  },
+  {
+    "_id": {
+      "$oid": "6844fd94d05305bab111d695"
+    },
+    "productCode": "P000187",
+    "name": "Ức gà có xương C.P 300g",
+    "title": "Ức gà có xương C.P 300g",
+    "slug": "uc-ga-co-xuong-cp-300g",
+    "meta_slug": "uc-ga-co-xuong-cp-300g",
+    "productType": "product-source",
+    "description": "<p><strong>Ức gà có xương C.P 300g</strong> là sản phẩm thịt gà tươi ngon, được tuyển chọn từ những con gà khỏe mạnh, nuôi theo quy trình khép kín và đạt chuẩn an toàn vệ sinh thực phẩm. Sản phẩm giữ nguyên phần xương, thích hợp để chế biến các món ăn đậm đà hương vị truyền thống như gà kho, gà nướng, gà rô ti hoặc nấu canh. Mỗi miếng ức gà đều có độ dày vừa phải, phần thịt săn chắc, ít mỡ, giàu đạm và dưỡng chất.</p><p>Được đóng gói hút chân không trong khay 300g tiện lợi, sản phẩm giúp bảo quản lâu hơn mà vẫn giữ được độ tươi ngon. Ức gà C.P không sử dụng chất bảo quản, an toàn cho sức khỏe người tiêu dùng. Với lượng protein cao và ít cholesterol, sản phẩm đặc biệt phù hợp cho người ăn kiêng, tập gym hoặc mong muốn duy trì chế độ dinh dưỡng lành mạnh.</p><p>Cách chế biến đơn giản, dễ dàng tẩm ướp và kết hợp với nhiều nguyên liệu khác. Sản phẩm được bảo quản lạnh ở nhiệt độ từ 0 đến 4°C để đảm bảo chất lượng tối ưu. C.P là thương hiệu uy tín hàng đầu trong lĩnh vực thực phẩm sạch, cam kết mang lại những sản phẩm chất lượng và tiện lợi cho mọi gia đình.</p><p><br></p><p><br></p><p><strong>Ức gà có xương C.P 300g</strong> là sản phẩm thịt gà tươi ngon, được tuyển chọn từ những con gà khỏe mạnh, nuôi theo quy trình khép kín và đạt chuẩn an toàn vệ sinh thực phẩm. Sản phẩm giữ nguyên phần xương, thích hợp để chế biến các món ăn đậm đà hương vị truyền thống như gà kho, gà nướng, gà rô ti hoặc nấu canh. Mỗi miếng ức gà đều có độ dày vừa phải, phần thịt săn chắc, ít mỡ, giàu đạm và dưỡng chất.</p><p>Được đóng gói hút chân không trong khay 300g tiện lợi, sản phẩm giúp bảo quản lâu hơn mà vẫn giữ được độ tươi ngon. Ức gà C.P không sử dụng chất bảo quản, an toàn cho sức khỏe người tiêu dùng. Với lượng protein cao và ít cholesterol, sản phẩm đặc biệt phù hợp cho người ăn kiêng, tập gym hoặc mong muốn duy trì chế độ dinh dưỡng lành mạnh.</p><p>Cách chế biến đơn giản, dễ dàng tẩm ướp và kết hợp với nhiều nguyên liệu khác. Sản phẩm được bảo quản lạnh ở nhiệt độ từ 0 đến 4°C để đảm bảo chất lượng tối ưu. C.P là thương hiệu uy tín hàng đầu trong lĩnh vực thực phẩm sạch, cam kết mang lại những sản phẩm chất lượng và tiện lợi cho mọi gia đình.</p><p><br></p><p><br></p><p><br></p><p><strong>Ức gà có xương C.P 300g</strong> là sản phẩm thịt gà tươi ngon, được tuyển chọn từ những con gà khỏe mạnh, nuôi theo quy trình khép kín và đạt chuẩn an toàn vệ sinh thực phẩm. Sản phẩm giữ nguyên phần xương, thích hợp để chế biến các món ăn đậm đà hương vị truyền thống như gà kho, gà nướng, gà rô ti hoặc nấu canh. Mỗi miếng ức gà đều có độ dày vừa phải, phần thịt săn chắc, ít mỡ, giàu đạm và dưỡng chất.</p><p>Được đóng gói hút chân không trong khay 300g tiện lợi, sản phẩm giúp bảo quản lâu hơn mà vẫn giữ được độ tươi ngon. Ức gà C.P không sử dụng chất bảo quản, an toàn cho sức khỏe người tiêu dùng. Với lượng protein cao và ít cholesterol, sản phẩm đặc biệt phù hợp cho người ăn kiêng, tập gym hoặc mong muốn duy trì chế độ dinh dưỡng lành mạnh.</p><p>Cách chế biến đơn giản, dễ dàng tẩm ướp và kết hợp với nhiều nguyên liệu khác. Sản phẩm được bảo quản lạnh ở nhiệt độ từ 0 đến 4°C để đảm bảo chất lượng tối ưu. C.P là thương hiệu uy tín hàng đầu trong lĩnh vực thực phẩm sạch, cam kết mang lại những sản phẩm chất lượng và tiện lợi cho mọi gia đình.</p><p><br></p><p><br></p><p><br></p><p><strong>Ức gà có xương C.P 300g</strong> là sản phẩm thịt gà tươi ngon, được tuyển chọn từ những con gà khỏe mạnh, nuôi theo quy trình khép kín và đạt chuẩn an toàn vệ sinh thực phẩm. Sản phẩm giữ nguyên phần xương, thích hợp để chế biến các món ăn đậm đà hương vị truyền thống như gà kho, gà nướng, gà rô ti hoặc nấu canh. Mỗi miếng ức gà đều có độ dày vừa phải, phần thịt săn chắc, ít mỡ, giàu đạm và dưỡng chất.</p><p>Được đóng gói hút chân không trong khay 300g tiện lợi, sản phẩm giúp bảo quản lâu hơn mà vẫn giữ được độ tươi ngon. Ức gà C.P không sử dụng chất bảo quản, an toàn cho sức khỏe người tiêu dùng. Với lượng protein cao và ít cholesterol, sản phẩm đặc biệt phù hợp cho người ăn kiêng, tập gym hoặc mong muốn duy trì chế độ dinh dưỡng lành mạnh.</p><p>Cách chế biến đơn giản, dễ dàng tẩm ướp và kết hợp với nhiều nguyên liệu khác. Sản phẩm được bảo quản lạnh ở nhiệt độ từ 0 đến 4°C để đảm bảo chất lượng tối ưu. C.P là thương hiệu uy tín hàng đầu trong lĩnh vực thực phẩm sạch, cam kết mang lại những sản phẩm chất lượng và tiện lợi cho mọi gia đình.</p>",
+    "short_description": "111111111111111111111111111",
+    "image_url": "[baseUrl]/chothongminh/product/P000187/50d128df-aacc-4f1f-861f-d8b73b21bd86.webp",
+    "gallery_product": "[\"50d128df-aacc-4f1f-861f-d8b73b21bd86.webp\",\"5cf21611-bca1-4816-a43a-1af55d0f7feb.webp\",\"0fdb1343-2536-44f2-b081-4ecea73b654f.webp\",\"10a2089e-2dc8-4ed3-8ab5-2041884ecbb4.webp\",\"d3e83457-18e8-4094-ab98-d8ba65c30d27.webp\",\"028bf2c4-7a40-4a8b-b59b-077b1696a982.webp\"]",
+    "price": 25000,
+    "product_extend": "{\"gallery_productExtend\":[\"2f6020ec-221b-4d8b-aad3-ceeea603bb51.webp\"],\"productListExtend\":[{\"extendIndex\":1,\"extend\":{\"id\":\"7c396c39-6cbb-4ad4-89e6-a1786331929f\",\"title\":\"Ức gà có xương C.P 500g\",\"unit\":\"500g\",\"price\":45000,\"sale\":0,\"priceSale\":45000,\"productCode\":\"PE000219\"}}]}",
+    "unit": "300g",
+    "availability": true,
+    "rating": 0,
+    "review_count": 0,
+    "meta_title": "Ức gà có xương C.P 300g",
+    "meta_keywords": "[\"Ức gà có xương C.P 300g\"]",
+    "meta_description": "Ức gà có xương C.P 300g",
+    "affiliateLinks": "",
+    "status": "APPROVE",
+    "categoryId": "9a564f76-6f36-476d-af8d-616bd31670e0",
+    "referenceKey": "94559719-64cf-4f1b-a303-58dc908283c8",
+    "userUpdate": "",
+    "userCreate": "",
+    "isDeleted": false,
+    "__v": 0,
+    "createDate": {
+      "$date": "2025-06-08T03:03:48.016Z"
+    },
+    "updateDate": {
+      "$date": "2025-06-26T10:00:07.547Z"
+    },
+    "productId": "790b3de3-6459-4171-a818-6fb19fb891c4"
+  },
+  {
+    "_id": {
+      "$oid": "6844fd93d05305bab111d693"
+    },
+    "productCode": "PE000219",
+    "name": "Ức gà có xương C.P 300g",
+    "title": "Ức gà có xương C.P 500g",
+    "slug": "uc-ga-co-xuong-cp-300g-uc-ga-co-xuong-cp-500g",
+    "meta_slug": "uc-ga-co-xuong-cp-300g-uc-ga-co-xuong-cp-500g",
+    "productType": "product-extend",
+    "description": "<p><strong>Ức gà có xương C.P 300g</strong> là sản phẩm thịt gà tươi ngon, được tuyển chọn từ những con gà khỏe mạnh, nuôi theo quy trình khép kín và đạt chuẩn an toàn vệ sinh thực phẩm. Sản phẩm giữ nguyên phần xương, thích hợp để chế biến các món ăn đậm đà hương vị truyền thống như gà kho, gà nướng, gà rô ti hoặc nấu canh. Mỗi miếng ức gà đều có độ dày vừa phải, phần thịt săn chắc, ít mỡ, giàu đạm và dưỡng chất.</p><p>Được đóng gói hút chân không trong khay 300g tiện lợi, sản phẩm giúp bảo quản lâu hơn mà vẫn giữ được độ tươi ngon. Ức gà C.P không sử dụng chất bảo quản, an toàn cho sức khỏe người tiêu dùng. Với lượng protein cao và ít cholesterol, sản phẩm đặc biệt phù hợp cho người ăn kiêng, tập gym hoặc mong muốn duy trì chế độ dinh dưỡng lành mạnh.</p><p>Cách chế biến đơn giản, dễ dàng tẩm ướp và kết hợp với nhiều nguyên liệu khác. Sản phẩm được bảo quản lạnh ở nhiệt độ từ 0 đến 4°C để đảm bảo chất lượng tối ưu. C.P là thương hiệu uy tín hàng đầu trong lĩnh vực thực phẩm sạch, cam kết mang lại những sản phẩm chất lượng và tiện lợi cho mọi gia đình.</p><p><br></p><p><br></p><p><strong>Ức gà có xương C.P 300g</strong> là sản phẩm thịt gà tươi ngon, được tuyển chọn từ những con gà khỏe mạnh, nuôi theo quy trình khép kín và đạt chuẩn an toàn vệ sinh thực phẩm. Sản phẩm giữ nguyên phần xương, thích hợp để chế biến các món ăn đậm đà hương vị truyền thống như gà kho, gà nướng, gà rô ti hoặc nấu canh. Mỗi miếng ức gà đều có độ dày vừa phải, phần thịt săn chắc, ít mỡ, giàu đạm và dưỡng chất.</p><p>Được đóng gói hút chân không trong khay 300g tiện lợi, sản phẩm giúp bảo quản lâu hơn mà vẫn giữ được độ tươi ngon. Ức gà C.P không sử dụng chất bảo quản, an toàn cho sức khỏe người tiêu dùng. Với lượng protein cao và ít cholesterol, sản phẩm đặc biệt phù hợp cho người ăn kiêng, tập gym hoặc mong muốn duy trì chế độ dinh dưỡng lành mạnh.</p><p>Cách chế biến đơn giản, dễ dàng tẩm ướp và kết hợp với nhiều nguyên liệu khác. Sản phẩm được bảo quản lạnh ở nhiệt độ từ 0 đến 4°C để đảm bảo chất lượng tối ưu. C.P là thương hiệu uy tín hàng đầu trong lĩnh vực thực phẩm sạch, cam kết mang lại những sản phẩm chất lượng và tiện lợi cho mọi gia đình.</p><p><br></p><p><br></p><p><br></p><p><strong>Ức gà có xương C.P 300g</strong> là sản phẩm thịt gà tươi ngon, được tuyển chọn từ những con gà khỏe mạnh, nuôi theo quy trình khép kín và đạt chuẩn an toàn vệ sinh thực phẩm. Sản phẩm giữ nguyên phần xương, thích hợp để chế biến các món ăn đậm đà hương vị truyền thống như gà kho, gà nướng, gà rô ti hoặc nấu canh. Mỗi miếng ức gà đều có độ dày vừa phải, phần thịt săn chắc, ít mỡ, giàu đạm và dưỡng chất.</p><p>Được đóng gói hút chân không trong khay 300g tiện lợi, sản phẩm giúp bảo quản lâu hơn mà vẫn giữ được độ tươi ngon. Ức gà C.P không sử dụng chất bảo quản, an toàn cho sức khỏe người tiêu dùng. Với lượng protein cao và ít cholesterol, sản phẩm đặc biệt phù hợp cho người ăn kiêng, tập gym hoặc mong muốn duy trì chế độ dinh dưỡng lành mạnh.</p><p>Cách chế biến đơn giản, dễ dàng tẩm ướp và kết hợp với nhiều nguyên liệu khác. Sản phẩm được bảo quản lạnh ở nhiệt độ từ 0 đến 4°C để đảm bảo chất lượng tối ưu. C.P là thương hiệu uy tín hàng đầu trong lĩnh vực thực phẩm sạch, cam kết mang lại những sản phẩm chất lượng và tiện lợi cho mọi gia đình.</p><p><br></p><p><br></p><p><br></p><p><strong>Ức gà có xương C.P 300g</strong> là sản phẩm thịt gà tươi ngon, được tuyển chọn từ những con gà khỏe mạnh, nuôi theo quy trình khép kín và đạt chuẩn an toàn vệ sinh thực phẩm. Sản phẩm giữ nguyên phần xương, thích hợp để chế biến các món ăn đậm đà hương vị truyền thống như gà kho, gà nướng, gà rô ti hoặc nấu canh. Mỗi miếng ức gà đều có độ dày vừa phải, phần thịt săn chắc, ít mỡ, giàu đạm và dưỡng chất.</p><p>Được đóng gói hút chân không trong khay 300g tiện lợi, sản phẩm giúp bảo quản lâu hơn mà vẫn giữ được độ tươi ngon. Ức gà C.P không sử dụng chất bảo quản, an toàn cho sức khỏe người tiêu dùng. Với lượng protein cao và ít cholesterol, sản phẩm đặc biệt phù hợp cho người ăn kiêng, tập gym hoặc mong muốn duy trì chế độ dinh dưỡng lành mạnh.</p><p>Cách chế biến đơn giản, dễ dàng tẩm ướp và kết hợp với nhiều nguyên liệu khác. Sản phẩm được bảo quản lạnh ở nhiệt độ từ 0 đến 4°C để đảm bảo chất lượng tối ưu. C.P là thương hiệu uy tín hàng đầu trong lĩnh vực thực phẩm sạch, cam kết mang lại những sản phẩm chất lượng và tiện lợi cho mọi gia đình.</p>",
+    "short_description": "Ức gà có xương C.P ngon, bổ, rẻ",
+    "image_url": "[baseUrl]/chothongminh/product/PE000219/2f6020ec-221b-4d8b-aad3-ceeea603bb51.webp",
+    "gallery_product": "[\"2f6020ec-221b-4d8b-aad3-ceeea603bb51.webp\"]",
+    "price": 45000,
+    "product_extend": "",
+    "unit": "500g",
+    "availability": true,
+    "rating": 0,
+    "review_count": 0,
+    "meta_title": "Ức gà có xương C.P 300g",
+    "meta_keywords": "[\"Ức gà có xương C.P 300g\"]",
+    "meta_description": "Ức gà có xương C.P 300g",
+    "affiliateLinks": "",
+    "status": "APPROVE",
+    "categoryId": "9a564f76-6f36-476d-af8d-616bd31670e0",
+    "referenceKey": "94559719-64cf-4f1b-a303-58dc908283c8",
+    "userUpdate": "",
+    "userCreate": "",
+    "isDeleted": false,
+    "__v": 0,
+    "createDate": {
+      "$date": "2025-06-08T03:03:48.016Z"
+    },
+    "updateDate": {
+      "$date": "2025-06-26T10:00:07.555Z"
+    },
+    "productId": "7c396c39-6cbb-4ad4-89e6-a1786331929f"
+  },
+  {
+    "_id": {
+      "$oid": "685ebc272eda8ef159a03ae3"
+    },
+    "productCode": "P000201",
+    "name": "Trà Đạo",
+    "title": "Trà Đạo 2",
+    "slug": "tra-dao-tra-dao-2",
+    "meta_slug": "tra-dao-2",
+    "productType": "product-source",
+    "description": "<p><span style=\"color: rgb(0, 29, 53);\">Trà đạo (茶道, Sadō hoặc Chadō)&nbsp;là một nghệ thuật thưởng trà truyền thống của Nhật Bản, kết hợp giữa nghi thức, triết lý sống và văn hóa.&nbsp;Nó không chỉ đơn thuần là uống trà mà còn là một hình thức tôn vinh vẻ đẹp, sự thanh tịnh và sự hài hòa trong tâm hồn, cũng như kết nối con người với thiên nhiên.&nbsp;</span></p>",
+    "short_description": "Trà Đạo 2",
+    "image_url": "[baseUrl]/chothongminh/product/P000201/ad3cbd21-7c35-4ba9-a480-e848d1109593.webp",
+    "gallery_product": "[\"ad3cbd21-7c35-4ba9-a480-e848d1109593.webp\"]",
+    "price": 15000,
+    "product_extend": "",
+    "unit": "Phần",
+    "availability": true,
+    "rating": 0,
+    "review_count": 0,
+    "meta_title": "Trà Đạo 2",
+    "meta_keywords": "[\"Trà Đạo 2\"]",
+    "meta_description": "Trà Đạo 2",
+    "affiliateLinks": "",
+    "status": "APPROVE",
+    "categoryId": "9b5479d7-ffc8-41fe-8455-699b957a0e28",
+    "referenceKey": "d14f5191-8706-4298-aee3-08dc93f067e3",
+    "userUpdate": "",
+    "userCreate": "",
+    "isDeleted": false,
+    "__v": 0,
+    "createDate": {
+      "$date": "2025-06-27T15:43:35.939Z"
+    },
+    "updateDate": {
+      "$date": "2025-06-27T15:44:32.649Z"
+    },
+    "productId": "86f29a52-9023-4abd-b066-4bf2f538b5d2"
+  },
+  {
+    "_id": {
+      "$oid": "685f61bb2eda8ef159a03f72"
+    },
+    "productCode": "P000202",
+    "name": "Thức ăn khác ",
+    "title": "Thức ăn khác ",
+    "slug": "thuc-an-khac-thuc-an-khac",
+    "meta_slug": "thuc-an-khac",
+    "productType": "product-source",
+    "description": "<p>Thức ăn khác&nbsp;</p>",
+    "short_description": "Thức ăn khác ",
+    "image_url": "[baseUrl]/chothongminh/product/P000202/5b9e7e5b-290c-4074-bd93-83b3e5ba169b.webp",
+    "gallery_product": "[\"5b9e7e5b-290c-4074-bd93-83b3e5ba169b.webp\"]",
+    "price": 23000,
+    "product_extend": "",
+    "unit": "20000",
+    "availability": true,
+    "rating": 0,
+    "review_count": 0,
+    "meta_title": "Thức ăn khác ",
+    "meta_keywords": "[\"Thức ăn khác\"]",
+    "meta_description": "Thức ăn khác ",
+    "affiliateLinks": "",
+    "status": "APPROVE",
+    "categoryId": "7b101cf4-19b8-4db9-96e3-7c413d181ad8",
+    "referenceKey": "93d87b40-3ba7-4f22-9ac6-0a7ae8704b70",
+    "userUpdate": "",
+    "userCreate": "",
+    "isDeleted": false,
+    "__v": 0,
+    "createDate": {
+      "$date": "2025-06-28T03:30:03.073Z"
+    },
+    "updateDate": {
+      "$date": "2025-06-28T03:30:08.413Z"
+    },
+    "productId": "6917558f-c545-431c-8de1-5fca8e0839f5"
+  },
+  {
+    "_id": {
+      "$oid": "68634bc3203faeb22c86b2b3"
+    },
+    "productCode": "P000206",
+    "name": "test 3",
+    "title": "test 3",
+    "slug": "test-3-test-3",
+    "meta_slug": "test-3",
+    "productType": "product-source",
+    "description": "<p>test 3</p>",
+    "short_description": "test 3",
+    "image_url": "[baseUrl]/chothongminh/product/P000206/75c09584-22ad-4951-a62a-000f8e7aefd9.webp",
+    "gallery_product": "[\"75c09584-22ad-4951-a62a-000f8e7aefd9.webp\"]",
+    "price": 15000,
+    "product_extend": "null",
+    "unit": "Lon",
+    "availability": true,
+    "rating": 0,
+    "review_count": 0,
+    "meta_title": "test 3",
+    "meta_keywords": "[\"test 3\"]",
+    "meta_description": "test 3",
+    "affiliateLinks": "",
+    "status": "PENDING",
+    "categoryId": "a7dcd54b-d481-4496-b099-b1b31c7785c2",
+    "referenceKey": "e93965c5-9f55-4f47-8651-3bfebead08b8",
+    "userUpdate": "",
+    "userCreate": "",
+    "isDeleted": false,
+    "__v": 0,
+    "createDate": {
+      "$date": "2025-07-01T02:45:23.102Z"
+    },
+    "updateDate": {
+      "$date": "2025-07-01T02:45:23.102Z"
+    },
+    "productId": "78619bbc-52f2-4b45-9acf-73c3f4e20794"
+  },
+  {
+    "_id": {
+      "$oid": "6864fe7681d71d7627c36f57"
+    },
+    "productCode": "P000207",
+    "name": "Tàu Hủ",
+    "title": "Tàu Hủ Nguyên Chất",
+    "slug": "tau-hu-tau-hu-nguyen-chat",
+    "meta_slug": "tau-hu-nguyen-chat",
+    "productType": "product-source",
+    "description": "<p>Tàu Hủ Nguyên Chất</p>",
+    "short_description": "Tàu Hủ Nguyên Chất",
+    "image_url": "[baseUrl]/chothongminh/product/P000207/9a0d9eed-11ba-4b58-aca3-5e0a798a2c28.webp",
+    "gallery_product": "[\"9a0d9eed-11ba-4b58-aca3-5e0a798a2c28.webp\"]",
+    "price": 50000,
+    "product_extend": "",
+    "unit": "Phần",
+    "availability": true,
+    "rating": 0,
+    "review_count": 0,
+    "meta_title": "Tàu Hủ Nguyên Chất",
+    "meta_keywords": "[\"Tàu Hủ Nguyên Chất\"]",
+    "meta_description": "Tàu Hủ Nguyên Chất",
+    "affiliateLinks": "",
+    "status": "APPROVE",
+    "categoryId": "32d63f0e-d099-423c-91a7-a0c6e0460bb5",
+    "referenceKey": "98b6b1f8-95c6-4f9f-8172-a415e89a4185",
+    "userUpdate": "",
+    "userCreate": "",
+    "isDeleted": false,
+    "__v": 0,
+    "createDate": {
+      "$date": "2025-07-02T09:40:06.197Z"
+    },
+    "updateDate": {
+      "$date": "2025-07-02T09:40:06.197Z"
+    },
+    "productId": "d33e2af5-a8e0-4802-b8b0-3ab3d1e7bc92"
+  },
+  {
+    "_id": {
+      "$oid": "6864fe9181d71d7627c36f5e"
+    },
+    "productCode": "P000208",
+    "name": "Tàu Hủ Chiên",
+    "title": "Tàu Hủ Chiên",
+    "slug": "tau-hu",
+    "meta_slug": "tau-hu-chien",
+    "productType": "product-source",
+    "description": "<p>Tàu Hủ Chiên</p>",
+    "short_description": "Tàu Hủ Chiên",
+    "image_url": "[baseUrl]/chothongminh/product/P000208/9f910b9a-248c-4489-bef3-fd797ae2bbe0.webp",
+    "gallery_product": "[\"9f910b9a-248c-4489-bef3-fd797ae2bbe0.webp\"]",
+    "price": 20000,
+    "product_extend": "",
+    "unit": "Phần",
+    "availability": true,
+    "rating": 0,
+    "review_count": 0,
+    "meta_title": "Tàu Hủ Chiên",
+    "meta_keywords": "[\"Tàu Hủ Chiên\"]",
+    "meta_description": "Tàu Hủ Chiên",
+    "affiliateLinks": "",
+    "status": "APPROVE",
+    "categoryId": "32d63f0e-d099-423c-91a7-a0c6e0460bb5",
+    "referenceKey": "4fbf5a10-ea1f-4b75-96f3-034126e696db",
+    "userUpdate": "",
+    "userCreate": "",
+    "isDeleted": false,
+    "__v": 0,
+    "createDate": {
+      "$date": "2025-07-02T09:40:33.694Z"
+    },
+    "updateDate": {
+      "$date": "2025-07-02T09:41:30.859Z"
+    },
+    "productId": "3f4f5804-0d6c-41c7-b5c1-26e84ce7cab4"
+  },
+  {
+    "_id": {
+      "$oid": "687e13fc9805ee725309da82"
+    },
+    "__v": 0,
+    "affiliateLinks": "",
+    "availability": false,
+    "categoryId": "",
+    "createDate": {
+      "$date": "2025-07-21T10:18:36.092Z"
+    },
+    "description": "",
+    "gallery_product": "",
+    "image_url": "",
+    "isDeleted": false,
+    "meta_description": "",
+    "meta_keywords": "",
+    "meta_slug": "",
+    "meta_title": "",
+    "name": "",
+    "price": 0,
+    "productCode": "",
+    "productType": "product-source",
+    "product_extend": "",
+    "rating": 0,
+    "referenceKey": "e60066d1-b5b2-4c2c-a964-855084eccbb1",
+    "review_count": 0,
+    "short_description": "",
+    "slug": "",
+    "status": "APPROVE",
+    "title": "",
+    "unit": "",
+    "updateDate": {
+      "$date": "2025-07-21T10:18:36.092Z"
+    },
+    "userCreate": "",
+    "userUpdate": "",
+    "productId": "e7931981-6ea5-4a67-9712-bdb4fc4cfc7d"
+  },
+  {
+    "_id": {
+      "$oid": "687e1430967a5a963e29899c"
+    },
+    "productCode": "P000217",
+    "name": "oke ne nhan",
+    "title": "oke ne nhan",
+    "slug": "oke-ne-nhan",
+    "meta_slug": "sadsadasdsad",
+    "productType": "product-source",
+    "description": "<p>sadasd</p>",
+    "short_description": "sadasd",
+    "image_url": "[baseUrl]/chothongminh/product/P000217/051ba5f4-7680-400a-9f54-d79599727281.webp",
+    "gallery_product": "[\"051ba5f4-7680-400a-9f54-d79599727281.webp\"]",
+    "price": 123213213,
+    "product_extend": "",
+    "unit": "213123213",
+    "availability": true,
+    "rating": 0,
+    "review_count": 0,
+    "meta_title": "sadsadasdsad",
+    "meta_keywords": "[\"sadsad\"]",
+    "meta_description": "sadsad",
+    "affiliateLinks": "",
+    "status": "APPROVE",
+    "categoryId": "32d63f0e-d099-423c-91a7-a0c6e0460bb5",
+    "referenceKey": "c921e44a-cc19-4490-b5da-d2ebed334e74",
+    "userUpdate": "",
+    "userCreate": "",
+    "isDeleted": false,
+    "__v": 0,
+    "createDate": {
+      "$date": "2025-07-21T10:19:28.404Z"
+    },
+    "updateDate": {
+      "$date": "2025-07-21T10:20:06.429Z"
+    },
+    "productId": "50219953-ae07-466d-9674-db31b0e3aa10"
+  },
+  {
+    "_id": {
+      "$oid": "687e5ff2967a5a963e298de9"
+    },
+    "productCode": "PE000249",
+    "name": "Bánh bao nhân thịt heo trứng muối Thọ Phát",
+    "title": "Bịt bánh bao nhân thịt heo trứng muối Thọ Phát 4 cái 2",
+    "slug": "banh-bao-nhan-thit-heo-trung-muoi-tho-phat-bit-banh-bao-nhan-thit-heo-trung-muoi-tho-phat-4-cai-2",
+    "meta_slug": "banh-bao-nhan-thit-heo-trung-muoi-tho-phat-bit-banh-bao-nhan-thit-heo-trung-muoi-tho-phat-4-cai-2",
+    "productType": "product-extend",
+    "description": "<p>Bánh bao nhân thịt heo trứng muối Thọ Phát</p>",
+    "short_description": "Bánh bao nhân thịt heo trứng muối Thọ Phát",
+    "image_url": "[baseUrl]/chothongminh/product/PE000249/5edd7651-32dc-470c-875f-45b7494ea5cd.webp",
+    "gallery_product": "[\"5edd7651-32dc-470c-875f-45b7494ea5cd.webp\"]",
+    "price": 50000,
+    "product_extend": "",
+    "unit": "Bịt 4 cái",
+    "availability": true,
+    "rating": 0,
+    "review_count": 0,
+    "meta_title": "Bánh bao nhân thịt heo trứng muối Thọ Phát",
+    "meta_keywords": "[\"Bánh bao nhân thịt heo trứng muối Thọ Phát\"]",
+    "meta_description": "Bánh bao nhân thịt heo trứng muối Thọ Phát",
+    "affiliateLinks": "",
+    "status": "APPROVE",
+    "categoryId": "8b06a696-ed18-4e19-8824-6530c6256e93",
+    "referenceKey": "08ebed19-763c-4976-b2a0-5fadf73b8888",
+    "userUpdate": "",
+    "userCreate": "",
+    "isDeleted": false,
+    "createDate": {
+      "$date": "2025-07-21T15:42:42.463Z"
+    },
+    "updateDate": {
+      "$date": "2025-07-21T15:53:47.694Z"
+    },
+    "__v": 0,
+    "productId": "c255b72e-f9ba-42b0-b9ac-35f37d1c89c6"
+  },
+  {
+    "_id": {
+      "$oid": "687e628b220b4bcdfb333551"
+    },
+    "productCode": "PE000254",
+    "name": "Bánh bao nhân thịt heo trứng muối Thọ Phát",
+    "title": "Bịt bánh bao nhân thịt heo trứng muối Thọ Phát 4 cái 9",
+    "slug": "banh-bao-nhan-thit-heo-trung-muoi-tho-phat-bit-banh-bao-nhan-thit-heo-trung-muoi-tho-phat-4-cai-9",
+    "meta_slug": "banh-bao-nhan-thit-heo-trung-muoi-tho-phat-bit-banh-bao-nhan-thit-heo-trung-muoi-tho-phat-4-cai-9",
+    "productType": "product-extend",
+    "description": "<p>Bánh bao nhân thịt heo trứng muối Thọ Phát</p>",
+    "short_description": "Bịt bánh bao nhân thịt heo trứng muối Thọ Phát 4 cái",
+    "image_url": "[baseUrl]/chothongminh/product/PE000254/cd0e8cbb-9a0a-4a3b-bf0a-34845c149f69.webp",
+    "gallery_product": "[\"cd0e8cbb-9a0a-4a3b-bf0a-34845c149f69.webp\"]",
+    "price": 60000,
+    "product_extend": "",
+    "unit": "Bịt 4 cái",
+    "availability": true,
+    "rating": 0,
+    "review_count": 0,
+    "meta_title": "Bánh bao nhân thịt heo trứng muối Thọ Phát",
+    "meta_keywords": "[\"Bánh bao nhân thịt heo trứng muối Thọ Phát\"]",
+    "meta_description": "Bánh bao nhân thịt heo trứng muối Thọ Phát",
+    "affiliateLinks": "",
+    "status": "APPROVE",
+    "categoryId": "8b06a696-ed18-4e19-8824-6530c6256e93",
+    "referenceKey": "08ebed19-763c-4976-b2a0-5fadf73b8888",
+    "userUpdate": "",
+    "userCreate": "",
+    "isDeleted": false,
+    "createDate": {
+      "$date": "2025-07-21T15:53:47.581Z"
+    },
+    "updateDate": {
+      "$date": "2025-07-21T15:53:47.581Z"
+    },
+    "__v": 0,
+    "productId": "be825cfa-e136-41e8-8308-e5d2bddf457c"
+  }
+]

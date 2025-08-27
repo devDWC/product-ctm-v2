@@ -1,3 +1,4 @@
+import e from "express";
 import { CounterModel } from "../../model/entities/counter.entities";
 
 export function buildMongoQuery({
@@ -7,6 +8,7 @@ export function buildMongoQuery({
   defaultSort = { updateDate: -1 },
   baseFilter = {},
   conditions = [],
+  keyDenied = [],
 }: any): any {
   const filter: any = {};
   const sort: any = {};
@@ -25,22 +27,28 @@ export function buildMongoQuery({
     });
   }
 
-  // Áp dụng conditions cụ thể
+  // Conditions
   if (conditions.length > 0) {
     conditions.forEach(({ key, value }: any) => {
+      if (keyDenied.includes(key)) {
+        throw new Error(`Query on key '${key}' is denied`);
+      }
+
       if (Array.isArray(value)) {
-        // Nếu value là array => dùng $in
         andConditions.push({ [key]: { $in: value } });
       } else {
-        // Nếu value là đơn lẻ
         andConditions.push({ [key]: value });
       }
     });
   }
 
-  // Phân tích sortList
+  // Sort list
   if (sortList && sortList.length > 0) {
     sortList.forEach(({ key, value }: any) => {
+      if (keyDenied.includes(key)) {
+        throw new Error(`Sorting on key '${key}' is denied`);
+      }
+
       if (value === "asc" || value === "desc") {
         sort[key] = value === "asc" ? 1 : -1;
       } else {
@@ -80,4 +88,17 @@ export async function generateCode(prefix = "P", minPadLength = 6) {
   } catch (err: any) {
     throw new Error("Error generating code: " + err.message);
   }
+}
+
+export function buildPagination(
+  pageCurrent: number,
+  pageSize: number,
+  limitPageSize: number
+) {
+  let limit = pageSize;
+  if (pageSize > limitPageSize) {
+    limit = limitPageSize;
+  }
+  const skip = ((pageCurrent || 1) - 1) * limit;
+  return { skip, limit };
 }

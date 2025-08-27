@@ -37,6 +37,7 @@
     "deleteFailure": "Error while deleting category",
     "getAllSuccess": "Get categories successfully",
     "getAllFailure": "Error while getting categories",
+    "getFailure": "error while getting category",
     "getOneSuccess": "Get category info successfully",
     "getOneFailure": "Error while getting category",
     "getChildrenSuccess": "Get child categories successfully",

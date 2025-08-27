@@ -1,12 +1,18 @@
 // src/services/category.service.ts
 import { CategoryDto } from "../../../../model/dto/category/category.dto";
 import { CategoryRepository } from "../../../../repository/mgo-repository/categories-repository/categories.repository";
-import { CategoryModel, ICategory } from "../../../../model/entities/category.entities";
+import {
+  CategoryModel,
+  ICategory,
+} from "../../../../model/entities/category.entities";
 import {
   ConflictError,
   NotfoundError,
 } from "../../../../shared/utils/response.utility";
-import { buildMongoQuery } from "../../../../shared/utils/mgo.utility";
+import {
+  buildMongoQuery,
+  buildPagination,
+} from "../../../../shared/utils/mgo.utility";
 import { InputQuery } from "../../../../model/base/input-query.dto";
 
 export class CategoryService {
@@ -29,12 +35,16 @@ export class CategoryService {
       sortList: option.sortList,
       conditions: option.conditions,
       baseFilter: { isDeleted: false },
+      keyDenied: [],
     };
 
     const { filter, sort } = buildMongoQuery(mongoBuild);
 
-    const skip = ((option.pageCurrent || 1) - 1) * (option.pageSize || 10);
-    const limit = option.pageSize || 10;
+    const { skip, limit } = buildPagination(
+      option.pageCurrent,
+      option.pageSize,
+      100
+    );
 
     const { data, total } = await this.categoryRepo.getMany(filter, null, {
       sort,
@@ -102,11 +112,15 @@ export class CategoryService {
       sortList: option.sortList,
       conditions: option.conditions,
       baseFilter: { parentId: { $ne: "0" }, isDeleted: false },
+      keyDenied: [],
     };
     const { filter, sort } = buildMongoQuery(mongoBuild);
 
-    const skip = ((option.pageCurrent || 1) - 1) * (option.pageSize || 10);
-    const limit = option.pageSize || 10;
+    const { skip, limit } = buildPagination(
+      option.pageCurrent,
+      option.pageSize,
+      100
+    );
 
     // Dùng getMany
     const { data, total } = await this.categoryRepo.getMany(filter, null, {

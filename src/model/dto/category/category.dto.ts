@@ -2,9 +2,9 @@
 import { ICategory } from "../../entities/category.entities";
 
 export type CustomId = {
-  mongoId?: string,
-  categoryId: string
-}
+  mongoId?: string;
+  categoryId: string;
+};
 export class CategoryDto {
   image_url: string;
   name: string;
@@ -84,4 +84,15 @@ export interface UpdateCategoryDto {
   order?: number;
   createUser?: number;
   folderPath?: string;
+}
+
+export interface ICategoryNode {
+  categoryId: string;
+  name: string;
+  parentId: string;
+  image_url: string;
+  slug: string;
+  level: number;
+  index: number;
+  children: ICategoryNode[];
 }

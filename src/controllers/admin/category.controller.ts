@@ -37,7 +37,10 @@ import { validateAndSanitize } from "../../shared/helper/validateAndSanitize";
 import { S3Service } from "../../services/helper-services/s3.service";
 import { v4 as uuidv4 } from "uuid";
 import { _logSingletonService } from "../../services/helper-services/log.service";
-import { InputQuery } from "../../model/base/input-query.dto";
+import {
+  InputQuery,
+  InputQueryCleaner,
+} from "../../model/base/input-query.dto";
 
 @Tags("Category")
 @Route("/v1/admin/categories")
@@ -50,6 +53,7 @@ export class CategoryController extends Controller {
    */
   @Get("/getCategoryWithoutParentId")
   @Security("BearerAuth")
+  @Middlewares(accessControlMiddleware("categories", "get"))
   public async getCategoryWithoutParentId(
     /**
      * @summary Lấy danh sách danh mục không phải là parent.
@@ -70,7 +74,7 @@ export class CategoryController extends Controller {
         conditions: conditions ? JSON.parse(conditions) : [],
       };
       const categories = await this.categoryService.getCategoryWithoutParentId(
-        option
+        InputQueryCleaner.clean(option)
       );
 
       _logSingletonService.error(
@@ -94,6 +98,7 @@ export class CategoryController extends Controller {
    */
   @Get("/")
   @Security("BearerAuth")
+  @Middlewares(accessControlMiddleware("categories", "get"))
   public async getAllCategories(
     @Query() search?: string,
     @Query() pageCurrent: number = 1,
@@ -112,7 +117,7 @@ export class CategoryController extends Controller {
       };
 
       const { data, total } = await this.categoryService.getAllCategories(
-        option
+        InputQueryCleaner.clean(option)
       );
 
       _logSingletonService.info(t(lang, "getAllSuccess", "categories"), data);
@@ -130,6 +135,7 @@ export class CategoryController extends Controller {
    */
   @Get("/{categoryId}")
   @Security("BearerAuth")
+  @Middlewares(accessControlMiddleware("categories", "get"))
   public async getCategoryById(
     @Path() categoryId: string,
     @Header("X-Language") lang?: string
@@ -159,6 +165,7 @@ export class CategoryController extends Controller {
    */
   @Get("/parent/{parentId}")
   @Security("BearerAuth")
+  @Middlewares(accessControlMiddleware("categories", "get"))
   public async getCategoriesByParentId(
     @Path() parentId: string,
     @Header("X-Language") lang?: string
@@ -193,6 +200,7 @@ export class CategoryController extends Controller {
    */
   @Get("/sort/level/{id}")
   @Security("BearerAuth")
+  @Middlewares(accessControlMiddleware("categories", "get"))
   public async getListCategoryLevel(
     @Path() id: number,
     @Header("X-Language") lang?: string
