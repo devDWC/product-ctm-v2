@@ -11,6 +11,7 @@ export interface ICategoryGroup extends Document {
   userCreate: number;
   createDate: Date;
   updateDate: Date;
+  isDeleted: Boolean;
 }
 
 // Tạo schema
@@ -42,6 +43,7 @@ const categoryGroupSchema = new Schema<ICategoryGroup>(
       type: Number,
       default: 0,
     },
+    isDeleted: { type: Boolean, default: false },
   },
   {
     timestamps: { createdAt: "createDate", updatedAt: "updateDate" },

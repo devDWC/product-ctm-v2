@@ -53,8 +53,8 @@ export class CategoryController extends Controller {
   }
 
   @Post("/")
-  @Security("BearerAuth")
-  @Middlewares(accessControlMiddleware("categories", "create"))
+  // @Security("BearerAuth")
+  // @Middlewares(accessControlMiddleware("categories", "create"))
   public async createCategory(
     @FormField() name: string,
     @FormField() slug?: string,

@@ -14,6 +14,7 @@ import {
   Security,
   Get,
   Query,
+  Body,
 } from "tsoa";
 import { ApiResponse } from "../../model/base/response.dto";
 import {
@@ -25,6 +26,8 @@ import {
 import {
   CreateCategoryGroupDto,
   UpdateCategoryGroupDto,
+  inputCategoryGroupDto,
+  outputCategoryGroupDto,
 } from "../../model/dto/categoryGroup/categoryGroup.dto";
 import {
   createCategoryGroupSchema,
@@ -46,7 +49,7 @@ export class CategoryGroupController extends Controller {
   private readonly _s3Service = new S3Service();
 
   @Get("/")
-  public async getCategoryGroup(
+  public async getCategoryGr(
     @Query() search?: string,
     @Query() pageCurrent: number = 1,
     @Query() pageSize: number = 10,
@@ -65,7 +68,9 @@ export class CategoryGroupController extends Controller {
       const { data, total } = await this.categoryGrService.getAllCategories(
         option
       );
-      return Success(data, t(lang, "getCategory", "categories"), total);
+      console.log("data", data);
+      const mapped = data.map((item: any) => new outputCategoryGroupDto(item));
+      return Success(mapped, t(lang, "getCategory", "categories"), total);
     } catch (error: any) {
       console.log(error);
       return ExceptionError(error || t(lang, "getAllFailure", "categories"));
@@ -75,20 +80,17 @@ export class CategoryGroupController extends Controller {
   @Post("/")
   // @Security("BearerAuth")
   // @Middlewares(accessControlMiddleware("categoryGroups", "create"))
-  public async createCategoryGroup(
-    @FormField() name: string,
-    @FormField() slug: string,
-    @FormField() userCreate: number,
-    @FormField() description?: string,
+  public async createCategoryGr(
+    @Body() dto: inputCategoryGroupDto,
 
     @Header("X-Language") lang?: string
   ): Promise<ApiResponse> {
-    const dto: CreateCategoryGroupDto = {
-      name,
-      slug,
-      description,
-      userCreate,
-    };
+    // const dto: CreateCategoryGroupDto = {
+    //   name,
+    //   slug,
+    //   description,
+    //   userCreate,
+    // };
 
     _logSingletonService.info("Creating category group", dto);
     try {
@@ -110,130 +112,87 @@ export class CategoryGroupController extends Controller {
     }
   }
 
-  //   @Put("/{categoryId}")
-  //   @Middlewares([accessControlMiddleware("categories", "update")])
-  //   public async updateCategory(
-  //     @Path() categoryId: string,
+  @Put("/{id}")
+  // @Middlewares([accessControlMiddleware("categories", "update")])
+  public async updateCategoryGr(
+    @Path() id: string,
+    @Body() dto: inputCategoryGroupDto,
+    @Header("X-Language") lang?: string
+  ): Promise<ApiResponse> {
+    try {
+      const result = validateAndSanitize(updateCategoryGroupSchema, dto, lang);
+      if (result.error) {
+        return result.error;
+      }
 
-  //     @FormField() name: string = "abc",
-  //     @FormField() slug?: string,
-  //     @FormField() description?: string,
-  //     @FormField() meta_title?: string,
-  //     @FormField() meta_keywords?: string,
-  //     @FormField() meta_description?: string,
-  //     @FormField() meta_slug?: string,
-  //     @FormField() parentId?: number,
-  //     @FormField() index?: number,
-  //     @FormField() order?: number,
-  //     @FormField() createUser?: number,
-  //     @FormField() folderPath?: string,
+      const category = await this.categoryGrService.updateCategory(
+        id,
+        result.data
+      );
 
-  //     @UploadedFile() image_url?: Express.Multer.File,
+      if (!category) {
+        return NotfoundError(t(lang, "notFound", "categories"));
+      }
 
-  //     @Header("X-Language") lang?: string
-  //   ): Promise<ApiResponse> {
-  //     const dto: UpdateCategoryDto = {
-  //       name,
-  //       slug,
-  //       description,
-  //       meta_title,
-  //       meta_keywords,
-  //       meta_description,
-  //       meta_slug,
-  //       parentId,
-  //       index,
-  //       order,
-  //       createUser,
-  //       folderPath,
-  //     };
+      return Success(category, t(lang, "updateSuccess", "categories"));
+    } catch (error: any) {
+      if (error.status === 409 || error.status === 404) {
+        return error;
+      }
+      return ExceptionError(
+        error?.message || t(lang, "updateFailure", "categories")
+      );
+    }
+  }
 
-  //     const distinctive = uuidv4();
-  //     try {
-  //       if (image_url) {
-  //         const upload = await this._s3Service.uploadSingleFileAsync(
-  //           image_url,
-  //           dto.folderPath || "categories",
-  //           distinctive
-  //         );
-  //         if (!upload) {
-  //           return ProcessError(t(lang, "uploadFailed", "categories"));
-  //         }
-  //         dto.image_url = `/${upload.bucketName}/${upload.key}` || "";
-  //       }
+  @Delete("/{id}")
+  // @Middlewares([accessControlMiddleware("categories", "delete")])
+  public async deleteHardCategoryGr(
+    @Path() id: string,
+    @Header("X-Language") lang?: string
+  ): Promise<ApiResponse> {
+    try {
+      const category = await this.categoryGrService.deleteHardCategory(id);
+      if (!category) return NotfoundError(t(lang, "notFound", "categories"));
+      return Success(category, t(lang, "deleteSuccess", "categories"));
+    } catch (error: any) {
+      return ExceptionError(
+        error?.message || t(lang, "deleteFailure", "categories")
+      );
+    }
+  }
 
-  //       const result = validateAndSanitize(updateCategorySchema, dto, lang);
-  //       if (result.error) {
-  //         return result.error;
-  //       }
+  @Put("/temp/{id}")
+  // @Middlewares([accessControlMiddleware("categories", "update")])
+  public async deleteSoftCategoryGr(
+    @Path() id: string,
+    @Header("X-Language") lang?: string
+  ): Promise<ApiResponse> {
+    try {
+      const category = await this.categoryGrService.deleteSoftCategory(id);
+      if (!category) return NotfoundError(t(lang, "notFound", "categories"));
+      return Success(category, t(lang, "deleteSuccess", "categories"));
+    } catch (error: any) {
+      return ExceptionError(
+        error?.message || t(lang, "deleteFailure", "categories")
+      );
+    }
+  }
 
-  //       const category = await this.categoryService.updateCategory(
-  //         categoryId,
-  //         result.data
-  //       );
-
-  //       if (!category) {
-  //         if (image_url) {
-  //           // rollback file nếu category không tồn tại
-  //           this._s3Service.deleteFolder(
-  //             dto.folderPath || "categories",
-  //             distinctive
-  //           );
-  //         }
-  //         return NotfoundError(t(lang, "notFound", "categories"));
-  //       }
-
-  //       return Success(category, t(lang, "updateSuccess", "categories"));
-  //     } catch (error: any) {
-  //       if (image_url) {
-  //         this._s3Service.deleteFolder(
-  //           dto.folderPath || "categories",
-  //           distinctive
-  //         );
-  //       }
-  //       if (error.status === 409 || error.status === 404) {
-  //         return error;
-  //       }
-  //       return ExceptionError(
-  //         error?.message || t(lang, "updateFailure", "categories")
-  //       );
-  //     }
-  //   }
-
-  //   @Delete("/{categoryId}")
-  //   @Middlewares([accessControlMiddleware("categories", "delete")])
-  //   public async deleteHardCategory(
-  //     @Path() categoryId: string,
-  //     @Header("X-Language") lang?: string
-  //   ): Promise<ApiResponse> {
-  //     try {
-  //       const category = await this.categoryService.deleteHardCategory(
-  //         categoryId
-  //       );
-  //       if (!category) return NotfoundError(t(lang, "notFound", "categories"));
-  //       return Success(category, t(lang, "deleteSuccess", "categories"));
-  //     } catch (error: any) {
-  //       return ExceptionError(
-  //         error?.message || t(lang, "deleteFailure", "categories")
-  //       );
-  //     }
-  //   }
-
-  //   @Put("/temp/{categoryId}")
-  //   @Middlewares([accessControlMiddleware("categories", "update")])
-  //   public async deleteSoftCategory(
-  //     @Path() categoryId: string,
-  //     @Header("X-Language") lang?: string
-  //   ): Promise<ApiResponse> {
-  //     try {
-  //       const category = await this.categoryService.deleteSoftCategory(
-  //         categoryId
-  //       );
-  //       if (!category) return NotfoundError(t(lang, "notFound", "categories"));
-  //       return Success(category, t(lang, "deleteSuccess", "categories"));
-  //     } catch (error: any) {
-  //       return ExceptionError(
-  //         error?.message || t(lang, "deleteFailure", "categories")
-  //       );
-  //     }
-  //   }
+  @Get("{id}")
+  // @Middlewares([accessControlMiddleware("categories", "update")])
+  public async getCategoryGrById(
+    @Path() id: string,
+    @Header("X-Language") lang?: string
+  ): Promise<ApiResponse> {
+    try {
+      const category = await this.categoryGrService.getCategoryById(id);
+      if (!category) return NotfoundError(t(lang, "notFound", "categories"));
+      return Success(category, t(lang, "deleteSuccess", "categories"));
+    } catch (error: any) {
+      return ExceptionError(
+        error?.message || t(lang, "deleteFailure", "categories")
+      );
+    }
+  }
 }

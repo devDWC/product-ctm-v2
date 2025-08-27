@@ -70,83 +70,64 @@ export class CategoryGrService {
   /**
    * Cập nhật category theo categoryId
 //    */
-  //   public async updateCategory(
-  //     categoryId: string,
-  //     updateData: Partial<ICategory>
-  //   ): Promise<CategoryDto | null> {
-  //     const category = await this.categoryRepo.getOne({
-  //       categoryId,
-  //       isDeleted: false,
-  //     });
-  //     if (!category) {
-  //       throw NotfoundError("Không tìm thấy category");
-  //     }
+  public async updateCategory(
+    id: string,
+    updateData: Partial<ICategoryGroup>
+  ): Promise<CategoryGroupDto | null> {
+    const category = await this.categoryGrRepo.getOne({
+      id,
+      isDeleted: false,
+    });
+    if (!category) {
+      throw NotfoundError("Không tìm thấy category");
+    }
 
-  //     // 2. Nếu có name + slug mới thì check trùng
-  //     if (updateData.name && updateData.slug) {
-  //       const exists = await this.categoryRepo.getOne({
-  //         name: updateData.name,
-  //         slug: updateData.slug,
-  //         isDeleted: false,
-  //         categoryId: { $ne: categoryId }, // loại trừ chính nó
-  //       });
+    // 2. Nếu có name + slug mới thì check trùng
+    if (updateData.name && updateData.slug) {
+      const exists = await this.categoryGrRepo.getOne({
+        name: updateData.name,
+        slug: updateData.slug,
+        isDeleted: false,
+        id: { $ne: id }, // loại trừ chính nó
+      });
 
-  //       if (exists) {
-  //         throw ConflictError("Category với name + slug đã tồn tại");
-  //       }
-  //     }
+      if (exists) {
+        throw ConflictError("CategoryGroup với name + slug đã tồn tại");
+      }
+    }
 
-  //     if (updateData.parentId && updateData.parentId !== "0") {
-  //       const categoryId = String(updateData.parentId);
-  //       const parent = await this.categoryRepo.getOne({
-  //         categoryId,
-  //         isDeleted: false,
-  //       });
-  //       if (parent) {
-  //         updateData.order = (parent.order || 0) + 1;
-  //       }
-  //     }
-  //     const updated = await this.categoryRepo.update({ categoryId }, updateData);
-  //     return updated ? new CategoryDto(updated) : null;
-  //   }
+    const updated = await this.categoryGrRepo.update({ id }, updateData);
+    return updated ? new CategoryGroupDto(updated) : null;
+  }
 
   //   /**
   //    * Xóa category (soft delete) theo categoryId
   //    */
-  //   public async deleteSoftCategory(
-  //     categoryId: string
-  //   ): Promise<CategoryDto | null> {
-  //     const deleted = await this.categoryRepo.update(
-  //       { categoryId },
-  //       { isDeleted: true }
-  //     );
-  //     return deleted ? new CategoryDto(deleted) : null;
-  //   }
+  public async deleteSoftCategory(
+    id: string
+  ): Promise<CategoryGroupDto | null> {
+    const deleted = await this.categoryGrRepo.update(
+      { id },
+      { isDeleted: true }
+    );
+    return deleted ? new CategoryGroupDto(deleted) : null;
+  }
 
   //   /**
   //    * Xóa category (soft delete) theo categoryId
   //    */
-  //   public async deleteHardCategory(
-  //     categoryId: string
-  //   ): Promise<CategoryDto | null> {
-  //     const deleted = await this.categoryRepo.delete({ categoryId });
-  //     return deleted ? new CategoryDto(deleted) : null;
-  //   }
+  public async deleteHardCategory(
+    id: string
+  ): Promise<CategoryGroupDto | null> {
+    const deleted = await this.categoryGrRepo.delete({ id });
+    return deleted ? new CategoryGroupDto(deleted) : null;
+  }
 
-  //   /**
-  //    * Cập nhật order hoặc index
-  //    */
-  //   public async updateCategoryOrderOrIndex(
-  //     categoryId: string,
-  //     order?: number,
-  //     index?: number
-  //   ): Promise<CategoryDto | null> {
-  //     const updateData: Partial<ICategory> = {};
-  //     if (order !== undefined) updateData.order = order;
-  //     if (index !== undefined) updateData.index = index;
-
-  //     const updated = await this.categoryRepo.update({ categoryId }, updateData);
-
-  //     return updated ? new CategoryDto(updated) : null;
-  //   }
+  public async getCategoryById(id: string): Promise<CategoryGroupDto | null> {
+    const category = await this.categoryGrRepo.getOne({
+      id,
+      isDeleted: false,
+    });
+    return category ? new CategoryGroupDto(category) : null;
+  }
 }
