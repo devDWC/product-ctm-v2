@@ -335,15 +335,6 @@ export class ProductService {
           createdCodes.push(v.productCode);
         }
 
-        const gallery_productExtend = allVariants
-          .map((v) => {
-            const gallery = v.updateData?.gallery_product;
-            const parsedGallery =
-              typeof gallery === "string" ? JSON.parse(gallery) : gallery;
-            return parsedGallery?.[0] || null;
-          })
-          .filter(Boolean);
-
         const productListExtend = allVariants.map((v, idx) => ({
           extendIndex: idx + 1,
           extend: {
@@ -359,9 +350,8 @@ export class ProductService {
         }));
 
         updatedMain.product_extend =
-          gallery_productExtend.length && productListExtend
+          productListExtend
             ? JSON.stringify({
-                gallery_productExtend,
                 productListExtend,
               })
             : "";

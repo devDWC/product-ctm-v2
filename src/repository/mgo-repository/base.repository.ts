@@ -80,6 +80,16 @@ export class BaseRepository<T extends Document> {
   }
 
   /**
+   * Xóa nhiều document theo filter
+   */
+  public async deleteMany(
+    filter: FilterQuery<T>
+  ): Promise<{ deletedCount?: number }> {
+    const result = await this.model.deleteMany(filter).exec();
+    return { deletedCount: result.deletedCount };
+  }
+
+  /**
    * Đếm số lượng document thỏa filter
    */
   public async count(filter: FilterQuery<T> = {}): Promise<number> {

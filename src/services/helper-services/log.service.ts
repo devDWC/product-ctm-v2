@@ -1,5 +1,6 @@
 import * as Sentry from "@sentry/node";
 import baseConfig from "../../config/baseConfig.json";
+import { ErrorLog } from "../../model/enum/error-log.enum";
 
 Sentry.init({
   dsn: "https://c052f03c5a0db4e7635b8ed752015312@o4509902576484352.ingest.de.sentry.io/4509902753824848", // thay DSN thật
@@ -35,6 +36,18 @@ export class LogService {
       console.error(`[ERROR] ${error.message}`, error.stack, context || "");
       Sentry.captureException(error);
     }
+  }
+
+  businessErrorLog(controller: string, error: string, context?: any) {
+    const errorLog = `[${controller}]-[${ErrorLog.BUSINESS}]: ${error}`;
+    console.error(`${errorLog}, ${context}`);
+    Sentry.captureMessage(errorLog);
+  }
+
+  exceptionErrorLog(controller: string, error: string, context?: any) {
+    const errorLog = `[${controller}]-[${ErrorLog.EXCEPTION}]: ${error}`;
+    console.error(`${errorLog}, ${context}`);
+    Sentry.captureException(error);
   }
 }
 

@@ -1,7 +1,6 @@
 // src/services/category.service.ts
 import { CategoryRepository } from "../../../../repository/mgo-repository/categories-repository/categories.repository";
 import {
-  CategoryModel,
   ICategory,
 } from "../../../../model/entities/category.entities";
 import { ProductModel } from "../../../../model/entities/product.entities";

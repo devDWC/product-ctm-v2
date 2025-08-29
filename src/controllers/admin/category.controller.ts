@@ -47,6 +47,7 @@ import {
 export class CategoryController extends Controller {
   private categoryService = new CategoryService();
   private readonly _s3Service = new S3Service();
+  private CATEGORY_NAME = "Category";
 
   /**
    * @summary Lấy danh sách danh mục không phải là parent.
@@ -77,15 +78,16 @@ export class CategoryController extends Controller {
         InputQueryCleaner.clean(option)
       );
 
-      _logSingletonService.error(
+      _logSingletonService.info(
         t(lang, "getChildrenSuccess", "categories"),
         categories
       );
       return Success(categories, t(lang, "getChildrenSuccess", "categories"));
     } catch (error: any) {
-      _logSingletonService.error(
-        t(lang, "getChildrenFailure", "categories"),
-        error
+      _logSingletonService.exceptionErrorLog(
+        this.CATEGORY_NAME,
+        error.message,
+        t(lang, "getChildrenFailure", "categories")
       );
       return ExceptionError(
         error?.message || t(lang, "getChildrenFailure", "categories")
@@ -123,7 +125,11 @@ export class CategoryController extends Controller {
       _logSingletonService.info(t(lang, "getAllSuccess", "categories"), data);
       return Success(data, t(lang, "getAllSuccess", "categories"), total);
     } catch (error: any) {
-      _logSingletonService.error(t(lang, "getAllFailure", "categories"), error);
+      _logSingletonService.exceptionErrorLog(
+        this.CATEGORY_NAME,
+        error.message,
+        t(lang, "getAllFailure", "categories")
+      );
       return ExceptionError(
         error?.message || t(lang, "getAllFailure", "categories")
       );
@@ -153,7 +159,11 @@ export class CategoryController extends Controller {
       );
       return Success(category, t(lang, "getOneSuccess", "categories"));
     } catch (error: any) {
-      _logSingletonService.error(t(lang, "getOneFailure", "categories"), error);
+      _logSingletonService.exceptionErrorLog(
+        this.CATEGORY_NAME,
+        error.message,
+        t(lang, "getOneFailure", "categories")
+      );
       return ExceptionError(
         error?.message || t(lang, "getOneFailure", "categories")
       );
@@ -185,9 +195,10 @@ export class CategoryController extends Controller {
         categories.length
       );
     } catch (error: any) {
-      _logSingletonService.error(
-        t(lang, "getChildrenFailure", "categories"),
-        error
+      _logSingletonService.exceptionErrorLog(
+        this.CATEGORY_NAME,
+        error.message,
+        t(lang, "getChildrenFailure", "categories")
       );
       return ExceptionError(
         error?.message || t(lang, "getChildrenFailure", "categories")
@@ -213,9 +224,10 @@ export class CategoryController extends Controller {
       );
       return Success(categories, t(lang, "getChildrenSuccess", "categories"));
     } catch (error: any) {
-      _logSingletonService.error(
-        t(lang, "getChildrenFailure", "categories"),
-        error
+      _logSingletonService.exceptionErrorLog(
+        this.CATEGORY_NAME,
+        error.message,
+        t(lang, "getChildrenFailure", "categories")
       );
       return ExceptionError(
         error?.message || t(lang, "getChildrenFailure", "categories")
@@ -311,7 +323,11 @@ export class CategoryController extends Controller {
         return error;
       }
 
-      _logSingletonService.error(t(lang, "createFailure", "categories"), error);
+      _logSingletonService.exceptionErrorLog(
+        this.CATEGORY_NAME,
+        error.message,
+        t(lang, "createFailure", "categories")
+      );
 
       return ExceptionError(t(lang, "createFailure", "categories"));
     }
@@ -371,6 +387,11 @@ export class CategoryController extends Controller {
             t(lang, "uploadFailed", "categories"),
             upload
           );
+          _logSingletonService.businessErrorLog(
+            this.CATEGORY_NAME,
+            upload.message,
+            t(lang, "uploadFailed", "categories")
+          );
           return ProcessError(t(lang, "uploadFailed", "categories"));
         }
         dto.image_url = `/${upload.bucketName}/${upload.key}` || "";
@@ -395,12 +416,15 @@ export class CategoryController extends Controller {
             distinctive
           );
         }
-
-        _logSingletonService.error(t(lang, "notFound", "categories"), category);
+        _logSingletonService.businessErrorLog(
+          this.CATEGORY_NAME,
+          t(lang, "notFound", "categories"),
+          t(lang, "notFound", "categories")
+        );
         return NotfoundError(t(lang, "notFound", "categories"));
       }
 
-      _logSingletonService.error(
+      _logSingletonService.info(
         t(lang, "updateSuccess", "categories"),
         category
       );
@@ -413,10 +437,19 @@ export class CategoryController extends Controller {
         );
       }
       if (error.status === 409 || error.status === 404) {
+        _logSingletonService.businessErrorLog(
+          this.CATEGORY_NAME,
+          error.message,
+          error.message
+        );
         return error;
       }
 
-      _logSingletonService.error(t(lang, "updateFailure", "categories"), error);
+      _logSingletonService.exceptionErrorLog(
+        this.CATEGORY_NAME,
+        error.message,
+        error.message
+      );
       return ExceptionError(
         error?.message || t(lang, "updateFailure", "categories")
       );
@@ -438,7 +471,11 @@ export class CategoryController extends Controller {
         categoryId
       );
       if (!category) {
-        _logSingletonService.error(t(lang, "notFound", "categories"), category);
+        _logSingletonService.businessErrorLog(
+          this.CATEGORY_NAME,
+          t(lang, "notFound", "categories"),
+          t(lang, "notFound", "categories")
+        );
         return NotfoundError(t(lang, "notFound", "categories"));
       }
 
@@ -448,7 +485,11 @@ export class CategoryController extends Controller {
       );
       return Success(category, t(lang, "deleteSuccess", "categories"));
     } catch (error: any) {
-      _logSingletonService.error(t(lang, "deleteFailure", "categories"), error);
+      _logSingletonService.exceptionErrorLog(
+        this.CATEGORY_NAME,
+        error.message,
+        t(lang, "notFound", "categories")
+      );
       return ExceptionError(
         error?.message || t(lang, "deleteFailure", "categories")
       );
@@ -470,7 +511,11 @@ export class CategoryController extends Controller {
         categoryId
       );
       if (!category) {
-        _logSingletonService.error(t(lang, "notFound", "categories"), category);
+        _logSingletonService.businessErrorLog(
+          this.CATEGORY_NAME,
+          t(lang, "notFound", "categories"),
+          t(lang, "notFound", "categories")
+        );
         return NotfoundError(t(lang, "notFound", "categories"));
       }
 
@@ -480,7 +525,11 @@ export class CategoryController extends Controller {
       );
       return Success(category, t(lang, "deleteSuccess", "categories"));
     } catch (error: any) {
-      _logSingletonService.error(t(lang, "deleteFailure", "categories"), error);
+      _logSingletonService.exceptionErrorLog(
+        this.CATEGORY_NAME,
+        error.message,
+        t(lang, "deleteFailure", "categories")
+      );
       return ExceptionError(
         error?.message || t(lang, "deleteFailure", "categories")
       );

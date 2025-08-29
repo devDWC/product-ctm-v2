@@ -12,6 +12,8 @@ import { autoMap, autoMapWithClass } from "../utils/autoMap-untility";
 import { getUrlImgProduct } from "../utils/img-untity";
 import { v4 as uuidv4 } from "uuid";
 import { generateCode } from "../utils/mgo.utility";
+import { ProductDetailsModel } from "../../model/entities/product-detail.entities";
+import { ProductDtExtendV1Dto } from "../../model/dto/product-detail/product-detail.dto";
 
 const organization: string = "chothongminh";
 
@@ -449,6 +451,48 @@ export class ProductExtension {
       return {
         ...source,
         product_extend,
+      };
+    });
+
+    return finalData;
+  }
+
+  async mapProductListV1Async(sources: any) {
+    const referenceKeys = sources.map((p: any) => p.referenceKey);
+
+    // B2: Lấy toàn bộ biến thể theo referenceKey
+    const variants = await ProductDetailsModel.find({
+      productType: "product-extend",
+      isDeleted: false,
+      referenceKey: { $in: referenceKeys },
+    }).lean();
+
+    // B3: Gộp dữ liệu theo referenceKey
+    const variantMap = variants.reduce((map: Record<string, any>, v) => {
+      const key = v.referenceKey;
+      if (!map[key]) map[key] = [];
+      map[key].push(v);
+      return map;
+    }, {});
+
+    const finalData = sources.map((source: any) => {
+      const extendsList = variantMap[source.referenceKey] || [];
+
+      const productListExtend = extendsList.map((item: any, index: number) => ({
+        extendIndex: index + 1,
+        extend: ProductDtExtendV1Dto.init(item),
+      }));
+
+      const product_extend =
+        productListExtend.length === 0 ? "" : JSON.stringify(productListExtend);
+
+      const product_extend_ids = extendsList.map((item: any) => item.id);
+
+      return {
+        ...source,
+        categoryId: parseInt(source.categoryId),
+        product_extend,
+        product_extend_ids,
       };
     });
 

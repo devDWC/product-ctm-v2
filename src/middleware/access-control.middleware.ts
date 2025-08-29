@@ -1,6 +1,7 @@
 // src/middlewares/access-control.middleware.ts
 import { Request, Response, NextFunction } from "express";
 import { ApiResponse } from "../model/base/response.dto";
+import baseConfig from "../config/baseConfig.json";
 import axios from "axios";
 
 function getAccessURL() {
@@ -41,10 +42,14 @@ export function accessControlMiddleware(router: string, action: string) {
     };
 
     try {
+      if (!baseConfig.enableMiddleware) {
+        return next();
+      }
       const res: any = await checkPermission(req, router, action);
 
       if (!res.allowed) {
-        apiRes.message = res.message || "You do not have permission to perform this action.";
+        apiRes.message =
+          res.message || "You do not have permission to perform this action.";
         return res.status(403).json(apiRes);
       }
 

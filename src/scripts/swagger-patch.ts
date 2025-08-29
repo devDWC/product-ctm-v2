@@ -194,7 +194,7 @@ const getExample = {
   pageCurrent: 1,
   pageSize: 10,
   sortList: JSON.stringify([{ key: "createDate", value: "desc" }]),
-  conditions: JSON.stringify([{ key: "tenantId", value: 101 }]),
+  conditions: JSON.stringify([{ key: "tenantId", value: 3 }]),
 };
 
 patchSwaggerGetExamples({
@@ -207,6 +207,18 @@ patchSwaggerGetExamples({
 });
 patchSwaggerGetExamples({
   endpoint: "/v1/admin/categories/getCategoryWithoutParentId",
+  queryExamples: getExample,
+});
+patchSwaggerGetExamples({
+  endpoint: "/v1/admin/product-detail",
+  queryExamples: getExample,
+});
+patchSwaggerGetExamples({
+  endpoint: "/v1/admin/product-detail/getProductDetailsCMSWithPromotion/data",
+  queryExamples: getExample,
+});
+patchSwaggerGetExamples({
+  endpoint: "/v1/admin/product-detail/getRevenueStatistic/getData/data",
   queryExamples: getExample,
 });
 fs.writeFileSync(swaggerPath, JSON.stringify(swagger, null, 2));

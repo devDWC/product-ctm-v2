@@ -30,6 +30,7 @@ export interface IProductDetails extends Document {
   referenceKey: string;
   createDate?: Date;
   updateDate?: Date;
+  category?: mongoose.Types.ObjectId;
 }
 
 // Schema
@@ -64,6 +65,10 @@ const ProductDetailsSchema: Schema<IProductDetails> = new Schema(
     productType: { type: String, required: true },
     short_description: { type: String, required: true },
     referenceKey: { type: String, default: "" },
+    category: {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: "Category", // phải trùng với model Category đã export
+    },
   },
   {
     timestamps: { createdAt: "createDate", updatedAt: "updateDate" },

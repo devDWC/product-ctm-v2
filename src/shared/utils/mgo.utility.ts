@@ -9,61 +9,73 @@ export function buildMongoQuery({
   baseFilter = {},
   conditions = [],
   keyDenied = [],
-}: any): any {
+}: {
+  search?: string;
+  searchKeys?: string[];
+  sortList?: { key: string; value: "asc" | "desc" }[];
+  defaultSort?: Record<string, 1 | -1>;
+  baseFilter?: Record<string, any>;
+  conditions?: { key: string; value: any }[];
+  keyDenied?: string[];
+}): { filter: any; sort: any } {
   const filter: any = {};
   const sort: any = {};
   const andConditions: any[] = [];
 
-  // Base filter (ví dụ: { status: 'A' })
+  // Base filter
   if (Object.keys(baseFilter).length > 0) {
     andConditions.push(baseFilter);
   }
 
-  // Xử lý tìm kiếm
+  // Search
   if (search && searchKeys.length > 0) {
-    const searchRegex = new RegExp(search, "i");
+    const searchRegex = new RegExp(search.trim(), "i");
     andConditions.push({
-      $or: searchKeys.map((key: string) => ({ [key]: searchRegex })),
+      $or: searchKeys.map((key) => ({ [key]: searchRegex })),
     });
   }
 
   // Conditions
-  if (conditions.length > 0) {
-    conditions.forEach(({ key, value }: any) => {
+  if (conditions && conditions.length > 0) {
+    conditions.forEach(({ key, value }) => {
       if (keyDenied.includes(key)) {
         throw new Error(`Query on key '${key}' is denied`);
       }
 
       if (Array.isArray(value)) {
-        andConditions.push({ [key]: { $in: value } });
+        // Nếu value là [min, max] và cả 2 đều là số → hiểu là khoảng giá
+        if (value.length === 2 && value.every((v) => typeof v === "number")) {
+          andConditions.push({
+            [key]: { $gte: value[0], $lte: value[1] },
+          });
+        } else {
+          andConditions.push({ [key]: { $in: value } });
+        }
       } else {
         andConditions.push({ [key]: value });
       }
     });
   }
 
-  // Sort list
+  // Sort
   if (sortList && sortList.length > 0) {
-    sortList.forEach(({ key, value }: any) => {
+    sortList.forEach(({ key, value }) => {
       if (keyDenied.includes(key)) {
         throw new Error(`Sorting on key '${key}' is denied`);
       }
-
-      if (value === "asc" || value === "desc") {
-        sort[key] = value === "asc" ? 1 : -1;
-      } else {
-        andConditions.push({ [key]: value });
-      }
+      sort[key] = value === "asc" ? 1 : -1;
     });
   }
 
-  // Sort mặc định nếu chưa có
+  // Default sort
   if (Object.keys(sort).length === 0 && defaultSort) {
     Object.assign(sort, defaultSort);
   }
 
-  // Nếu có điều kiện thì thêm vào filter
-  if (andConditions.length > 0) {
+  // Merge andConditions vào filter
+  if (andConditions.length === 1) {
+    Object.assign(filter, andConditions[0]); // chỉ 1 điều kiện → gộp thẳng
+  } else if (andConditions.length > 1) {
     filter.$and = andConditions;
   }
 

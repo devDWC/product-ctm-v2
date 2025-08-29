@@ -46,7 +46,7 @@ import {
 export class ProductController extends Controller {
   private readonly _s3Service = new S3Service();
   private readonly productService = new ProductService();
-
+  private PRODUCT_NAME = "Product";
   /**
    * @summary Lấy danh sách sản phẩm có pagination và search.
    */
@@ -76,7 +76,11 @@ export class ProductController extends Controller {
       _logSingletonService.info(t(lang, "getAllSuccess", "product"), data);
       return Success(data, t(lang, "getAllSuccess", "product"), total);
     } catch (error: any) {
-      _logSingletonService.error(t(lang, "getAllFailure", "product"), error);
+      _logSingletonService.exceptionErrorLog(
+        this.PRODUCT_NAME,
+        error.message,
+        t(lang, "getAllFailure", "product")
+      );
       return ExceptionError(
         error?.message || t(lang, "getAllFailure", "product")
       );
@@ -96,13 +100,21 @@ export class ProductController extends Controller {
     try {
       const category = await this.productService.getProductById(productId);
       if (!category) {
-        _logSingletonService.error(t(lang, "notFound", "product"), category);
+        _logSingletonService.businessErrorLog(
+          this.PRODUCT_NAME,
+          t(lang, "notFound", "product"),
+          t(lang, "notFound", "product")
+        );
         return NotfoundError(t(lang, "notFound", "product"));
       }
       _logSingletonService.info(t(lang, "getOneSuccess", "product"), category);
       return Success(category, t(lang, "getOneSuccess", "product"));
     } catch (error: any) {
-      _logSingletonService.error(t(lang, "getOneFailure", "product"), error);
+      _logSingletonService.exceptionErrorLog(
+        this.PRODUCT_NAME,
+        error.message,
+        t(lang, "getOneFailure", "product")
+      );
       return ExceptionError(
         error?.message || t(lang, "getOneFailure", "product")
       );
@@ -128,13 +140,21 @@ export class ProductController extends Controller {
         pageSize
       );
       if (!product) {
-        _logSingletonService.error(t(lang, "notFound", "product"), product);
+        _logSingletonService.businessErrorLog(
+          this.PRODUCT_NAME,
+          t(lang, "notFound", "product"),
+          t(lang, "notFound", "product")
+        );
         return NotfoundError(t(lang, "notFound", "product"));
       }
       _logSingletonService.info(t(lang, "getOneSuccess", "product"), product);
       return Success(product, t(lang, "getOneSuccess", "product"));
     } catch (error: any) {
-      _logSingletonService.error(t(lang, "getAllFailure", "product"), error);
+      _logSingletonService.exceptionErrorLog(
+        this.PRODUCT_NAME,
+        error.message,
+        t(lang, "notFound", "product")
+      );
       return ExceptionError(
         error?.message || t(lang, "getAllFailure", "product")
       );
@@ -208,7 +228,11 @@ export class ProductController extends Controller {
 
       const result = validateAndSanitize(createProductSchema, dto, lang);
       if (result.error) {
-        _logSingletonService.error(result.error.message, result.error);
+        _logSingletonService.businessErrorLog(
+          this.PRODUCT_NAME,
+          result.error.message,
+          result.error.message
+        );
         return result.error;
       }
 
@@ -221,7 +245,11 @@ export class ProductController extends Controller {
         product.length
       );
     } catch (error: any) {
-      _logSingletonService.error(t(lang, "createFailed", "product"), error);
+      _logSingletonService.exceptionErrorLog(
+        this.PRODUCT_NAME,
+        error.message,
+        t(lang, "createFailed", "product")
+      );
       return ExceptionError(t(lang, "createFailed", "product"));
     }
   }
@@ -296,7 +324,11 @@ export class ProductController extends Controller {
 
       const result = validateAndSanitize(updateProductSchema, dto, lang);
       if (result.error) {
-        _logSingletonService.error(result.error.message, result.error);
+        _logSingletonService.businessErrorLog(
+          this.PRODUCT_NAME,
+          result.error.message,
+          result.error.message
+        );
         return result.error;
       }
 
@@ -305,8 +337,12 @@ export class ProductController extends Controller {
       _logSingletonService.info(t(lang, "updateSuccess", "product"), product);
       return Success(product, t(lang, "updateSuccess", "product"));
     } catch (error: any) {
-      _logSingletonService.error(t(lang, "updateFailed", "product"), error);
-      return ExceptionError(t(lang, "updateSuccess", "product"));
+      _logSingletonService.businessErrorLog(
+        this.PRODUCT_NAME,
+        error.message,
+        t(lang, "updateFailure", "product")
+      );
+      return ExceptionError(t(lang, "updateFailure", "product"));
     }
   }
 
@@ -331,11 +367,19 @@ export class ProductController extends Controller {
         _logSingletonService.info(result.message, result);
         return Success(result, result.message);
       } else {
-        _logSingletonService.error(result.message, result?.error);
+        _logSingletonService.businessErrorLog(
+          this.PRODUCT_NAME,
+          result.message,
+          t(lang, "updateFailure", "product")
+        );
         return ProcessError(result.message);
       }
     } catch (error: any) {
-      _logSingletonService.error(t(lang, "updateFailed", "product"), error);
+      _logSingletonService.businessErrorLog(
+        this.PRODUCT_NAME,
+        error.message,
+        t(lang, "updateFailure", "product")
+      );
       return ExceptionError(t(lang, "updateSuccess", "product"));
     }
   }
@@ -357,14 +401,22 @@ export class ProductController extends Controller {
         lang
       );
       if (!result.status) {
-        _logSingletonService.error(result.message, result);
+        _logSingletonService.businessErrorLog(
+          this.PRODUCT_NAME,
+          result.message,
+          t(lang, "notFound", "product")
+        );
         return NotfoundError(result.message);
       }
 
       _logSingletonService.info(t(lang, "deleteSuccess", "product"), result);
       return Success(result.productUpdate, t(lang, "deleteSuccess", "product"));
     } catch (error: any) {
-      _logSingletonService.error(t(lang, "deleteFailure", "product"), error);
+      _logSingletonService.exceptionErrorLog(
+        this.PRODUCT_NAME,
+        error.message,
+        t(lang, "deleteFailure", "product")
+      );
       return ExceptionError(
         error?.message || t(lang, "deleteFailure", "product")
       );
@@ -388,14 +440,22 @@ export class ProductController extends Controller {
         lang
       );
       if (!category) {
-        _logSingletonService.error(t(lang, "notFound", "product"), category);
+        _logSingletonService.businessErrorLog(
+          this.PRODUCT_NAME,
+          t(lang, "notFound", "product"),
+          t(lang, "notFound", "product")
+        );
         return NotfoundError(t(lang, "notFound", "product"));
       }
 
       _logSingletonService.info(t(lang, "deleteSuccess", "product"), category);
       return Success(category, t(lang, "deleteSuccess", "product"));
     } catch (error: any) {
-      _logSingletonService.error(t(lang, "deleteFailure", "product"), error);
+      _logSingletonService.exceptionErrorLog(
+        this.PRODUCT_NAME,
+        error.message,
+        t(lang, "deleteFailure", "product")
+      );
       return ExceptionError(
         error?.message || t(lang, "deleteFailure", "product")
       );

@@ -13,6 +13,7 @@ import { ExceptionError, Success } from "../../shared/utils/response.utility";
 export class CategoryV1Controller extends Controller {
   private categoryService = new CategoryService();
   private readonly _s3Service = new S3Service();
+  private CATEGORY_NAME = "CategoryV1";
 
   /**
    * @summary Lấy sản phẩm theo category con và tổng hợp thành list lớn
@@ -30,7 +31,11 @@ export class CategoryV1Controller extends Controller {
       );
       return Success(categories, t(lang, "getChildrenSuccess", "categories"));
     } catch (error: any) {
-      _logSingletonService.error(error.message, error);
+      _logSingletonService.exceptionErrorLog(
+        this.CATEGORY_NAME,
+        error.message,
+        t(lang, "getChildrenFailure", "categories")
+      );
       return ExceptionError(error?.message || error.message);
     }
   }
@@ -51,7 +56,11 @@ export class CategoryV1Controller extends Controller {
       );
       return Success(categories, t(lang, "getChildrenSuccess", "categories"));
     } catch (error: any) {
-      _logSingletonService.error(error.message, error);
+      _logSingletonService.exceptionErrorLog(
+        this.CATEGORY_NAME,
+        error.message,
+        t(lang, "getChildrenFailure", "categories")
+      );
       return ExceptionError(error?.message || error.message);
     }
   }
@@ -75,7 +84,11 @@ export class CategoryV1Controller extends Controller {
       );
       return Success(categories, t(lang, "getChildrenSuccess", "categories"));
     } catch (error: any) {
-      _logSingletonService.error(error.message, error);
+      _logSingletonService.exceptionErrorLog(
+        this.CATEGORY_NAME,
+        error.message,
+        t(lang, "getChildrenFailure", "categories")
+      );
       return ExceptionError(error?.message || error.message);
     }
   }
@@ -99,7 +112,11 @@ export class CategoryV1Controller extends Controller {
       );
       return Success(categories, t(lang, "getChildrenSuccess", "categories"));
     } catch (error: any) {
-      _logSingletonService.error(error.message, error);
+      _logSingletonService.exceptionErrorLog(
+        this.CATEGORY_NAME,
+        error.message,
+        t(lang, "getChildrenFailure", "categories")
+      );
       return ExceptionError(error?.message || error.message);
     }
   }
