@@ -40,6 +40,16 @@ export class BaseRepository<T extends Document> {
   }
 
   /**
+   * Lấy một document theo filter
+   */
+  public async getOneNotLean(
+    filter: FilterQuery<T>,
+    projection: any = null
+  ): Promise<T | null> {
+    return this.model.findOne(filter, projection);
+  }
+
+  /**
    * Tạo mới document với điều kiện filter (nếu đã tồn tại thì trả về null)
    */
   public async create(

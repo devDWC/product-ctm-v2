@@ -1,6 +1,7 @@
 // models/Cart.ts
 import mongoose, { Schema, Document } from "mongoose";
 import { v4 as uuidv4 } from "uuid";
+import { string } from "zod";
 
 // Interface cho Cart
 export interface ICart extends Document {
@@ -8,7 +9,7 @@ export interface ICart extends Document {
   userId: string | null;
   tenantId: number | null;
   quantity: number;
-  product_details_id: string;
+  productDetailId: string;
   product_details_extend_id: string;
   productCode: string | null;
   referenceKey: string | null;
@@ -41,13 +42,13 @@ const CartSchema: Schema<ICart> = new Schema(
       type: Number,
       default: 0,
     },
-    product_details_id: {
+    productDetailId: {
       type: String,
       default: "",
     },
     product_details_extend_id: {
       type: String,
-      default: "",
+      defailt: "",
     },
     productCode: {
       type: String,
