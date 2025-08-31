@@ -44,7 +44,6 @@ import {
 @Tags("Product")
 @Route("/v1/admin/product")
 export class ProductController extends Controller {
-  private readonly _s3Service = new S3Service();
   private readonly productService = new ProductService();
   private PRODUCT_NAME = "Product";
   /**

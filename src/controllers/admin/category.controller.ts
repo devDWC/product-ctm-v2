@@ -56,9 +56,6 @@ export class CategoryController extends Controller {
   @Security("BearerAuth")
   @Middlewares(accessControlMiddleware("categories", "get"))
   public async getCategoryWithoutParentId(
-    /**
-     * @summary Lấy danh sách danh mục không phải là parent.
-     */
     @Query() search?: string,
     @Query() pageCurrent: number = 1,
     @Query() pageSize: number = 10,
@@ -284,6 +281,11 @@ export class CategoryController extends Controller {
     };
     const distinctive = uuidv4();
     try {
+      const result = validateAndSanitize(createCategorySchema, dto, lang);
+      if (result.error) {
+        _logSingletonService.error(result.error.message, result.error);
+        return result.error;
+      }
       if (image_url) {
         const upload = await this._s3Service.uploadSingleFileAsync(
           image_url,
@@ -299,12 +301,7 @@ export class CategoryController extends Controller {
         }
         dto.image_url = `/${upload.bucketName}/${upload.key}` || "";
       }
-      const result = validateAndSanitize(createCategorySchema, dto, lang);
-      if (result.error) {
-        _logSingletonService.error(result.error.message, result.error);
-        return result.error;
-      }
-
+      
       const category = await this.categoryService.createCategory(result.data);
 
       _logSingletonService.info(

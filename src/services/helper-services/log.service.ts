@@ -39,12 +39,14 @@ export class LogService {
   }
 
   businessErrorLog(controller: string, error: string, context?: any) {
+    if (!this.isEnabled) return;
     const errorLog = `[${controller}]-[${ErrorLog.BUSINESS}]: ${error}`;
     console.error(`${errorLog}, ${context}`);
     Sentry.captureMessage(errorLog);
   }
 
   exceptionErrorLog(controller: string, error: string, context?: any) {
+    if (!this.isEnabled) return;
     const errorLog = `[${controller}]-[${ErrorLog.EXCEPTION}]: ${error}`;
     console.error(`${errorLog}, ${context}`);
     Sentry.captureException(error);

@@ -6,21 +6,18 @@ import { ProductExtension } from "../../../../shared/functions/product-extension
 import { S3Service } from "../../../helper-services/s3.service";
 import { v4 as uuidv4 } from "uuid";
 import { CategoryService } from "../../categories-service/admin/category.admin.service";
-import { createSlug, isNullOrEmpty } from "../../../helper-services/sp-service";
+import { createSlug } from "../../../helper-services/sp-service";
 import {
   ProductDetailCreateDto,
   ProductDetailDto,
   ProductDtUpdateDto,
 } from "../../../../model/dto/product-detail/product-detail.dto";
-import unitOfWork from "../../../../shared/utils/unitOfWork";
 import { ProductDetailsModel } from "../../../../model/entities/product-detail.entities";
 import {
   buildMongoQuery,
   buildPagination,
 } from "../../../../shared/utils/mgo.utility";
 import { ProductDetailRepository } from "../../../../repository/mgo-repository/product-detail-repository/product-detail.repository";
-import { ProductModel } from "../../../../model/entities/product.entities";
-import { CategoryDto } from "../../../../model/dto/category/category.dto";
 import { ProductPromotionModel } from "../../../../model/entities/product-promotion.entities";
 import { PromotionModel } from "../../../../model/entities/promotion.entities";
 import { autoMapWithClass } from "../../../../shared/utils/autoMap-untility";
@@ -75,9 +72,9 @@ export class ProductDetailService {
       }
     );
 
-    const listWithProduct = await this.joinProduct(details);
+    const listWithProduct = await this._productExtension.joinProduct(details);
 
-    const finalDetails = await this.joinCategoriesToDetails(listWithProduct);
+    const finalDetails = await this._productExtension.joinCategoriesToDetails(listWithProduct);
     const detailsReturn = await this._productExtension.mapProductListV1Async(
       finalDetails
     );
@@ -98,8 +95,8 @@ export class ProductDetailService {
     );
 
     if (productDetail) {
-      const listWithProduct = await this.joinProduct([productDetail]);
-      const finalDetails = await this.joinCategoriesToDetails(listWithProduct);
+      const listWithProduct = await this._productExtension.joinProduct([productDetail]);
+      const finalDetails = await this._productExtension.joinCategoriesToDetails(listWithProduct);
       const detailsReturn = await this._productExtension.mapProductListV1Async(
         finalDetails
       );
@@ -371,9 +368,9 @@ export class ProductDetailService {
       }
     );
 
-    const listWithProduct = await this.joinProduct(details);
+    const listWithProduct = await this._productExtension.joinProduct(details);
 
-    const finalDetails = await this.joinCategoriesToDetails(listWithProduct);
+    const finalDetails = await this._productExtension.joinCategoriesToDetails(listWithProduct);
     const detailsReturn = await this._productExtension.mapProductListV1Async(
       finalDetails
     );
@@ -452,85 +449,6 @@ export class ProductDetailService {
 
   private startOfYearUTC(year: any) {
     return new Date(`${year}-01-01T00:00:00.000Z`);
-  }
-
-  private convertGalleryProductV1(galleryProduct: any) {
-    if (isNullOrEmpty(galleryProduct)) return galleryProduct;
-    let extendParse = JSON.parse(galleryProduct);
-    extendParse.gallery_productExtend = JSON.stringify(
-      extendParse.gallery_productExtend
-    );
-    return JSON.stringify(extendParse);
-  }
-
-  private async joinProduct(details: any) {
-    const productIds = [
-      ...new Set(details.map((d: any) => d.productId)),
-    ].filter(Boolean);
-
-    const products = await ProductModel.find({
-      productId: { $in: productIds }, // ⚠️ Đảm bảo kiểu của id trong DB giống kiểu bạn truyền
-      isDeleted: false,
-    }).lean();
-
-    const productMap = products.reduce<Record<string, any>>((map, p) => {
-      map[p.productId] = {
-        productId: p.productId,
-        name: p.name,
-        gallery_product: p.gallery_product,
-        product_extend: this.convertGalleryProductV1(p.product_extend),
-        slug: p.slug,
-        productCode: p.productCode,
-        referenceKey: p.referenceKey,
-        description: p.description,
-        productType: p.productType,
-      };
-      return map;
-    }, {});
-
-    return details.map((detail: any) => ({
-      ...detail,
-      product: productMap[detail.productId] || null,
-    }));
-  }
-
-  private async joinCategoriesToDetails(details: any) {
-    const categoryIds: string[] = Array.from(
-      new Set(
-        details
-          .map((p: { categoryId?: string | number }) =>
-            p.categoryId?.toString()
-          )
-          .filter((id: any): id is string => Boolean(id))
-      )
-    );
-
-    const options: InputQuery = {
-      search: "",
-      pageCurrent: 1,
-      pageSize: 1000,
-      conditions: [{ key: "categoryId", value: categoryIds }],
-    };
-    const { data: response, total } =
-      await this.categoriesService.getAllCategories(options);
-
-    const categoryMap = response.reduce(
-      (map: Record<string, any>, cat: CategoryDto) => {
-        map[cat.customId.categoryId] = {
-          categoryId: cat.customId.categoryId,
-          name: cat.name,
-          slug: cat.slug,
-          image_url: cat.image_url,
-        };
-        return map;
-      },
-      {}
-    );
-
-    return details.map((detail: any) => ({
-      ...detail,
-      category: categoryMap[detail.categoryId] || null,
-    }));
   }
 
   private async mappingProductPromotion(products: any) {

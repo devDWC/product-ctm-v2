@@ -28,7 +28,8 @@ function patchSwaggerExample({
   const putPath =
     swagger.paths[endpoint + "/{id}"]?.put ||
     swagger.paths[endpoint + "/{productId}"]?.put ||
-    swagger.paths[endpoint + "/{categoryId}"]?.put;
+    swagger.paths[endpoint + "/{categoryId}"]?.put ||
+    swagger.paths[endpoint + "/{promotionId}"]?.put;
 
   // POST
   if (
@@ -177,6 +178,37 @@ const exampleCategory = {
   folderPath: "categories",
 };
 
+const examplePromotion = {
+  name: "Flash Sale 2025",
+  description: "Giảm giá lớn đầu năm cho tất cả sản phẩm điện tử.",
+  type: "FLASH_SALE",
+  color_code: "#FF5733",
+  background_color_code: "#FFFFFF",
+  background_color_promotion_code: "#FFE4B5",
+  start_time: "2025-09-01T00:00:00.000Z",
+  end_time: "2025-09-07T23:59:59.000Z",
+  tenantId: 101,
+  is_recurring: "false",
+  recurring_config: "",
+  status: true,
+  userUpdate: "admin-uuid-12345",
+  codeName: "FLASH2025",
+  index: 1,
+  value1: "Giảm 50% cho đơn hàng trên 1 triệu",
+  value2: "Miễn phí vận chuyển",
+  value3: "Áp dụng cho 1000 khách hàng đầu tiên",
+  number1: 50,
+  number2: 1000000,
+  number3: 1000,
+  bool1: true,
+  bool2: false,
+  bool3: false,
+  limit_items: 500,
+  folderPath: "promotionTest",
+  distinctive:
+    "tinh-khanh-hoa-thanh-pho-nha-trang-phuong-phuong-sai-52-quang-trung/da/type",
+};
+
 patchSwaggerExample({
   endpoint: "/v1/admin/product",
   examples: examples,
@@ -187,6 +219,12 @@ patchSwaggerExample({
   endpoint: "/v1/admin/categories",
   examples: exampleCategory,
   pathParamExample: { productId: "3afbf496-2601-410a-8bcf-2ba6109cf121" },
+});
+
+patchSwaggerExample({
+  endpoint: "/v1/admin/promotion",
+  examples: examplePromotion,
+  pathParamExample: { promotionId: "3afbf496-2601-410a-8bcf-2ba6109cf121" },
 });
 
 const getExample = {

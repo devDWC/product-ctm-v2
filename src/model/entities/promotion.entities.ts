@@ -10,7 +10,10 @@ export interface IPromotion extends Document {
   type: string;
   banner_img: string;
   logo_img: string;
+  icon_img: string;
   color_code: string;
+  background_color_code: string;
+  background_color_promotion_code: string;
   start_time: Date | null;
   end_time: Date | null;
   tenantId: number;
@@ -30,7 +33,7 @@ export interface IPromotion extends Document {
   bool2: boolean;
   bool3: boolean;
   isDeleted: boolean;
-  limit_items: number | null;
+  limit_items: number | 0;
   createDate?: Date;
   updateDate?: Date;
 }
@@ -49,7 +52,10 @@ const PromotionSchema: Schema<IPromotion> = new Schema(
     type: { type: String, default: "" },
     banner_img: { type: String, default: "" },
     logo_img: { type: String, default: "" },
+    icon_img: { type: String, default: "" },
     color_code: { type: String, default: "" },
+    background_color_code: { type: String, default: "" },
+    background_color_promotion_code: { type: String, default: "" },
     start_time: { type: Date, default: null },
     end_time: { type: Date, default: null },
     tenantId: { type: Number, default: 0 },

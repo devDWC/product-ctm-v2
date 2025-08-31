@@ -14,11 +14,15 @@ import { v4 as uuidv4 } from "uuid";
 import { generateCode } from "../utils/mgo.utility";
 import { ProductDetailsModel } from "../../model/entities/product-detail.entities";
 import { ProductDtExtendV1Dto } from "../../model/dto/product-detail/product-detail.dto";
+import { InputQuery } from "../../model/base/input-query.dto";
+import { CategoryService } from "../../services/mgo-services/categories-service/admin/category.admin.service";
+import { CategoryDto } from "../../model/dto/category/category.dto";
 
 const organization: string = "chothongminh";
 
 export class ProductExtension {
   private readonly _s3Service = new S3Service();
+  private readonly categoryService = new CategoryService();
 
   async prepareMainProduct(productData: any, listGallery: any) {
     const productCode = await generateCode("P");
@@ -497,5 +501,84 @@ export class ProductExtension {
     });
 
     return finalData;
+  }
+
+  async joinProduct(details: any) {
+    const productIds = [
+      ...new Set(details.map((d: any) => d.productId)),
+    ].filter(Boolean);
+
+    const products = await ProductModel.find({
+      productId: { $in: productIds }, // ⚠️ Đảm bảo kiểu của id trong DB giống kiểu bạn truyền
+      isDeleted: false,
+    }).lean();
+
+    const productMap = products.reduce<Record<string, any>>((map, p) => {
+      map[p.productId] = {
+        productId: p.productId,
+        name: p.name,
+        gallery_product: p.gallery_product,
+        product_extend: this.convertGalleryProductV1(p.product_extend),
+        slug: p.slug,
+        productCode: p.productCode,
+        referenceKey: p.referenceKey,
+        description: p.description,
+        productType: p.productType,
+      };
+      return map;
+    }, {});
+
+    return details.map((detail: any) => ({
+      ...detail,
+      product: productMap[detail.productId] || null,
+    }));
+  }
+
+  private convertGalleryProductV1(galleryProduct: any) {
+    if (isNullOrEmpty(galleryProduct)) return galleryProduct;
+    let extendParse = JSON.parse(galleryProduct);
+    extendParse.gallery_productExtend = JSON.stringify(
+      extendParse.gallery_productExtend
+    );
+    return JSON.stringify(extendParse);
+  }
+
+  async joinCategoriesToDetails(details: any) {
+    const categoryIds: string[] = Array.from(
+      new Set(
+        details
+          .map((p: { categoryId?: string | number }) =>
+            p.categoryId?.toString()
+          )
+          .filter((id: any): id is string => Boolean(id))
+      )
+    );
+
+    const options: InputQuery = {
+      search: "",
+      pageCurrent: 1,
+      pageSize: 1000,
+      conditions: [{ key: "categoryId", value: categoryIds }],
+    };
+    const { data: response, total } =
+      await this.categoryService.getAllCategories(options);
+
+    const categoryMap = response.reduce(
+      (map: Record<string, any>, cat: CategoryDto) => {
+        map[cat.customId.categoryId] = {
+          categoryId: cat.customId.categoryId,
+          name: cat.name,
+          slug: cat.slug,
+          image_url: cat.image_url,
+        };
+        return map;
+      },
+      {}
+    );
+
+    return details.map((detail: any) => ({
+      ...detail,
+      category: categoryMap[detail.categoryId] || null,
+    }));
   }
 }

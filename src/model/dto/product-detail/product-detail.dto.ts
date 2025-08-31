@@ -240,7 +240,7 @@ export class ProductDtUpdateDto {
 }
 
 export class ProductDetailDto {
-  id: string;
+  productDetailId: string;
   productCode: string;
   title_product_details: string;
   name_product_details: string;
@@ -258,6 +258,7 @@ export class ProductDetailDto {
   updateDate?: Date;
   sale_promotion?: number;
   product_promotion_id?: string;
+  namePromotion?: string;
 
   constructor(x: any, baseUrl: string) {
     let gallery = Array.isArray(x.product?.gallery_product)
@@ -268,14 +269,14 @@ export class ProductDetailDto {
       getUrlImgProduct(baseUrl, x.product?.productCode, g)
     );
 
-    this.id = x.id;
+    this.productDetailId = x.productDetailId;
     this.productCode = x.productCode;
     this.title_product_details = x.title_product_details;
     this.name_product_details = x.name_product_details;
     this.slug_product_details = x.slug_product_details;
     this.category = x.category
       ? {
-          id: x.category.id,
+          id: x.category.categoryId,
           name: x.category.name,
           slug: x.category.slug,
         }
@@ -291,6 +292,7 @@ export class ProductDetailDto {
     this.updateDate = x.updateDate;
     this.sale_promotion = x.sale_product_details;
     this.product_promotion_id = x.product_promotion_id;
+    this.namePromotion = x.name
   }
 
   static fromList(list: any[], baseUrl: string): ProductDetailDto[] {
