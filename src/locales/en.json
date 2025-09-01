@@ -129,5 +129,17 @@
     "notFound": "Wishlist not found.",
     "getListSuccess": "Wishlist retrieved successfully.",
     "getListFailure": "Failed to retrieve wishlist."
+  },
+   "categoryGroup": {
+    "createFailure": "Failed to create category group. Please try again.",
+    "createSuccess": "category group has been created successfully.",
+    "existing": "This category group already exists.",
+    "deleteFailed": "Failed to delete category group. Please try again.",
+    "deleteSuccess": "category group has been deleted successfully.",
+    "notFound": "category group not found.",
+    "getAllSuccess": "category group retrieved successfully.",
+    "getAllFailure": "Failed to retrieve category group.",
+    "getOneSuccess": "Get category group successfully.",
+    "getOneFailure": "Failed to get category group."
   }
 }

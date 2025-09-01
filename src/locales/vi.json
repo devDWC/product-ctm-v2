@@ -130,5 +130,17 @@
     "notFound": "Không tìm thấy danh sách yêu thích.",
     "getListSuccess": "Lấy danh sách yêu thích thành công.",
     "getListFailure": "Không thể lấy danh sách yêu thích."
+  },
+  "categoryGroup": {
+    "createFailure": "Không thể tạo danh sách danh mục nhóm. Vui lòng thử lại.",
+    "createSuccess": "Danh sách danh mục nhóm đã được tạo thành công.",
+    "existing": "Danh sách danh mục nhóm này đã tồn tại.",
+    "deleteFailed": "Xóa danh sách danh mục nhóm thất bại. Vui lòng thử lại.",
+    "deleteSuccess": "Danh sách danh mục nhóm đã được xóa thành công.",
+    "notFound": "Không tìm thấy danh sách danh mục nhóm.",
+    "getAllSuccess": "Lấy danh sách danh mục nhóm thành công.",
+    "getAllFailure": "Không thể lấy danh sách danh mục nhóm.",
+    "getOneSuccess": "Lấy danh mục nhóm thành công.",
+    "getOneFailure": "Không thể lấy danh mục nhóm."
   }
 }
